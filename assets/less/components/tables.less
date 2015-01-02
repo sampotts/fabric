@@ -1,0 +1,160 @@
+// ==========================================================================
+// Tables
+// ==========================================================================
+
+// Base table
+// --------------------------------------------
+
+table {
+    max-width: 100%;
+    background-color: @table-bg;
+    border-collapse: separate;
+    border-spacing: 0;
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+// Base table styles
+// --------------------------------------------
+.table {
+    width: 100%;
+    margin-bottom: 20px;
+    border-top: 1px solid @table-border-color;
+
+    // Cells
+    th,
+    td {
+        padding: @table-cell-padding * .75 @table-cell-padding;
+        line-height: @line-height-base;
+        text-align: left;
+        border: 1px solid @table-border-color;
+        border-width: 0 0 1px;
+        
+        p {
+            margin: 0;
+        }
+        small {
+            display: block;
+        }
+
+        // Varations
+        &.actions,
+        &.numeric,
+        &.total-label {
+            text-align: right;
+        }
+        &.total-label {
+            color: @gray-lighter;
+            vertical-align: inherit;
+        }
+        &.total {
+            color: @gray-dark;
+            font-weight: 600;
+
+            small {
+                font-weight: 400;
+            }
+        }
+        &.actions {
+            white-space: nowrap;
+            display: table-cell; // Override form actions
+
+            .block-options {
+                text-align: inherit;
+            }
+            .btn {
+                margin-left: 10px;
+                
+                &:first-child {
+                    margin-left: 0;
+                }
+            }
+        }
+        &.view-row {
+            text-align: center;
+            vertical-align: middle;
+            width: 20px;
+            padding-left: 0;
+
+            a, a:hover, a:focus {
+                color: @gray-lightest;
+            }
+        }
+        &.date-cell {
+            white-space: nowrap;
+        }
+    }
+    th {
+        color: @gray-light;
+        font-weight: 400;
+        vertical-align: bottom;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    td {
+        vertical-align: top;
+    }
+    tbody.empty td {
+        text-align: center;
+        padding-top: 80px;
+        padding-bottom: 80px;
+        border-width: 0;
+        
+        p {
+	        margin: 0 0 10px;
+        }
+        small {
+            margin-bottom: 10px;
+        }
+        .btn {
+	        margin-top: 20px;
+        }
+    }
+    
+    // Targetted with #anchor
+    tr:target td {
+        background: lighten(@yellow, 49%);
+        border-bottom-color: lighten(@yellow, 10%);
+        color: darken(@yellow, 5%);
+        box-shadow: 0 -1px 0 lighten(@yellow, 10%);
+        
+        strong {
+            color: inherit;
+        }
+    }
+
+    // Links
+    tr[data-row-href]:hover td {
+        background-color: @off-white;
+    }
+    
+    // Alt row color
+    tr.alt td {
+        background: @off-white;
+    }
+
+    // Remove top border from thead by default
+    caption + thead tr:first-child th,
+    caption + thead tr:first-child td,
+    colgroup + thead tr:first-child th,
+    colgroup + thead tr:first-child td,
+    thead:first-child tr:first-child th,
+    thead:first-child tr:first-child td {
+        border-top: 0;
+    }
+}
+
+
+// Condensed table styles
+// --------------------------------------------
+.table-condensed th,
+.table-condensed td {
+    padding: @table-condensed-cell-padding;
+}
+
+// Middle aligned table styles
+// --------------------------------------------
+.table-middle-align th,
+.table-middle-align td {
+    vertical-align: middle;
+}

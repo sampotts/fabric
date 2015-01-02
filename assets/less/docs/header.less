@@ -1,0 +1,31 @@
+// ==========================================================================
+// Docs Turbo Header
+// ==========================================================================
+
+.header {
+    padding-top: @grid-section-padding * 2;
+    padding-bottom: @grid-section-padding * 2;    
+
+    // Background jazzing
+    background: @brand-primary;
+    text-shadow: 0 1px 1px rgba(0,0,0, .1);
+
+    h1,
+    h2, 
+    h3 {
+        color: #fff;
+
+        & ~ p {
+            color: #fff;
+        }
+    }
+
+    .container {
+        animation: fade-in-down .5s ease;
+    }
+
+    @media (min-width : @screen-xs) {
+        padding-top: @grid-section-padding * 4;
+        padding-bottom: @grid-section-padding * 4;
+    }
+}

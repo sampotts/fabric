@@ -1,0 +1,54 @@
+// ==========================================================================
+// Store header
+// ==========================================================================
+
+// Site header 
+.header-site {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+// Home header
+.header {
+    padding-top: @grid-section-padding;
+    padding-bottom: @grid-section-padding;
+    text-align: center;
+    
+    h1 {
+        .font-size(@font-size-h1 * 1.5);
+    }
+    p {
+        .font-size(21);
+    }
+    h1, 
+    h2, 
+    h3 {
+        margin: 0;
+
+        & ~ p {
+            margin: @grid-section-padding / 2 0 0; 
+            color: @headings-small-color;
+        }
+    }
+
+    .actions {
+        margin-top: @grid-section-padding;
+    }
+    
+    @media (min-width : @screen-xs) {
+        padding-top: @grid-section-padding * 2;
+        padding-bottom: @grid-section-padding * 2;
+    }
+}
+
+// Variations
+.header-full-height {
+    height: 100%;
+
+    // Use flexbox (with fallback)
+    .valign-middle();
+
+    // Center contents
+    text-align: center;
+    justify-content: center;
+}

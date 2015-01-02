@@ -1,0 +1,4 @@
+{
+	"fabric.css": 	["assets/less/_fabric.less"],
+	"docs.css": 	["assets/less/_docs.less"]
+}

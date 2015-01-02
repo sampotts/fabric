@@ -1,0 +1,48 @@
+// ==========================================================================
+// Grid
+// ==========================================================================
+
+// Containers
+// -----------------------------------------------
+body {
+    min-width: @body-min-width;
+}
+.container {
+    max-width: @container-max-width;
+    padding-left: @grid-gutter-width;
+    padding-right: @grid-gutter-width;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+// Grid
+// -----------------------------------------------
+@media (min-width: @bp-grid) {
+    // Setup widths
+    .col1  { width: 5.801104972%;  }
+    .col2  { width: 14.364640883%; }
+    .col3  { width: 22.928176794%; }
+    .col4  { width: 31.491712705%; }
+    .col5  { width: 40.055248616%; }
+    .col6  { width: 48.618784527%; }
+    .col7  { width: 57.182320438000005%; }
+    .col8  { width: 65.74585634900001%; }
+    .col9  { width: 74.30939226%; }
+    .col10 { width: 82.87292817100001%; }
+    .col11 { width: 91.436464082%; }
+    
+    // Setup the rows
+    .row { 
+        .clearfix();
+
+        & > [class^="col"] {
+        	float: left;
+        	margin-left: 2.762430939%;
+        
+            // First child has no margin, or first in row
+            &:first-child {
+            	margin-left: 0;
+            }
+        }
+    }
+}

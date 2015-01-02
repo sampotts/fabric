@@ -1,0 +1,256 @@
+// ==========================================================================
+// Variables
+// ==========================================================================
+
+// Base Colors
+@red:                                       #e74c3c;
+@green:                                     #1ac266;
+@blue:                                      #3498db;
+@purple:                                    #9b59b6;
+@orange:                                    #e67e22;
+@yellow:                                    #f1c40f;
+@dark-blue:									#34495e;
+@turquoise:									#1abc9c;
+
+// Tints (darker)
+@tint-red:									#c0392b;
+@tint-green:                                #18b55f;
+@tint-blue: 		                        #2980b9;
+@tint-purple:								#8e44ad;
+@tint-orange:								#d35400;
+@tint-yellow: 								#f39c12;
+@tint-dark-blue:							#2c3e50;
+@tint-turquoise:							#16a085;
+
+// Greyscale
+@black:										darken(#7f8c8d, 20%);
+@gray-dark:							        #7f8c8d;
+@gray:			                            #95a5a6;
+@gray-light:					        	#bdc3c7;
+@gray-lighter:					        	mix(@gray-light, @gray-lightest, 30%);
+@gray-lightest:								#ecf0f1;
+@off-white:						        	#fbfbfb;
+
+// Brands
+@color-facebook:				        	#3c569a;
+@color-twitter:					            #0f94ff; 
+@color-google-plus:			        	    #de4c35; 
+@color-instagram:				            #925e47;
+@color-pinterest:				            #cb2026; 
+@color-tumblr:                              #3D5A70;
+@color-youtube:                             #CC181E;
+@color-kindle:                              #dc820e;
+@color-dropbox:                             #137de0;
+@color-dribbble:                            #EA4C89;
+@color-vimeo:                               #19b7ed;
+@color-paypal: 							    #0D79BF;
+@color-flickr: 							    #FD1E81;
+@color-soundcloud:                          #FF4D00;
+
+// Branding
+// --------------------------------------------------
+@brand-primary:                             @red;
+@brand-secondary:                           @green;
+
+// Base
+// --------------------------------------------------
+@body-bg:                           		#fff;
+@text-color:                                #95a5a6;
+@link-color:                                @brand-primary;
+@link-hover-color:                          @black;
+
+// Typography
+// --------------------------------------------------
+// Font, line-height, and color for body text, headings, and more.
+@font-family-sans-serif:                    "Circular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+@font-family-serif:                         Georgia, "Times New Roman", Times, serif;
+@font-family-monospace:                     Menlo, Monaco, Consolas, "Courier New", monospace;
+@font-family-base:                          @font-family-sans-serif;
+
+// If you want to use fancy text block typefaces (serif can be easier to read)
+@font-family-text-block:                    inherit;
+
+@font-size-base:                            16;
+@font-size-large:                           ceil((@font-size-base * 1.1)); // ~18px
+@font-size-small:                           ceil((@font-size-base * 0.85)); // ~14px
+@font-size-xs:                              ceil((@font-size-base * 0.8)); // ~13px
+
+@font-size-h1:                              ceil((@font-size-base * 2.25)); // ~36px
+@font-size-h2:                              ceil((@font-size-base * 1.85)); // ~30px
+@font-size-h3:                              ceil((@font-size-base * 1.6)); // ~26px
+@font-size-h4:                              ceil((@font-size-base * 1.35)); // ~22px
+@font-size-h5:                              @font-size-large;
+@font-size-h6:                              @font-size-xs;
+
+//** Unit-less `line-height` for use in components like buttons.
+@line-height-base:                          1.5;
+//** Computed "line-height" (`font-size` * `line-height`) for use with `margin`, `padding`, etc.
+@line-height-computed:                      floor((@font-size-base * @line-height-base)) * 1px; // ~25px
+
+@headings-font-family:                      inherit;
+@headings-font-weight:                      600;
+@headings-small-font-family:                inherit;
+@headings-small-font-weight:                700;
+@headings-line-height:                      1.1;
+@headings-color:                            @brand-primary;
+@headings-small-color:                      lighten(@text-color, 10%);
+
+@strong-color: 								@black;
+
+// Components
+// --------------------------------------------------
+// Define common padding and border radius sizes and more. Values based on 15px text and 1.5 line-height (~20px to start).
+@padding-base-vertical:                     8px;
+@padding-base-horizontal:                   12px;
+
+@padding-large-vertical:                    10px;
+@padding-large-horizontal:                  15px;
+
+@padding-small-vertical:                    5px;
+@padding-small-horizontal:                  8px;
+
+@padding-xs-vertical:                       1px;
+@padding-xs-horizontal:                     5px;
+
+@line-height-large:                         1.33;
+@line-height-small:                         1.5;
+
+@border-radius-base:                        4px;
+@border-radius-large:                       6px;
+@border-radius-small:                       3px;
+
+// Media
+// --------------------------------------------------
+@image-background:                          @gray-lightest;
+
+// Loaders
+// --------------------------------------------------
+@loader-bg:                                 @brand-primary;
+
+// Logos
+// --------------------------------------------------
+@logo-selz:                                 url("//d33i624pw6jj68.cloudfront.net/themes/classic/static/images/selz.svg");
+@logo-visa:                                 url("//d33i624pw6jj68.cloudfront.net/themes/classic/static/images/visa.svg");
+@logo-mastercard:                           url("//d33i624pw6jj68.cloudfront.net/themes/classic/static/images/mastercard.svg");
+@logo-amex:                                 url("//d33i624pw6jj68.cloudfront.net/themes/classic/static/images/amex.svg");
+@logo-paypal:                               url("//d33i624pw6jj68.cloudfront.net/themes/classic/static/images/paypal.svg");
+@logo-paypal-white:                         url("//d33i624pw6jj68.cloudfront.net/themes/classic/static/images/paypal_white.svg");
+
+// Sections
+// --------------------------------------------------
+@section-border-color:                      @gray-lightest;
+
+// Tables
+// --------------------------------------------------
+// Customizes the `.table` component with basic values, each used across all table variations.
+@table-cell-padding:                        20px;
+@table-condensed-cell-padding:              10px;
+@table-bg:                                  transparent;
+@table-bg-hover:                            #f5f5f5;
+@table-bg-active:                           @table-bg-hover;
+@table-border-color:                        @gray-lightest;
+
+// Buttons
+// --------------------------------------------------
+@btn-font-family:                           @font-family-sans-serif;
+@btn-font-weight:                           600;
+@btn-radius:                                @border-radius-base;
+@btn-default-bg:                            @text-color;
+@btn-primary-bg:                            @brand-secondary;
+@btn-secondary-bg:                          @blue;
+@btn-success-bg:                            @green;
+@btn-danger-bg:                             @red;
+@btn-link-disabled-color:                   @gray-light;
+
+// Navigation
+// --------------------------------------------------
+@navbar-link-hover-bg: 						@gray-lighter;
+@navbar-link-hover-color: 					@link-hover-color;
+@navbar-link-active-bg: 					@link-color;
+@navbar-link-active-color: 					#fff;
+@tab-bg: 									@off-white;
+@tab-hover-bg: 								@gray-lighter;
+@tab-hover-color: 							@link-hover-color; 
+
+// Tooltips
+// --------------------------------------------------
+@tooltip-bg:                                @black;
+@tooltip-text-color:                        #fff;
+@tooltip-zindex:                            30;
+@tooltip-arrow-size: 						7px;
+
+// Switches
+// --------------------------------------------------
+@switch-width: 								50px;
+@switch-height: 							24px;
+@switch-padding: 							2px;
+@switch-handle-size: 						@switch-height - (@switch-padding * 2);
+@switch-control-bg-off:                 	@gray-light;
+@switch-control-background-on:          	@green;
+
+// Forms
+// --------------------------------------------------
+@form-horizontal-offset:                	200px;
+@form-control-group-border:             	1px solid @gray-lightest;
+
+@input-control-padding-vertical:        	7px;
+@input-control-padding-horizontal:      	12px;
+@input-control-border-color:            	@gray-lighter;
+@input-control-border-color-focus:      	@gray-light;
+@input-control-border-width:            	2px;
+@input-control-bg:                      	#fff;
+@input-control-min-height:              	40px;
+@input-control-placeholder-color:       	@gray-light;
+@input-control-bg-disabled:             	@gray-lightest;
+@input-control-help-color: 					@gray-light;
+@input-control-shadow: 						inset 0 1px 0 rgba(0,0,0, .025);
+@input-addon-bg:                        	@gray-lightest;
+@input-addon-color: 						@gray;
+@border-radius-input: 						4px;
+
+// Form states and alerts
+// --------------------------------------------------
+// Define colors for form feedback states and, by default, alerts.
+
+@state-success-text:                        @tint-green;
+@state-success-bg:                          lighten(@tint-green, 52%);
+@state-success-border:                      darken(spin(@state-success-bg, -10), 7%);
+
+@state-info-text:                           @tint-blue;
+@state-info-bg:                             lighten(@tint-blue, 48%);
+@state-info-border:                         darken(spin(@state-info-bg, -10), 7%);
+
+@state-warning-text:                        @tint-yellow;
+@state-warning-bg:                          lighten(@tint-yellow, 44%);
+@state-warning-border:                      darken(spin(@state-warning-bg, -10), 5%);
+
+@state-danger-text:                         @tint-red;
+@state-danger-bg:                           lighten(@tint-red, 48%);
+@state-danger-border:                       darken(spin(@state-danger-bg, -10), 5%);
+
+@main-menu-width:                           280px;
+
+// Media queries breakpoints
+// --------------------------------------------------
+// Define the breakpoints at which your layout will change, adapting to different screen sizes.
+@screen-xs:                                 480px;
+@screen-sm:                                 768px;
+@screen-md:                                 992px;
+@screen-lg:                                 1200px;
+
+// So media queries don't overlap when required, provide a maximum
+@screen-xs-max:                             (@screen-sm - 1);
+@screen-sm-max:                             (@screen-md - 1);
+@screen-md-max:                             (@screen-lg - 1);
+
+// Grid
+@body-min-width:                            320px;
+@container-max-width:                       @screen-lg;
+@grid-section-padding:                      20px;
+
+// Core grid settings
+@grid-column-width: 						60;
+@grid-gutter-width: 						20px;
+
+// When to start using the grid
+@bp-grid: 									@screen-sm;

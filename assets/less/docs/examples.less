@@ -1,0 +1,52 @@
+// ==========================================================================
+// Docs Examples
+// ==========================================================================
+
+.example {
+	padding-top: @grid-section-padding * 2;
+
+	@media (min-width : @screen-xs) {
+        padding-top: @grid-section-padding * 4;
+    }
+
+    nav {
+    	margin-bottom: @grid-section-padding;
+    }
+} 
+.example__actions {
+	margin-bottom: @grid-section-padding;
+}
+
+.example__grid {
+	margin-top: (@grid-section-padding * .75);
+
+	&:first-child {
+		margin-top: 0;
+	}
+
+	& > [class^="col"] {
+		padding-top: (@grid-section-padding / 4);
+		padding-bottom: (@grid-section-padding / 4);
+
+		background: @gray-lighter;
+		border-radius: @border-radius-base;
+		text-align: center;
+		font-weight: 600;	
+		.font-smoothing(on);
+
+		transition: background .3s ease, color .3s ease;
+
+		&:hover {
+			background: @gray;
+			color: #fff;
+		}	
+	}
+
+	@media (max-width: (@bp-grid - 1)) {
+		margin-top: @grid-section-padding;
+
+		& > [class^="col"] {
+			margin-top: (@grid-section-padding / 2);
+		}
+	}
+}

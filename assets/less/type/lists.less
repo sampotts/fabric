@@ -1,0 +1,54 @@
+// ==========================================================================
+// List styles
+// ==========================================================================
+
+ul.unstyled,
+ol.unstyled {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul, 
+ol {
+    margin: 0 0 @grid-section-padding;
+    padding: 0 0 0 @grid-section-padding;
+}
+
+// Fancy styled ordered list
+ol.fancy {
+	padding: 0;
+	list-style-type: none;
+	counter-reset: counter;
+
+	li {
+		position: relative;
+		min-height: @line-height-computed;
+		margin-top: (@grid-section-padding / 2);
+		padding-left: (@line-height-computed + (@grid-section-padding / 2));
+
+		&:first-child {
+			margin-top: 0;
+		}
+
+		&:before {
+			position: absolute;
+			top: 0;
+			left: 0;
+			
+			background: @brand-primary;
+			color: #fff;
+			text-align: center;
+			font-weight: 600;
+			.font-smoothing(on);
+			border-radius: 100%;
+
+			line-height: @line-height-computed;
+			height: @line-height-computed;
+			width: @line-height-computed;
+			
+			content: counter(counter);
+	    	counter-increment: counter;
+		}
+	}	
+}

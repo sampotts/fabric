@@ -1,0 +1,159 @@
+// ==========================================================================
+// Typography
+// ==========================================================================
+
+html {
+    font-size: 62.5%;
+}
+body {
+    color: @text-color;
+    line-height: @line-height-base;
+    font-family: @font-family-base;
+    .font-size(@font-size-base);
+}
+body, 
+input, 
+select {
+    text-rendering: optimizeLegibility;
+}
+
+// Links
+// -------------------------
+a,
+button.faux-anchor {
+    color: @link-color;
+    text-decoration: none;
+    transition: color .3s ease;
+    
+    &:hover,
+    &:focus {
+        color: @link-hover-color;
+    }
+    &:focus {
+        .tab-focus();
+    }
+}
+
+// Headings
+// -------------------------
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: @headings-font-family;
+    font-weight: @headings-font-weight;
+    line-height: @headings-line-height;
+    color: @headings-color;
+    .font-smoothing(on);
+    
+    small,
+    .small {
+        font-weight: normal;
+        line-height: 1;
+        color: @headings-small-color;
+    }
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3 {
+    margin-top: 0;
+    margin-bottom: (@grid-section-padding / 2);
+    
+    small,
+    .small {
+        font-size: 65%;
+    }
+}
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+    margin-top: 0;
+    margin-bottom: (@grid-section-padding / 2);
+    
+    small,
+    .small {
+        font-size: 75%;
+    }
+}
+h1, .h1 { .font-size(@font-size-h1); }
+h2, .h2 { .font-size(@font-size-h2); }
+h3, .h3 { .font-size(@font-size-h3); }
+h4, .h4 { .font-size(@font-size-h4); }
+h5, .h5 { .font-size(@font-size-h5); }
+h6, .h6 { 
+    font-family: @headings-small-font-family;
+    font-weight: @headings-small-font-weight;
+    .font-size(@font-size-h6);  
+    text-transform: uppercase;
+    color: @headings-small-color;
+}
+
+// Body text
+// -------------------------
+p {
+    margin: 0 0 @grid-section-padding;
+
+    &.lead {
+        .font-size(@font-size-large);
+    }
+}
+small {
+    .font-size(@font-size-xs);
+}
+strong {
+    color: @strong-color;
+}
+
+// Content blocks
+// -------------------------
+.text-intro {
+    text-align: center;
+    border-bottom: 1px solid @section-border-color;
+    
+    @media (min-width : @screen-xs) {
+        padding-bottom: @grid-section-padding;
+    }
+}
+.header,
+.text-block {
+    .clearfix();
+    font-family: @font-family-text-block;
+    .font-size(@font-size-large);
+    .font-smoothing(on);
+}
+.text-block,
+.content-block {
+    margin-bottom: @grid-section-padding;
+    
+    @media (min-width : @screen-xs) {
+        margin-bottom: @grid-section-padding * 2;
+    }
+    @media (min-width : @screen-md) {
+        margin-bottom: @grid-section-padding * 2;
+    }
+}
+
+// Processing block
+// -------------------------
+.processing-block {
+    padding-top: @grid-section-padding * 2;
+    padding-bottom: @grid-section-padding * 2;
+    text-align: center;
+    
+    &:before {
+        content: "";
+        vertical-align: middle;
+        top: -1px;
+        margin-right: 10px;
+    }
+}
+
+// Empty block
+// -------------------------
+.empty-block {
+    margin: 0;
+	padding-top: @grid-section-padding * 2;
+	padding-bottom: @grid-section-padding * 2;
+	.font-size(@font-size-large);
+	color: @gray-light;
+	text-align: center;
+}

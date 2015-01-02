@@ -1,0 +1,41 @@
+// ==========================================================================
+// Alerts
+// ==========================================================================
+
+.alert {
+    position: relative;
+	padding: @padding-large-vertical @grid-section-padding @padding-large-vertical 14px;
+	margin-bottom: 20px;
+
+    // Type
+    text-shadow: 0 1px 0 rgba(255,255,255,.25);
+	
+	//Default style
+	background-color: @state-warning-bg;
+	border: 1px solid @state-warning-border;
+    border-width: 0 0 0 6px;
+	color: @state-warning-text;
+	
+	strong {
+	    color: inherit;
+	}
+	
+	// Error alerts
+	&-error {
+		background-color: @state-danger-bg;
+		border-color: @state-danger-border;
+		color: @state-danger-text;
+	}
+	// Success alerts
+	&-success {
+		background-color: @state-success-bg;
+		border-color: @state-success-border;
+		color: @state-success-text;
+	}
+    // Info alerts
+	&-info {
+		background-color: @state-info-bg;
+		border-color: @state-info-border;
+		color: @state-info-text;
+	}
+}

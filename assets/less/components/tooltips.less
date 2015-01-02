@@ -1,0 +1,101 @@
+// ==========================================================================
+// Tooltips & popovers
+// ==========================================================================
+
+// Tooltip
+.tooltip {
+	position: relative;
+    cursor: help;
+	
+	&__tip {
+		// Arrow
+        .arrow(top, @tooltip-bg, @tooltip-arrow-size);
+
+		// Layout
+		position: absolute;
+		z-index: @tooltip-zindex;
+        top: 100%;
+		left: 50%;
+		transform: translateX(-50%);
+		margin-top: @tooltip-arrow-size; 
+		padding: @padding-base-vertical (@padding-base-horizontal * 1.25);
+
+        // Animation
+        animation: fade-in .2s;
+		
+        // Background
+		background: @tooltip-bg;
+
+        // Type
+        color: @tooltip-text-color;
+		line-height: @line-height-base;
+		text-align: center;
+		.font-size(@font-size-small);
+		font-weight: 600;
+		pointer-events: none; // Let mouse events pass through
+        .font-smoothing(on);
+        white-space: nowrap;
+        text-transform: none;
+
+        // Mixins
+		border-radius: 4px;
+		box-shadow: 0 1px 1px rgba(0,0,0, .2);
+
+		// Variations
+		&--left,
+		&--right {
+			top: 50%;
+			transform: translate(0, -50%);
+		}
+		&--left {
+			.arrow(right, @tooltip-bg, @tooltip-arrow-size);
+			right: 100%;
+			left: auto;
+			margin-right: ceil(@tooltip-arrow-size * 1.5);
+		}
+		&--right {
+			.arrow(left, @tooltip-bg, @tooltip-arrow-size);
+			left: 100%;
+			margin-left: ceil(@tooltip-arrow-size * 1.5);
+		}
+		&--above {
+	        .arrow(bottom, @tooltip-bg, @tooltip-arrow-size);
+			top: auto;
+	        bottom: 100%;
+	        
+	        margin-bottom: 10px;
+	        
+	        // Reset default tip's arrow
+	        &::after {
+				top: auto;
+			}
+		}
+
+		// Reset absolute positioning
+		&--left,
+		&--right,
+		&--above {
+			position: absolute;
+			margin-top: 0;
+		}
+	}
+
+	// Hover only
+	&--hover {
+		.tooltip__tip{
+			display: none;
+		}
+		&:hover .tooltip__tip,
+		&:focus .tooltip__tip {	
+			display: block;
+		}
+	}
+
+	span& {
+		display: inline-block;
+	}
+	button&,
+	a& {
+	    cursor: pointer;
+	}
+}

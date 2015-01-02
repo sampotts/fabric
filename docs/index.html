@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>fabric.css</title>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		
+		<!-- Mobile meta -->
+		<!-- standard viewport tag to set the viewport to the device's width, Android 2.3 devices need this so 100% width works properly and	doesn't allow children to blow up the viewport width-->
+		<meta name="viewport" content="initial-scale=1.0,user-scalable=tes,maximum-scale=2,width=device-width">
+		<!-- width=device-width causes the iPhone 5 to letterbox the app, so we want to exclude it for iPhone 5 to allow full screen apps -->
+		<meta name="viewport" content="initial-scale=1.0,user-scalable=yes,maximum-scale=2" media="(device-height: 568px)">
+
+		<!-- Stylesheets -->
+		<link rel="stylesheet" href="../dist/css/fabric.css">
+		<link rel="stylesheet" href="../dist/css/docs.css">
+
+		<!-- Modernizr -->
+		<script src="../dist/js/modernizr.js"></script>
+	</head>
+	<body>
+		<header class="header">
+			<div class="container">
+				<h1 class="turbo">Fabric.css</h1>
+				<p>Yet another simple, lightweight CSS framework.</p>
+				<div class="actions">
+					<a href="#main" class="btn btn--primary">Download</a>
+					<a href="#main" class="btn">More info</a>
+				</div>
+			</div>
+		</header>
+		<main id="main" class="container main">
+			<article id="grid" class="example row">
+				<header class="col3">
+					<h1>Grid</h1>
+					<p>A simple, fluid 12 column grid</p>
+				</header>
+				<section class="col9">
+					<div class="row example__grid" role="presentation">
+						<div class="col1">1</div>
+						<div class="col1">1</div>
+						<div class="col1">1</div>
+						<div class="col1">1</div>
+						<div class="col1">1</div>
+						<div class="col1">1</div>
+						<div class="col1">1</div>
+						<div class="col1">1</div>
+						<div class="col1">1</div>
+						<div class="col1">1</div>
+						<div class="col1">1</div>
+						<div class="col1">1</div>
+					</div>
+					<div class="row example__grid" role="presentation">
+						<div class="col2">2</div>
+						<div class="col2">2</div>
+						<div class="col2">2</div>
+						<div class="col2">2</div>
+						<div class="col2">2</div>
+						<div class="col2">2</div>
+					</div>
+					<div class="row example__grid" role="presentation">
+						<div class="col3">3</div>
+						<div class="col3">3</div>
+						<div class="col3">3</div>
+						<div class="col3">3</div>
+					</div>
+					<div class="row example__grid" role="presentation">
+						<div class="col4">4</div>
+						<div class="col4">4</div>
+						<div class="col4">4</div>
+					</div>
+					<div class="row example__grid" role="presentation">
+						<div class="col5">5</div>
+						<div class="col5">5</div>
+						<div class="col2">2</div>
+					</div>
+					<div class="row example__grid" role="presentation">
+						<div class="col6">6</div>
+						<div class="col6">6</div>
+					</div>
+					<div class="row example__grid" role="presentation">
+						<div class="col7">7</div>
+						<div class="col5">5</div>
+					</div>
+					<div class="row example__grid" role="presentation">
+						<div class="col8">8</div>
+						<div class="col4">4</div>
+					</div>
+					<div class="row example__grid" role="presentation">
+						<div class="col9">9</div>
+						<div class="col3">3</div>
+					</div>
+					<div class="row example__grid" role="presentation">
+						<div class="col10">10</div>
+						<div class="col2">2</div>
+					</div>
+					<div class="row example__grid" role="presentation">
+						<div class="col11">11</div>
+						<div class="col1">1</div>
+					</div>
+				</section>
+			</article>
+			<article id="type" class="example row">
+				<header class="col3">
+					<h1>Type</h1>
+					<p>Headings, paragraphs, lists, quotes</p>
+				</header>
+				<section class="col9">
+					<h1>h1</h1>
+					<h2>h2</h2>
+					<h3>h3</h3>
+					<h4>h4</h4>
+					<h5>h5</h5>
+					<h6>h6</h6>
+
+					<p class="lead">This is a <strong>.lead</strong> paragraph. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla porta neque libero, at accumsan felis lacinia at. Duis sit amet ultrices ante, vitae rhoncus turpis. Curabitur at nunc vel justo porttitor bibendum quis in tortor. Praesent suscipit tristique purus quis dictum.</p>
+
+					<p>This is a <em>default</em> paragraph. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla porta neque libero, at accumsan felis lacinia at. Duis sit amet ultrices ante, vitae rhoncus turpis. Curabitur at nunc vel justo porttitor bibendum quis in tortor. Praesent suscipit tristique purus quis dictum.</p>
+
+					<ul>
+						<li>List item 1</li>
+						<li>List item 2</li>
+						<li>List item 3</li>
+					</ul>
+					<ol>
+						<li>List item 1</li>
+						<li>List item 2</li>
+						<li>List item 3</li>
+					</ol>
+					<ol class="fancy">
+						<li>List item 1</li>
+						<li>List item 2</li>
+						<li>List item 3</li>
+					</ol>
+				</section>
+			</article>
+			<article id="alerts" class="example row">
+				<header class="col3">
+					<h1>Alerts</h1>
+					<p>Warnings, errors, success and info alert messages</p>
+				</header>
+				<section class="col9">
+					<div class="alert" role="alert">This is a default warning alert</div>
+					<div class="alert alert-error" role="alert">This is an error alert</div>
+					<div class="alert alert-success" role="alert">This is a success alert</div>
+					<div class="alert alert-info" role="alert">This is an info alert</div>
+				</section>
+			</article>
+			<article id="buttons" class="example row">
+				<header class="col3">
+					<h1>Buttons</h1>
+					<p>Push me</p>
+				</header>
+				<section class="col9">
+					<p>You can use a &lt;button&gt; or an &lt;a&gt; element</p>
+					<div class="actions example__actions">					
+						<button type="button" class="btn btn--primary">Primary</button>
+						<button type="button" class="btn btn--secondary">Secondary</button>
+						<button type="button" class="btn">Default</button>
+					</div>
+
+					<p>Small version</p>
+					<div class="actions example__actions">
+						<button type="button" class="btn btn--primary btn--small">Primary</button>
+						<button type="button" class="btn btn--secondary btn--small">Secondary</button>
+						<button type="button" class="btn btn--small">Default</button>
+					</div>
+
+					<p>States</p>
+					<div class="actions example__actions">
+						<button type="button" class="btn hover">:hover</button>
+						<button type="button" class="btn focus">:focus</button>
+						<button type="button" class="btn active">:active</button>
+						<button type="button" class="btn disabled" disabled>:disabled</button>
+						<button type="button" class="btn loading">Loading&hellip;<span class="spinner">Loading&hellip;</span></button>
+					</div>
+
+					<p>There's some social ones too</p>
+					<div class="actions example__actions">
+						<button type="button" class="btn btn--facebook">Facebook</button>
+						<button type="button" class="btn btn--twitter">Twitter</button>
+						<button type="button" class="btn btn--pinterest">Pinterest</button>
+						<button type="button" class="btn btn--google-plus">Google&plus;</button>
+					</div>
+
+					<p>Counters</p>
+					<div class="example__actions">
+						<button type="button" class="btn btn--facebook btn--small">Share</button>
+						<span class="counter">88</span>
+						<button type="button" class="btn btn--twitter btn--small">Tweet</button>
+						<span class="counter">88</span>
+					</div>
+					<div class="example__actions">
+						<button type="button" class="btn btn--facebook">Share</button>
+						<span class="counter">88</span>
+						<button type="button" class="btn btn--twitter">Tweet</button>
+						<span class="counter">88</span>
+					</div>
+
+					<p>Pagination</p>
+					<div class="pagination example__actions">
+						<a href="#page1" class="btn previous">Previous</a>
+						<a href="#page3" class="btn btn--primary">Next</a>
+					</div>
+				</section>
+			</article>
+			<article id="forms" class="example row">
+				<header class="col3">
+					<h1>Forms</h1>
+					<p>Collection information from users</p>
+				</header>
+				<section class="col9">
+					<form method="post">
+						<fieldset>
+							<legend class="h5">Vertical Layout (default)</legend>
+							<div class="control-group">
+								<div class="control-label">
+									<label for="control-text">Text</label>
+									<small class="control-help">Label help</small>
+								</div>
+								<div class="controls">
+									<input type="text" id="control-text" placeholder="e.g. I love fabric">
+									<small class="control-help">This is some form help</small>
+								</div>
+							</div>
+							<div class="control-group">
+								<div class="control-label">
+									<label for="control-text-addon">Text</label>
+									<small class="control-help">Label help</small>
+								</div>
+								<div class="controls">
+									<div class="input-group">
+										<div class="add-on">UA-</div>
+										<input type="text" id="control-text=addon" placeholder="e.g. F89T67P09">
+									</div>
+									<small class="control-help">This is some form help</small>
+								</div>
+							</div>
+							<div class="control-group">
+								<div class="control-label">
+									<label for="control-textarea">Textarea</label>
+									<small class="control-help">Label help</small>
+								</div>
+								<div class="controls">
+									<textarea id="control-textarea" placeholder="e.g. A long message"></textarea>
+									<small class="control-help">This is some form help</small>
+								</div>
+							</div>
+							<div class="control-group">
+								<div class="control-label">
+									<label for="control-select">Select</label>
+									<small class="control-help">Label help</small>
+								</div>
+								<div class="controls">
+									<select id="control-select">
+										<option>Option 1</option>
+										<option>Option 2</option>
+									</select>
+									<small class="control-help">This is some form help</small>
+								</div>
+							</div>
+						</fieldset>
+					</form>
+					<form method="post" class="form-horizontal">
+						<fieldset>
+							<legend class="h5">Horizontal Layout</legend>
+							<p>This layout will only be used for <code>@screen-md</code> and larger screen sizes.</p>
+							<div class="control-group">
+								<div class="control-label">
+									<label for="control-text-2">Text</label>
+									<small class="control-help">Label help</small>
+								</div>
+								<div class="controls">
+									<input type="text" id="control-text-2" placeholder="e.g. I love fabric">
+									<small class="control-help">This is some form help</small>
+								</div>
+							</div>
+							<div class="control-group">
+								<div class="control-label">
+									<label for="control-textarea-2">Textarea</label>
+									<small class="control-help">Label help</small>
+								</div>
+								<div class="controls">
+									<textarea id="control-textarea-2" placeholder="e.g. A long message"></textarea>
+									<small class="control-help">This is some form help</small>
+								</div>
+							</div>
+							<div class="control-group">
+								<div class="control-label">
+									<label for="control-select-2">Select</label>
+									<small class="control-help">Label help</small>
+								</div>
+								<div class="controls">
+									<select id="control-select-2">
+										<option>Option 1</option>
+										<option>Option 2</option>
+									</select>
+									<small class="control-help">This is some form help</small>
+								</div>
+							</div>
+							<div class="control-group">
+								<div class="control-label">
+									<label for="control-select">Radios</label>
+									<small class="control-help">Label help</small>
+								</div>
+								<div class="controls">
+									<div class="radio">
+										<input type="radio" id="control-radio1" name="control-radio">
+										<label for="control-radio1" name="control-radio">Radio 1</label>
+									</div>
+									<div class="radio">
+										<input type="radio" id="control-radio2" name="control-radio">
+										<label for="control-radio2">Radio 2</label>
+									</div>
+									<div class="radio">
+										<input type="radio" id="control-radio3" name="control-radio">
+										<label for="control-radio3">Radio 3</label>
+									</div>
+								</div>
+							</div>
+							<div class="control-group">
+								<div class="control-label">
+									<label for="control-select">Checkboxes</label>
+									<small class="control-help">Label help</small>
+								</div>
+								<div class="controls">
+									<div class="checkbox">
+										<input type="checkbox" id="control-checkbox1" name="control-checkbox">
+										<label for="control-checkbox1" name="control-radio">Radio 1</label>
+									</div>
+									<div class="checkbox">
+										<input type="checkbox" id="control-checkbox2" name="control-checkbox">
+										<label for="control-checkbox2">Radio 2</label>
+									</div>
+									<div class="checkbox">
+										<input type="checkbox" id="control-checkbox3" name="control-checkbox">
+										<label for="control-checkbox3">Radio 3</label>
+									</div>
+								</div>
+							</div>
+							<div class="control-group">
+								<div class="control-label">
+									<label for="control-select">Switches</label>
+									<small class="control-help">Label help</small>
+								</div>
+								<div class="controls">
+									<div class="control-switch">
+							            <span class="checkbox-switch active">
+							                <input type="checkbox" id="control-switch1">
+							            </span>
+				                        <label for="control-switch1">Awesomness</label>
+							        </div>
+							    </div>
+							    <div class="controls">
+							        <div class="control-switch">
+							            <span class="checkbox-switch">
+							                <input type="checkbox" id="control-switch2">
+							            </span>
+				                        <label for="control-switch2">Sadness</label>
+							        </div>
+								</div>
+							</div>
+							<div class="actions actions--form">
+								<button type="submit" class="btn btn--primary">Save</button>
+								<button type="reset" class="btn">Cancel</button>
+							</div>
+							<div class="actions actions--form">
+								<button type="submit" class="btn btn--primary">Save</button>
+								<button type="reset" class="btn">Cancel</button>
+							</div>
+						</fieldset>
+					</form>
+					<form>
+						<fieldset>
+							<legend class="h5">Combo Input</legend>
+							<div class="control-combo">
+								<div class="control">
+									<label for="combo-text-1" class="sr-only">Text 1</label>
+									<input type="text" id="combo-text-1" placeholder="e.g. Dave Smith">
+								</div>
+								<div class="control">
+									<label for="combo-text-2" class="sr-only">Text 2</label>
+									<input type="email" id="combo-text-2" placeholder="e.g. dave@smith.com">
+								</div>
+								<div class="control">
+									<label for="combo-text-2" class="sr-only">Text 2</label>
+									<div class="input-group">
+										<div class="add-on">UA-</div>
+										<input type="email" id="combo-text-2" placeholder="e.g. X34F68FG">
+									</div>
+								</div>
+								<div class="control">
+									<label for="combo-select" class="sr-only">Select</label>
+									<select id="combo-select">
+										<option>Option 1</option>
+										<option>Option 2</option>
+									</select>
+								</div>
+							</div>
+							<div class="actions actions--form">
+								<button type="submit" class="btn btn--primary">Save</button>
+								<button type="reset" class="btn">Cancel</button>
+							</div>
+						</fieldset>
+					</form>
+				</section>
+			</article>
+			<article id="nav" class="example row">
+				<header class="col3">
+					<h1>Navigation</h1>
+					<p>Getting around</p>
+				</header>
+				<section class="col9">
+					<p>Navigation bar</p>
+					<nav class="nav-bar">
+						<div class="logo">Logo</div>
+						<ul>
+							<li>
+								<a href="#nav-item-1">Home</a>
+							</li>
+							<li class="active">
+								<a href="#nav-item-2">Products</a>
+							</li>
+							<li>
+								<a href="#nav-item-3">Contact</a>
+							</li>
+							<li>
+								<a href="#nav-item-4">About</a>
+							</li>
+						</ul>
+					</nav>
+
+					<p>Tabs</p>
+					<nav class="nav-tabs">
+						<ul>
+							<li>
+								<a href="#nav-item-1">Home</a>
+							</li>
+							<li class="active">
+								<a href="#nav-item-2">Products</a>
+							</li>
+							<li>
+								<a href="#nav-item-3">Contact</a>
+							</li>
+							<li>
+								<a href="#nav-item-4">About</a>
+							</li>
+						</ul>
+					</nav>
+				</section>
+			</article>
+			<article id="tooltips" class="example row">
+				<header class="col3">
+					<h1>Tooltips</h1>
+					<p>Little helpers</p>
+				</header>
+				<section class="col9">
+					<p>Here's an example <span class="tooltip">tooltip <span class="tooltip__tip tooltip__tip--above">Above</span></span> to show how it looks.</p>
+					<p>Here's an example <span class="tooltip">tooltip <span class="tooltip__tip tooltip__tip--left">Left</span></span> to show how it looks.</p>
+					<p>Here's an example <span class="tooltip">tooltip <span class="tooltip__tip tooltip__tip--right">Right</span></span> to show how it looks.</p>
+					<p>Here's an example <span class="tooltip">tooltip <span class="tooltip__tip">Below (default)</span></span> to show how it looks.</p>
+					<p>You can also set them to display <button type="button" class="faux-anchor tooltip tooltip--hover">on hover or focus <span class="tooltip__tip">Awesome</span></button> as well.</p>
+				</section>
+			</article>
+		</main>
+		<footer class="container">
+			<p>&copy; Sam Potts</p>
+		</footer>
+	</body>
+</html>

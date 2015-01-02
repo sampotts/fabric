@@ -1,0 +1,71 @@
+// ==========================================================================
+// Animation
+// ==========================================================================
+
+@keyframes pop-up { 
+	0%      { transform: matrix(0.97, 0, 0, 1, 0, 12); opacity: 0; }
+	20%     { transform: matrix(0.99, 0, 0, 1, 0, 2); opacity: 0.7; }
+	40%     { transform: matrix(1, 0, 0, 1, 0, -1); opacity: 1; }
+	70%     { transform: matrix(1, 0, 0, 1, 0, 0); opacity: 1; }
+	100%    { transform: matrix(1, 0, 0, 1, 0, 0); opacity: 1; }
+}
+@keyframes spin {
+    0%      { transform: rotate(0deg); }
+    100%    { transform: rotate(360deg); }
+}
+@keyframes fade-out-up {
+	0%      { transform: translateY(0); opacity: 1;  }
+	100%    { transform: translateY(-100%); opacity: 0; }
+}
+@keyframes fade-in-down {
+	0%      { transform: translateY(-100%); opacity: 0; }
+	100%    { transform: translateY(0); opacity: 1; }
+}
+@keyframes fade-in {
+	0%      { opacity: 0; }
+	100%    { opacity: 1; }
+}
+@keyframes loader {
+    0% {
+        background-color: @loader-bg;
+        box-shadow: 12px 0 0 0 rgba(red(@loader-bg), green(@loader-bg), blue(@loader-bg), .2), 
+                    24px 0 0 0 rgba(red(@loader-bg), green(@loader-bg), blue(@loader-bg), .2);
+    }
+    50% { 
+        background-color: rgba(red(@loader-bg), green(@loader-bg), blue(@loader-bg), .2);
+        box-shadow: 12px 0 0 0 @loader-bg, 
+                    24px 0 0 0 rgba(red(@loader-bg), green(@loader-bg), blue(@loader-bg), .2);
+    }
+    100% { 
+        background-color: rgba(red(@loader-bg), green(@loader-bg), blue(@loader-bg), .2);
+        box-shadow: 12px 0 0 0 rgba(red(@loader-bg), green(@loader-bg), blue(@loader-bg), .2), 
+                    24px 0 0 0 @loader-bg;
+    }
+}
+
+// Collapse
+// --------------------------------------------------
+.collapse {
+	display: none;
+
+	&.in      { display: block; }
+	tr&.in    { display: table-row; }
+	tbody&.in { display: table-row-group; }
+}
+.collapsing {
+	position: relative;
+	height: 0;
+	overflow: hidden;
+	transition: height .35s ease;
+}
+
+// Fade in content
+// --------------------------------------------
+.fade {
+	opacity: 0;
+	transition: opacity .3s ease;
+	
+	&.in {
+		opacity: 1;
+	}
+}

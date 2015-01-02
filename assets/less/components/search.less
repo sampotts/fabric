@@ -1,0 +1,29 @@
+// ==========================================================================
+// Search
+// ==========================================================================
+
+.form-search {
+    margin: 0;
+}
+// Search query input
+input.search-query {
+	border-radius: 30px;
+	padding-left: @padding-large-horizontal * 1.5;
+	padding-right: @padding-large-horizontal * 2;
+}
+// Control wrapper
+.search-control {
+	position: relative;
+	
+	.btn-search { 
+        position: absolute;
+        right: 10px;
+        top: 12px;
+        line-height: 1;
+        
+        [class^="icon-"] {
+            margin: 0;
+            .font-size(@font-size-base);
+        }
+    }
+}

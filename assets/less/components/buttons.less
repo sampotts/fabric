@@ -1,0 +1,234 @@
+// ==========================================================================
+// Buttons
+// ==========================================================================
+
+// Mixin for button styles
+.btn-styles(@background-color) {
+	background-color: @background-color;
+    
+    &:hover,
+	&:focus,
+	&.hover,
+	&.focus {
+		background-color: darken(@background-color, 2%);
+	}
+}
+.btn {  
+	// Layout
+    position: relative;
+	display: inline-block;
+	padding: @padding-base-vertical + 1 floor(@padding-base-horizontal * 1.5);
+	cursor: pointer;
+	vertical-align: middle;
+
+    // Type
+    font-family: @btn-font-family;
+    .font-size(@font-size-base);
+    line-height: @line-height-base;
+    color: #fff;
+	text-align: center;
+	font-weight: @btn-font-weight;
+	user-select: none;
+	text-shadow: 0 1px 1px rgba(0,0,0, .1);
+	.font-smoothing(on);
+	letter-spacing: -.01em;
+	
+	// Mixins
+	transition: background .3s ease, border .3s ease;
+	border-radius: @btn-radius;
+			
+	// Default
+	border: 0;
+	box-shadow: 0 1px 1px rgba(0,0,0, .15);
+
+	// Default button style
+	.btn-styles(@btn-default-bg);
+
+	// Variants
+	// --------------------------------------------------
+	&--primary {
+		.btn-styles(@btn-primary-bg);
+	}
+	&--secondary {
+		.btn-styles(@btn-secondary-bg);
+	}
+
+	// Externals
+	// --------------------------------------------------
+	&--facebook {
+		.btn-styles(@color-facebook);
+		
+		&::before { content: "\e60d"; }
+	}
+	&--twitter {
+		.btn-styles(@color-twitter);
+		
+		&::before { content: "\e60c"; }
+	}
+	&--pinterest {
+		.btn-styles(@color-pinterest);
+		
+		&::before { content: "\e618"; }
+	}
+	&--google-plus {
+		.btn-styles(@color-google-plus);
+		
+		&::before { content: "\e60e"; }
+	}
+	&--facebook::before,
+	&--twitter::before,
+	&--pinterest::before,
+	&--google-plus::before {
+	    font-family: "Icons";
+		vertical-align: top;
+		margin-right: 5px;
+		.font-smoothing(on);
+	}
+	
+	// Styling
+	// --------------------------------------------------
+	&--small {
+	    padding: @padding-small-vertical + 1 (@padding-small-horizontal * 1.5);
+	    .font-size(@font-size-small);
+	}
+	
+	// States
+	// --------------------------------------------------
+	&:hover,
+	&:focus,
+	&.hover,
+	&.focus {
+	    color: #fff;
+	}
+	&:focus,
+	&.focus  {
+		outline: none;
+	}
+	&:active,
+	&.active {
+		top: 1px;
+		box-shadow: inset 0 1px 3px rgba(0,0,0, .3);
+	}
+	// Disabled
+	&[disabled] {
+		pointer-events: none;
+		opacity: .5;
+	}
+	
+	// Loading
+	&.loading {
+	    cursor: default;
+	    pointer-events: none;
+	    color: transparent;
+	    text-shadow: none;
+	    
+	    [class^="logo-"],
+        [class*=" logo-"] {
+	        opacity: 0;
+	    }
+	}
+	
+	// Child elements
+	// --------------------------------------------------
+	.spinner {
+	    position: absolute;
+        left: 50%;
+        top: 50%;
+        margin: -11px 0 0 -11px;
+        border-color: rgba(255, 255, 255, .2);
+        border-left-color: #fff;
+	}
+	// Logos
+	[class^="logo-"] {
+        margin-left: 5px;   
+    }
+}
+
+// Button counter
+// ---------------------------------------------
+.counter {
+	margin: 0 8px;
+    position: relative;
+	.arrow(left, @gray-lighter, 4px);
+	display: inline-block;
+	vertical-align: middle;
+	padding: @padding-base-vertical + 2 ceil(@padding-base-horizontal * 1.2);
+	
+	background: @gray-lighter;
+	border-radius: @btn-radius;
+
+	font-weight: 600;
+	.font-smoothing(on);
+	color: @gray-dark;
+}
+.btn--small + .counter {
+	padding: @padding-small-vertical + 2 ceil(@padding-small-horizontal * 1.2);
+	.font-size(@font-size-small);
+}
+
+// Style <button> elements to look like anchors
+// --------------------------------------------------
+button.faux-anchor {
+    margin: 0;
+    padding: 0;
+    width: auto;
+    border: 0;
+    background: transparent;
+    vertical-align: baseline;
+    text-align: left;
+    font: inherit;
+    line-height: inherit;
+    cursor: pointer;
+    user-select: text;
+}
+
+// Focus styles
+// --------------------------------------------------
+button:focus, 
+.btn:focus,
+.btn.focus {
+    .tab-focus();
+}
+
+// Action blocks
+// --------------------------------------------------
+.actions {
+    font-size: 0;
+
+    > * {
+    	.font-size(@font-size-base);
+    }
+    .btn {
+        display: block;
+        width: 100%;
+        margin: @grid-section-padding / 2 0 0;   
+        
+        &--small {
+            .font-size(@font-size-small);
+        }
+        &:first-child {
+            margin: 0;
+        }
+    }
+    @media (max-width : @screen-xs) {
+        .pull-left,
+        .pull-right {
+            float: none;
+        }
+    }
+    @media (min-width : @screen-xs) {
+        .btn {
+            display: inline-block; 
+            width: auto;
+            margin: 0;
+        }
+        .btn + .btn {
+            margin: 0 0 0 @grid-section-padding;
+            
+            &.pull-left,
+            &.pull-right {
+                margin: 0;   
+            }
+        }
+    }
+}
