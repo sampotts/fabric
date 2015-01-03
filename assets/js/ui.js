@@ -23,7 +23,7 @@
             listeners();
 
             // When our page loads, check to see if it contains and anchor
-            scrollToAnchor();
+            window.setTimeout(scrollToAnchor, 300);
         }
 
         // Event bindings
