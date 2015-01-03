@@ -2,34 +2,32 @@
 // Checkbox switch
 // ==========================================================================
 
-.inputgeneratedcontent .checkbox {
-    [type="checkbox"] {
+.inputgeneratedcontent .checkbox [type="checkbox"] {
+    width: @checkbox-width;
+    height: @checkbox-height;
+
+    // The background
+    &::before {
         width: @checkbox-width;
         height: @checkbox-height;
+        background: @checkbox-control-bg-off;
+    }
 
-        // The background
-        &::before {
-            width: @checkbox-width;
-            height: @checkbox-height;
-            background: @checkbox-control-bg-off;
-        }
+    // The handle
+    &::after {
+        width: @checkbox-handle-size;
+        height: @checkbox-handle-size;
+        top: @checkbox-padding;
+        left: @checkbox-padding;
+        background: @checkbox-handle-bg;
+    }
 
-        // The handle
-        &::after {
-            width: @checkbox-handle-size;
-            height: @checkbox-handle-size;
-            top: @checkbox-padding;
-            left: @checkbox-padding;
-            background: @checkbox-handle-bg;
-        }
-
-        // Active state
-        &:checked::before {
-            background: @checkbox-control-background-on;
-        }
-        &:checked::after {
-            transform: translateX(@checkbox-width - @checkbox-handle-size - (@checkbox-padding * 2));
-        }
+    // Active state
+    &:checked::before {
+        background: @checkbox-control-background-on;
+    }
+    &:checked::after {
+        transform: translateX(@checkbox-width - @checkbox-handle-size - (@checkbox-padding * 2));
     }
 }
 
