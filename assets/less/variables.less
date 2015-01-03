@@ -97,6 +97,11 @@
 
 @strong-color: 								@black;
 
+// Lists
+// --------------------------------------------------
+@list-fancy-bg: 							@brand-primary;
+@list-fancy-color: 							#fff;
+
 // Components
 // --------------------------------------------------
 // Define common padding and border radius sizes and more. Values based on 15px text and 1.5 line-height (~20px to start).
@@ -125,7 +130,17 @@
 
 // Loaders
 // --------------------------------------------------
-@loader-bg:                                 @brand-primary;
+@loader-size-base:                      	24px;
+@loader-size-small:                     	16px;
+@loader-size-large:                     	32px;
+@loader-bg-base:                        	@gray-lightest;
+@loader-bg:                        			@brand-primary;
+@loader-border-width-base:              	3px;
+@loader-border-width-small:                	2px;
+
+@loader-btn-bg:                         	@button-color;
+@loader-btn-size-base:                  	@loader-size-base;
+@loader-btn-size-sm:                    	@loader-size-small;
 
 // Logos
 // --------------------------------------------------
@@ -149,18 +164,22 @@
 @table-bg-hover:                            #f5f5f5;
 @table-bg-active:                           @table-bg-hover;
 @table-border-color:                        @gray-lightest;
+@table-border-width:                        1px;
+@table-header-border-width: 				2px;
+@table-header-color: 						@gray-dark;
+@table-header-font-weight: 					500;
 
 // Buttons
 // --------------------------------------------------
-@btn-font-family:                           @font-family-sans-serif;
-@btn-font-weight:                           600;
-@btn-radius:                                @border-radius-base;
-@btn-default-bg:                            @text-color;
-@btn-primary-bg:                            @brand-secondary;
-@btn-secondary-bg:                          @blue;
-@btn-success-bg:                            @green;
-@btn-danger-bg:                             @red;
-@btn-link-disabled-color:                   @gray-light;
+@button-font-family:                        @font-family-sans-serif;
+@button-font-weight:                        600;
+@button-radius:                             @border-radius-base;
+@button-default-bg:                         @text-color;
+@button-primary-bg:                         @brand-secondary;
+@button-secondary-bg:                       @blue;
+@button-success-bg:                         @green;
+@button-danger-bg:                          @red;
+@button-color: 								#fff;
 
 // Navigation
 // --------------------------------------------------
@@ -168,9 +187,15 @@
 @navbar-link-hover-color: 					@link-hover-color;
 @navbar-link-active-bg: 					@link-color;
 @navbar-link-active-color: 					#fff;
+@navbar-link-radius: 						@button-radius;
+@navbar-link-font-weight: 					@button-font-weight;
+
+// Tabs
+// --------------------------------------------------
 @tab-bg: 									@off-white;
 @tab-hover-bg: 								@gray-lighter;
 @tab-hover-color: 							@link-hover-color; 
+@tab-radius: 								@button-radius;
 
 // Tooltips
 // --------------------------------------------------
@@ -178,15 +203,6 @@
 @tooltip-text-color:                        #fff;
 @tooltip-zindex:                            30;
 @tooltip-arrow-size: 						7px;
-
-// Switches
-// --------------------------------------------------
-@switch-width: 								50px;
-@switch-height: 							24px;
-@switch-padding: 							2px;
-@switch-handle-size: 						@switch-height - (@switch-padding * 2);
-@switch-control-bg-off:                 	@gray-light;
-@switch-control-background-on:          	@green;
 
 // Forms
 // --------------------------------------------------
@@ -208,10 +224,28 @@
 @input-addon-color: 						@gray;
 @border-radius-input: 						4px;
 
+// Checkboxes & Radios
+// --------------------------------------------------
+@checkbox-width: 							50px;
+@checkbox-height: 							24px;
+@checkbox-padding: 							2px;
+@checkbox-handle-size: 						@checkbox-height - (@checkbox-padding * 2);
+@checkbox-handle-bg: 						#fff;
+@checkbox-control-bg-off:                 	@gray-light;
+@checkbox-control-background-on:          	@green;
+
+@radio-width: 								24px;
+@radio-height: 								24px;
+@radio-bg: 									#fff;
+@radio-border-width: 						2px;
+@radio-border-color:                 		@gray-light;
+@radio-checked-width: 						(@radio-width / 2);
+@radio-checked-height: 						(@radio-height / 2);
+@radio-checked-bg:          				@green;
+
 // Form states and alerts
 // --------------------------------------------------
 // Define colors for form feedback states and, by default, alerts.
-
 @state-success-text:                        @tint-green;
 @state-success-bg:                          lighten(@tint-green, 52%);
 @state-success-border:                      darken(spin(@state-success-bg, -10), 7%);
@@ -227,8 +261,6 @@
 @state-danger-text:                         @tint-red;
 @state-danger-bg:                           lighten(@tint-red, 48%);
 @state-danger-border:                       darken(spin(@state-danger-bg, -10), 5%);
-
-@main-menu-width:                           280px;
 
 // Media queries breakpoints
 // --------------------------------------------------

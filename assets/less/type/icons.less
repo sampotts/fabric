@@ -87,29 +87,3 @@ a {
 .icon-soundcloud::before { content: "\e61b"; }
 .icon-youtube::before { content: "\e619"; }
 .icon-tumblr::before { content: "\e61d"; }
-
-// Loaders
-// --------------------------------------------
-// Based on http://projects.lukehaas.me/css-loaders/
-.spinner,
-.processing-block::before {
-    content: "";
-    position: relative;
-    display: inline-block;
-    width: 24px;
-    height: 24px;
-    font-size: 0;
-    border: 3px solid @gray-lighter;
-    border-left-color: @loader-bg;
-    border-radius: 50%;
-    animation: spin 1s infinite linear;
-}
-.media.image::before {
-    content: "";
-    position: relative;
-    left: -12px;
-    width: 6px;
-    height: 6px;
-    border-radius: 50%;
-    animation: loader 1s linear infinite alternate;
-}

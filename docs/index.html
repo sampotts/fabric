@@ -128,6 +128,12 @@
 						<li>List item 2</li>
 						<li>List item 3</li>
 					</ol>
+
+					<ul class="fancy">
+						<li>List item 1</li>
+						<li>List item 2</li>
+						<li>List item 3</li>
+					</ul>					
 					<ol class="fancy">
 						<li>List item 1</li>
 						<li>List item 2</li>
@@ -173,7 +179,7 @@
 						<button type="button" class="btn focus">:focus</button>
 						<button type="button" class="btn active">:active</button>
 						<button type="button" class="btn disabled" disabled>:disabled</button>
-						<button type="button" class="btn loading">Loading&hellip;<span class="spinner">Loading&hellip;</span></button>
+						<button type="button" class="btn loading">Loading&hellip;</button>
 					</div>
 
 					<p>There's some social ones too</p>
@@ -331,38 +337,16 @@
 								<div class="controls">
 									<div class="checkbox">
 										<input type="checkbox" id="control-checkbox1" name="control-checkbox">
-										<label for="control-checkbox1" name="control-radio">Radio 1</label>
+										<label for="control-checkbox1" name="control-radio">Checkbox 1</label>
 									</div>
 									<div class="checkbox">
 										<input type="checkbox" id="control-checkbox2" name="control-checkbox">
-										<label for="control-checkbox2">Radio 2</label>
+										<label for="control-checkbox2">Checkbox 2</label>
 									</div>
 									<div class="checkbox">
 										<input type="checkbox" id="control-checkbox3" name="control-checkbox">
-										<label for="control-checkbox3">Radio 3</label>
+										<label for="control-checkbox3">Checkbox 3</label>
 									</div>
-								</div>
-							</div>
-							<div class="control-group">
-								<div class="control-label">
-									<label for="control-select">Switches</label>
-									<small class="control-help">Label help</small>
-								</div>
-								<div class="controls">
-									<div class="control-switch">
-							            <span class="checkbox-switch active">
-							                <input type="checkbox" id="control-switch1">
-							            </span>
-				                        <label for="control-switch1">Switch 1</label>
-							        </div>
-							    </div>
-							    <div class="controls">
-							        <div class="control-switch">
-							            <span class="checkbox-switch">
-							                <input type="checkbox" id="control-switch2">
-							            </span>
-				                        <label for="control-switch2">Switch 2</label>
-							        </div>
 								</div>
 							</div>
 							<div class="actions actions--form">
@@ -460,6 +444,77 @@
 					<div class="tab-pane fade" id="tab-item-4">
 						<p>About</p>
 					</div>
+				</section>
+			</article>
+			<article id="nav" class="example row">
+				<header class="col3">
+					<h1>Tables</h1>
+					<p>Displaying tabular data nicely</p>
+				</header>
+				<section class="col9">
+					<p>Basic table</p>
+					<table class="table">
+						<thead>
+							<tr>
+								<th scope="col">#</th>
+								<th scope="col">First Name</th>
+								<th scope="col">Second Name</th>
+								<th scope="col">Username</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th>1</th>
+								<td>Sam</td>
+								<td>Potts</td>
+								<td>@Sam_Potts</td>
+							</tr>
+							<tr>
+								<th>2</th>
+								<td>Mathieu</td>
+								<td>Kempe</td>
+								<td>@MathieuKempe</td>
+							</tr>	
+							<tr>
+								<th>3</th>
+								<td>Steve</td>
+								<td>Marsh</td>
+								<td>@SteMarsh</td>
+							</tr>
+						</tbody>
+					</table>
+
+					<p>Striped table</p>
+					<table class="table table--striped">
+						<thead>
+							<tr>
+								<th scope="col">#</th>
+								<th scope="col">First Name</th>
+								<th scope="col">Second Name</th>
+								<th scope="col">Username</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th>1</th>
+								<td>Sam</td>
+								<td>Potts</td>
+								<td>@Sam_Potts</td>
+							</tr>
+							<tr>
+								<th>2</th>
+								<td>Mathieu</td>
+								<td>Kempe</td>
+								<td>@MathieuKempe</td>
+							</tr>	
+							<tr>
+								<th>3</th>
+								<td>Steve</td>
+								<td>Marsh</td>
+								<td>@SteMarsh</td>
+							</tr>
+						</tbody>
+					</table>
 				</section>
 			</article>
 			<article id="tooltips" class="example row">

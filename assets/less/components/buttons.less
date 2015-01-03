@@ -22,12 +22,12 @@
 	vertical-align: middle;
 
     // Type
-    font-family: @btn-font-family;
+    font-family: @button-font-family;
     .font-size(@font-size-base);
     line-height: @line-height-base;
-    color: #fff;
+    color: @button-color;
 	text-align: center;
-	font-weight: @btn-font-weight;
+	font-weight: @button-font-weight;
 	user-select: none;
 	text-shadow: 0 1px 1px rgba(0,0,0, .1);
 	.font-smoothing(on);
@@ -35,22 +35,22 @@
 	
 	// Mixins
 	transition: background .3s ease, border .3s ease;
-	border-radius: @btn-radius;
+	border-radius: @button-radius;
 			
 	// Default
 	border: 0;
 	box-shadow: 0 1px 1px rgba(0,0,0, .15);
 
 	// Default button style
-	.btn-styles(@btn-default-bg);
+	.btn-styles(@button-default-bg);
 
 	// Variants
 	// --------------------------------------------------
 	&--primary {
-		.btn-styles(@btn-primary-bg);
+		.btn-styles(@button-primary-bg);
 	}
 	&--secondary {
-		.btn-styles(@btn-secondary-bg);
+		.btn-styles(@button-secondary-bg);
 	}
 
 	// Externals
@@ -85,13 +85,6 @@
 		.font-smoothing(on);
 	}
 	
-	// Styling
-	// --------------------------------------------------
-	&--small {
-	    padding: @padding-small-vertical + 1 (@padding-small-horizontal * 1.5);
-	    .font-size(@font-size-small);
-	}
-	
 	// States
 	// --------------------------------------------------
 	&:hover,
@@ -121,27 +114,18 @@
 	    pointer-events: none;
 	    color: transparent;
 	    text-shadow: none;
-	    
-	    [class^="logo-"],
-        [class*=" logo-"] {
-	        opacity: 0;
+	}
+
+	// Sizes
+	// --------------------------------------------------
+	&--small {
+	    padding: @padding-small-vertical + 1 (@padding-small-horizontal * 1.5);
+	    .font-size(@font-size-small);
+
+	    &.loading::after {
+
 	    }
 	}
-	
-	// Child elements
-	// --------------------------------------------------
-	.spinner {
-	    position: absolute;
-        left: 50%;
-        top: 50%;
-        margin: -11px 0 0 -11px;
-        border-color: rgba(255, 255, 255, .2);
-        border-left-color: #fff;
-	}
-	// Logos
-	[class^="logo-"] {
-        margin-left: 5px;   
-    }
 }
 
 // Button counter
@@ -155,7 +139,7 @@
 	padding: @padding-base-vertical + 2 ceil(@padding-base-horizontal * 1.2);
 	
 	background: @gray-lighter;
-	border-radius: @btn-radius;
+	border-radius: @button-radius;
 
 	font-weight: 600;
 	.font-smoothing(on);

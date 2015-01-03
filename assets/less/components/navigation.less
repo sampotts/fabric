@@ -7,11 +7,6 @@ nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
-}
-
-// Common
-.nav-bar ul,
-.nav-tabs ul {
     font-size: 0;
 
     > * {
@@ -19,7 +14,7 @@ nav ul {
     }
     li {
         display: inline-block;
-        margin-left: (@grid-section-padding / 2);
+        margin: 0 0 0 (@grid-section-padding / 2);
     }
     a {
         display: block;
@@ -48,7 +43,7 @@ nav ul {
     }
     a {
         padding: (@grid-section-padding / 4) (@grid-section-padding / 2);
-        border-radius: @btn-radius;
+        border-radius: @navbar-link-radius;
 
         &:hover,
         &:focus {
@@ -60,38 +55,6 @@ nav ul {
         background: @navbar-link-active-bg;
         color: @navbar-link-active-color;
         .font-smoothing(on);
-        font-weight: @btn-font-weight;
-    }
-}
-.nav-tabs {
-    border-bottom: 2px solid @section-border-color;
-    padding-top: (@grid-section-padding / 2);
-    white-space: nowrap;
-
-    li {
-        margin-bottom: -2px;
-    }
-    a {
-        padding: (@grid-section-padding / 2) @grid-section-padding;
-        border: 2px solid @section-border-color;
-        border-bottom: 0;
-        border-radius: @btn-radius @btn-radius 0 0;
-
-        &:hover,
-        &:focus {
-            color: @tab-hover-color;
-        }
-    }
-    .active a {
-        background: @body-bg;
-        position: relative;
-        z-index: 2;
-    }
-}
-.tab-pane {
-    display: none;
-
-    &.active {
-        display: block;
+        font-weight: @navbar-link-font-weight;
     }
 }

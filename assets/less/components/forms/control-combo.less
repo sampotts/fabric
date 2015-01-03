@@ -1,0 +1,71 @@
+// ==========================================================================
+// Input groups
+// Allow grouping of controls to create a compact form
+// ==========================================================================
+
+.control-combo {
+    select,
+    textarea,
+    input[type="text"],
+    input[type="password"],
+    input[type="number"],
+    input[type="email"],
+    .uneditable-input,
+    .faux-input {
+        border-radius: 0;
+        position: relative;
+    
+        &:focus {
+            z-index: 2;
+        }
+        &:invalid {
+            z-index: 3;
+        }
+    }
+    .control {
+        margin-top: -2px;
+        border: none;
+        padding: 0;
+        
+        &:first-child {
+            select,
+            textarea,
+            input,
+            .uneditable-input {
+                border-radius: @border-radius-input @border-radius-input 0 0;
+                margin-top: 0;
+            }
+            .input-group > :first-child {
+                border-radius: 0 @border-radius-input 0 0;
+            }
+            .input-group > :last-child {
+                border-radius: @border-radius-input 0 0;
+            }
+        }
+        &:last-child {
+            select,
+            textarea,
+            input[type="text"],
+            input[type="password"],
+            input[type="number"],
+            input[type="email"],
+            .uneditable-input {
+                border-radius: 0 0 @border-radius-input @border-radius-input;
+            }
+            .input-group > :first-child {
+                border-radius: 0 0 0 @border-radius-input;
+            }
+            .input-group > :last-child {
+                border-radius: 0 0 @border-radius-input;
+            }
+        }
+        &.error {
+            select,
+            textarea,
+            input,
+            .uneditable-input {
+                z-index: 1
+            }
+        }
+    }
+}

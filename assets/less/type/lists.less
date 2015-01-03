@@ -12,43 +12,63 @@ ol.unstyled {
 ul, 
 ol {
     margin: 0 0 @grid-section-padding;
-    padding: 0 0 0 @grid-section-padding;
+    padding: 0 0 0 (@line-height-computed + (@grid-section-padding / 4));
+
+    li {
+    	margin-top: (@grid-section-padding / 2);
+    	padding-left: (@grid-section-padding / 4);
+
+    	&:first-child {
+			margin-top: 0;
+		}
+    }
 }
 
-// Fancy styled ordered list
+// Fancy lists
+ul.fancy,
 ol.fancy {
 	padding: 0;
-	list-style-type: none;
-	counter-reset: counter;
+	list-style: none;
 
 	li {
 		position: relative;
 		min-height: @line-height-computed;
-		margin-top: (@grid-section-padding / 2);
 		padding-left: (@line-height-computed + (@grid-section-padding / 2));
-
-		&:first-child {
-			margin-top: 0;
-		}
 
 		&:before {
 			position: absolute;
 			top: 0;
 			left: 0;
-			
-			background: @brand-primary;
-			color: #fff;
-			text-align: center;
-			font-weight: 600;
-			.font-smoothing(on);
+			background: @list-fancy-bg;
 			border-radius: 100%;
-
-			line-height: @line-height-computed;
-			height: @line-height-computed;
-			width: @line-height-computed;
-			
-			content: counter(counter);
-	    	counter-increment: counter;
 		}
+		
+	}
+}
+
+// Fancy styled ordered list
+ul.fancy li:before {
+	content: "";
+	height: (@line-height-computed / 4);
+	width: (@line-height-computed / 4);
+	margin: (@line-height-computed / 3) 0 0 (@line-height-computed / 3);
+}
+
+// Fancy styled ordered list
+ol.fancy {
+	counter-reset: counter;
+
+	li:before {
+		content: counter(counter);
+    	counter-increment: counter;
+
+    	line-height: @line-height-computed;
+		height: @line-height-computed;
+		width: @line-height-computed;
+		
+		color: @list-fancy-color;
+		text-align: center;
+		font-weight: 600;
+		.font-smoothing(on);
 	}	
 }

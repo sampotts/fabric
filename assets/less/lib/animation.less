@@ -13,6 +13,16 @@
     0%      { transform: rotate(0deg); }
     100%    { transform: rotate(360deg); }
 }
+@keyframes btn-loader {
+    0%      { 
+    			transform: rotate(0deg) translate(-50%, -50%); 
+    			transform-origin: 0 0; 
+    		}
+    100%    { 
+    			transform: rotate(360deg) translate(-50%, -50%); 
+    			transform-origin: 0 0; 
+    		}
+}
 @keyframes fade-out-up {
 	0%      { transform: translateY(0); opacity: 1;  }
 	100%    { transform: translateY(-100%); opacity: 0; }
@@ -25,7 +35,7 @@
 	0%      { opacity: 0; }
 	100%    { opacity: 1; }
 }
-@keyframes loader {
+/*@keyframes loader {
     0% {
         background-color: @loader-bg;
         box-shadow: 12px 0 0 0 rgba(red(@loader-bg), green(@loader-bg), blue(@loader-bg), .2), 
@@ -41,7 +51,7 @@
         box-shadow: 12px 0 0 0 rgba(red(@loader-bg), green(@loader-bg), blue(@loader-bg), .2), 
                     24px 0 0 0 @loader-bg;
     }
-}
+}*/
 
 // Collapse
 // --------------------------------------------------

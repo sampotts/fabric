@@ -1,0 +1,34 @@
+// ==========================================================================
+// Radio buttons
+// ==========================================================================
+
+.inputgeneratedcontent .radio {
+    [type="radio"] {
+        width: @radio-width;
+        height: @radio-height;
+
+        // The background
+        &::before {
+            width: @radio-width;
+            height: @radio-height;
+                
+            // Styling
+            background: @radio-bg;
+            border: @radio-border-width solid @radio-border-color;
+        }
+
+        // The ball
+        &::after {
+            // Layout
+            width: @radio-checked-width;
+            height: @radio-checked-height;
+            top: (@radio-checked-width / 2);
+            left: (@radio-checked-height / 2);
+        }
+
+        // Active state
+        &:checked::after {
+            background: @radio-checked-bg;
+        }
+    }
+}

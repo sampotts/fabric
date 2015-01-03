@@ -1,0 +1,36 @@
+// ==========================================================================
+// Tabbed content
+// ==========================================================================
+
+.nav-tabs {
+    border-bottom: 2px solid @section-border-color;
+    padding-top: (@grid-section-padding / 2);
+    white-space: nowrap;
+
+    ul li {
+        margin-bottom: -2px;
+    }
+    a {
+        padding: (@grid-section-padding / 2) @grid-section-padding;
+        border: 2px solid @section-border-color;
+        border-bottom: 0;
+        border-radius: @tab-radius @tab-radius 0 0;
+
+        &:hover,
+        &:focus {
+            color: @tab-hover-color;
+        }
+    }
+    .active a {
+        background: @body-bg;
+        position: relative;
+        z-index: 2;
+    }
+}
+.tab-pane {
+    display: none;
+
+    &.active {
+        display: block;
+    }
+}

@@ -19,7 +19,7 @@ table {
 .table {
     width: 100%;
     margin-bottom: 20px;
-    border-top: 1px solid @table-border-color;
+    //border-top: @table-border-width solid @table-border-color;
 
     // Cells
     th,
@@ -27,8 +27,9 @@ table {
         padding: @table-cell-padding * .75 @table-cell-padding;
         line-height: @line-height-base;
         text-align: left;
-        border: 1px solid @table-border-color;
-        border-width: 0 0 1px;
+        border: @table-border-width solid @table-border-color;
+        border-width: 0 0 @table-border-width;
+        vertical-align: top;
         
         p {
             margin: 0;
@@ -85,14 +86,14 @@ table {
         }
     }
     th {
-        color: @gray-light;
-        font-weight: 400;
-        vertical-align: bottom;
-        padding-top: 10px;
-        padding-bottom: 10px;
+        color: @table-header-color;
+        font-weight: @table-header-font-weight;
     }
-    td {
-        vertical-align: top;
+    thead th {
+        vertical-align: bottom;
+        padding-top: (@table-cell-padding / 2);
+        padding-bottom: (@table-cell-padding / 2);
+        border-bottom-width: @table-header-border-width;
     }
     tbody.empty td {
         text-align: center;
@@ -129,7 +130,8 @@ table {
     }
     
     // Alt row color
-    tr.alt td {
+    &--striped tbody tr:nth-of-type(odd) td,
+    &--striped tbody tr:nth-of-type(odd) th {
         background: @off-white;
     }
 

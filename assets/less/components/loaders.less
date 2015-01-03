@@ -1,0 +1,51 @@
+// ==========================================================================
+// Loaders
+// ==========================================================================
+
+// Based on http://projects.lukehaas.me/css-loaders/
+.loader,
+.btn.loading::after,
+.loader--block::before {
+    content: "";
+    position: relative;
+    display: inline-block;
+    width: @loader-size-base;
+    height: @loader-size-base;
+    font-size: 0;
+    border: @loader-border-width-base solid @loader-bg-base;
+    border-left-color: @loader-bg;
+    border-radius: 50%;
+    animation: spin 1s infinite linear;
+}
+.btn--small.loading::after,
+.loader.loader--small {
+    width: @loader-size-small;
+    height: @loader-size-small;
+    border-width: @loader-border-width-small;
+}
+.btn--large.loading::after,
+.loader.loader--large {
+    width: @loader-size-large;
+    height: @loader-size-large;
+}
+
+.btn.loading::after {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-color: rgba(red(@loader-btn-bg), green(@loader-btn-bg), blue(@loader-btn-bg), .2);
+    border-left-color: @loader-btn-bg;
+    animation: btn-loader 1s infinite linear;
+}
+
+
+/*.media.image::before {
+    content: "";
+    position: relative;
+    left: -12px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    animation: loader 1s linear infinite alternate;
+}*/
