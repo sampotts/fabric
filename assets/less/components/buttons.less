@@ -109,29 +109,24 @@
 	// Icons
 	// --------------------------------------------------
 	.icon {
-		vertical-align: top;
 		position: relative;
-		top: 2px;
-		width: 20px;
-		height: 20px;
-
-		&.icon--first {
-			left: -5px;
-		}
-		&.icon--last {
-			right: -5px;
-		}
+	    top: .15em;
+	    width: 1em;
+	    height: 1em;
 	}
-	&--small .icon {
-		width: 16px;
-		height: 16px;
-
-		&.icon--first {
-			left: -3px;
-		}
-		&.icon--last {
-			right: -3px;
-		}
+	.icon--first {
+		left: -5px;
+		margin-right: 4px;
+	}
+	.icon--last {
+		right: -5px;
+		margin-left: 4px;
+	}
+	&--small .icon--first {
+		left: -2px;
+	}
+	&--small .icon--last {
+		right: -2px;
 	}
 }
 
