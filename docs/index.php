@@ -144,7 +144,7 @@
 					</ol>
 				</section>
 			</article>
-			<article id="type" class="example row">
+			<article id="icons" class="example row">
 				<header class="col3">
 					<h1>Icons</h1>
 					<p>Cool little pictures</p>
@@ -297,23 +297,37 @@
 					<p>Warnings, errors, success and info alert messages</p>
 				</header>
 				<section class="col9">
-					<div class="alert" role="alert">This is a default warning alert</div>
-					<div class="alert alert-error" role="alert">This is an error alert</div>
-					<div class="alert alert-success" role="alert">This is a success alert</div>
-					<div class="alert alert-info" role="alert">This is an info alert</div>
+					<div class="alert" role="alert"><svg class="icon"><use xlink:href="#cross"></use></svg>This is a default warning alert</div>
+					<div class="alert alert-error" role="alert"><svg class="icon"><use xlink:href="#cross"></use></svg>This is an error alert</div>
+					<div class="alert alert-success" role="alert"><svg class="icon"><use xlink:href="#check"></use></svg>This is a success alert</div>
+					<div class="alert alert-info" role="alert"><svg class="icon"><use xlink:href="#help"></use></svg>This is an info alert</div>
 				</section>
 			</article>
 			<article id="buttons" class="example row">
 				<header class="col3">
-					<h1>Buttons</h1>
-					<p>Push me</p>
+					<h1>Buttons &amp; Anchors</h1>
+					<p>For triggering actions or missile launches</p>
 				</header>
 				<section class="col9">
-					<p>You can use a &lt;button&gt; or an &lt;a&gt; element</p>
+					<h5>Important</h5>
+					<p>Choose the right element for the job. Anchor elements (&lt;a&gt;) should be used for linking to actual pages or content. Button elements (&lt;button&gt;) should be used when you're triggering an action such as a form submit. You can of course use an anchor and then bind JavaScript to it and prevent the default behaviour (following the link). This would be useful for something such as an image lightbox where the user might want to open in a new tab.</p>
+
+					<h5>Basic links</h5>
+					<p>Here's an example of a <a href="#">real anchor</a> and here's an example of a <button type="button" class="faux-anchor">faux anchor</button> (a &lt;button&gt; styled as an anchor).</p>
+
+					<h5>Buttons</h5>
+					<p>You can use a &lt;button&gt; element&hellip;</p>
 					<div class="actions example__actions">					
 						<button type="button" class="btn btn--primary">Primary</button>
 						<button type="button" class="btn btn--secondary">Secondary</button>
 						<button type="button" class="btn">Default</button>
+					</div>
+
+					<p>&hellip; or an &lt;a&gt; element</p>
+					<div class="actions example__actions">	
+						<a href="#" class="btn btn--primary">Primary</a>
+						<a href="#" class="btn btn--secondary">Secondary</a>
+						<a href="#" class="btn">Default</a>
 					</div>
 
 					<p>With icons</p>
