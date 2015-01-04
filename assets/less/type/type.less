@@ -22,12 +22,13 @@ select {
 a,
 button.faux-anchor {
     color: @link-color;
-    text-decoration: none;
+    text-decoration: underline;
     transition: color .3s ease;
     
     &:hover,
     &:focus {
         color: @link-hover-color;
+        text-decoration: none;
     }
     &:focus {
         .tab-focus();

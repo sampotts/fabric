@@ -147,147 +147,147 @@
 			<article id="icons" class="example row">
 				<header class="col3">
 					<h1>Icons</h1>
-					<p>Cool little pictures</p>
+					<p>All icons are inline SVG as recommended by <a href="http://css-tricks.com/svg-sprites-use-better-icon-fonts/" target="_blank">Chris Coyier</a></p>
 				</header>
 				<section class="col9">
 					<ul class="list--icons">
-						<li><svg class="icon"><use xlink:href="#air-play"></use></svg></li>
-						<li><svg class="icon"><use xlink:href="#align-center"></use></svg></li>
-						<li><svg class="icon"><use xlink:href="#align-justify"></use></svg></li>
-						<li><svg class="icon"><use xlink:href="#align-left"></use></svg></li>
-						<li><svg class="icon"><use xlink:href="#align-right"></use></svg></li>
-						<li><svg class="icon"><use xlink:href="#alt"></use></svg></li>
-						<li><svg class="icon"><use xlink:href="#anchor"></use></svg></li>
-						<li><svg class="icon"><use xlink:href="#archive"></use></svg></li>
-						<li><svg class="icon"><use xlink:href="#arrow-down"></use></svg></li>
-						<li><svg class="icon"><use xlink:href="#arrow-left"></use></svg></li>
-						<li><svg class="icon"><use xlink:href="#arrow-right"></use></svg></li>
-						<li><svg class="icon"><use xlink:href="#arrow-up"></use></svg></li>
-						<li><svg class="icon"><use xlink:href="#bag"></use></svg></li>
-						<li><svg class="icon"><use xlink:href="#ban"></use></svg></li>
-						<li><svg class="icon"><use xlink:href="#bar-graph-2"></use></svg></li>
-						<li><svg class="icon"><use xlink:href="#bar-graph"></use></svg></li>
-						<li><svg class="icon"><use xlink:href="#battery"></use></svg></li>
-						<li><svg class="icon"><use xlink:href="#bell"></use></svg></li>
-						<li><svg class="icon"><use xlink:href="#book"></use></svg></li>
-						<li><svg class="icon"><use xlink:href="#box"></use></svg></li>
-						<li><svg class="icon"><use xlink:href="#briefcase"></use></svg></li>
-						<li><svg class="icon"><use xlink:href="#camera"></use></svg></li>
-						<li><svg class="icon"><use xlink:href="#check"></use></svg></li>
-						<li><svg class="icon"><use xlink:href="#circle-check"></use></svg></li>
-						<li><svg class="icon"><use xlink:href="#circle-cross"></use></svg></li>
-						<li><svg class="icon"><use xlink:href="#circle-minus"></use></svg></li>
-						<li><svg class="icon"><use xlink:href="#circle-plus"></use></svg></li>
-						<li><svg class="icon"><use xlink:href="#clipboard"></use></svg></li>
-						<li><svg class="icon"><use xlink:href="#clock"></use></svg></li>
-						<li><svg class="icon"><use xlink:href="#cloud-download"></use></svg></li>
-						<li><svg class="icon"><use xlink:href="#cloud-upload"></use></svg></li>
-						<li><svg class="icon"><use xlink:href="#cloud"></use></svg></li>
-						<li><svg class="icon"><use xlink:href="#cog"></use></svg></li>
-						<li><svg class="icon"><use xlink:href="#columns"></use></svg></li>
-						<li><svg class="icon"><use xlink:href="#command"></use></svg></li>
-						<li><svg class="icon"><use xlink:href="#content-left"></use></svg></li>
-						<li><svg class="icon"><use xlink:href="#content-right"></use></svg></li>
-						<li><svg class="icon"><use xlink:href="#contract"></use></svg></li>
-						<li><svg class="icon"><use xlink:href="#cross"></use></svg></li>
-						<li><svg class="icon"><use xlink:href="#delete"></use></svg></li>
-						<li><svg class="icon"><use xlink:href="#disc"></use></svg></li>
-						<li><svg class="icon"><use xlink:href="#download"></use></svg></li>
-						<li><svg class="icon"><use xlink:href="#drop"></use></svg></li>
-						<li><svg class="icon"><use xlink:href="#ellipsis"></use></svg></li>
-						<li><svg class="icon"><use xlink:href="#esc"></use></svg></li>
-						<li><svg class="icon"><use xlink:href="#expand"></use></svg></li>
-						<li><svg class="icon"><use xlink:href="#eye"></use></svg></li>
-						<li><svg class="icon"><use xlink:href="#fast-forward"></use></svg></li>
-						<li><svg class="icon"><use xlink:href="#file-add"></use></svg></li>
-						<li><svg class="icon"><use xlink:href="#file-subtract"></use></svg></li>
-						<li><svg class="icon"><use xlink:href="#file"></use></svg></li>
-						<li><svg class="icon"><use xlink:href="#flag"></use></svg></li>
-						<li><svg class="icon"><use xlink:href="#folder"></use></svg></li>
-						<li><svg class="icon"><use xlink:href="#globe"></use></svg></li>
-						<li><svg class="icon"><use xlink:href="#grid-2"></use></svg></li>
-						<li><svg class="icon"><use xlink:href="#grid"></use></svg></li>
-						<li><svg class="icon"><use xlink:href="#head"></use></svg></li>
-						<li><svg class="icon"><use xlink:href="#heart"></use></svg></li>
-						<li><svg class="icon"><use xlink:href="#help"></use></svg></li>
-						<li><svg class="icon"><use xlink:href="#image"></use></svg></li>
-						<li><svg class="icon"><use xlink:href="#inbox"></use></svg></li>
-						<li><svg class="icon"><use xlink:href="#layers"></use></svg></li>
-						<li><svg class="icon"><use xlink:href="#layout"></use></svg></li>
-						<li><svg class="icon"><use xlink:href="#link"></use></svg></li>
-						<li><svg class="icon"><use xlink:href="#loader"></use></svg></li>
-						<li><svg class="icon"><use xlink:href="#location-2"></use></svg></li>
-						<li><svg class="icon"><use xlink:href="#location"></use></svg></li>
-						<li><svg class="icon"><use xlink:href="#lock"></use></svg></li>
-						<li><svg class="icon"><use xlink:href="#mail"></use></svg></li>
-						<li><svg class="icon"><use xlink:href="#map"></use></svg></li>
-						<li><svg class="icon"><use xlink:href="#marquee-minus"></use></svg></li>
-						<li><svg class="icon"><use xlink:href="#marquee-plus"></use></svg></li>
-						<li><svg class="icon"><use xlink:href="#marquee"></use></svg></li>
-						<li><svg class="icon"><use xlink:href="#maximize"></use></svg></li>
-						<li><svg class="icon"><use xlink:href="#menu"></use></svg></li>
-						<li><svg class="icon"><use xlink:href="#microphone"></use></svg></li>
-						<li><svg class="icon"><use xlink:href="#minimize"></use></svg></li>
-						<li><svg class="icon"><use xlink:href="#minus"></use></svg></li>
-						<li><svg class="icon"><use xlink:href="#monitor"></use></svg></li>
-						<li><svg class="icon"><use xlink:href="#moon"></use></svg></li>
-						<li><svg class="icon"><use xlink:href="#move"></use></svg></li>
-						<li><svg class="icon"><use xlink:href="#mute"></use></svg></li>
-						<li><svg class="icon"><use xlink:href="#open"></use></svg></li>
-						<li><svg class="icon"><use xlink:href="#outbox"></use></svg></li>
-						<li><svg class="icon"><use xlink:href="#paper-clip"></use></svg></li>
-						<li><svg class="icon"><use xlink:href="#paper-stack"></use></svg></li>
-						<li><svg class="icon"><use xlink:href="#paper"></use></svg></li>
-						<li><svg class="icon"><use xlink:href="#paragraph"></use></svg></li>
-						<li><svg class="icon"><use xlink:href="#pause"></use></svg></li>
-						<li><svg class="icon"><use xlink:href="#pie-graph"></use></svg></li>
-						<li><svg class="icon"><use xlink:href="#play"></use></svg></li>
-						<li><svg class="icon"><use xlink:href="#plus"></use></svg></li>
-						<li><svg class="icon"><use xlink:href="#power"></use></svg></li>
-						<li><svg class="icon"><use xlink:href="#printer"></use></svg></li>
-						<li><svg class="icon"><use xlink:href="#record"></use></svg></li>
-						<li><svg class="icon"><use xlink:href="#reload"></use></svg></li>
-						<li><svg class="icon"><use xlink:href="#repeat"></use></svg></li>
-						<li><svg class="icon"><use xlink:href="#reply"></use></svg></li>
-						<li><svg class="icon"><use xlink:href="#rewind"></use></svg></li>
-						<li><svg class="icon"><use xlink:href="#ribbon"></use></svg></li>
-						<li><svg class="icon"><use xlink:href="#search"></use></svg></li>
-						<li><svg class="icon"><use xlink:href="#server"></use></svg></li>
-						<li><svg class="icon"><use xlink:href="#share"></use></svg></li>
-						<li><svg class="icon"><use xlink:href="#shuffle"></use></svg></li>
-						<li><svg class="icon"><use xlink:href="#signal"></use></svg></li>
-						<li><svg class="icon"><use xlink:href="#skip-back"></use></svg></li>
-						<li><svg class="icon"><use xlink:href="#skip-forward"></use></svg></li>
-						<li><svg class="icon"><use xlink:href="#speech-bubble"></use></svg></li>
-						<li><svg class="icon"><use xlink:href="#square-check"></use></svg></li>
-						<li><svg class="icon"><use xlink:href="#square-cross"></use></svg></li>
-						<li><svg class="icon"><use xlink:href="#square-minus"></use></svg></li>
-						<li><svg class="icon"><use xlink:href="#square-plus"></use></svg></li>
-						<li><svg class="icon"><use xlink:href="#stack-2"></use></svg></li>
-						<li><svg class="icon"><use xlink:href="#stack"></use></svg></li>
-						<li><svg class="icon"><use xlink:href="#star"></use></svg></li>
-						<li><svg class="icon"><use xlink:href="#stop"></use></svg></li>
-						<li><svg class="icon"><use xlink:href="#sun"></use></svg></li>
-						<li><svg class="icon"><use xlink:href="#tag"></use></svg></li>
-						<li><svg class="icon"><use xlink:href="#target"></use></svg></li>
-						<li><svg class="icon"><use xlink:href="#thermometer"></use></svg></li>
-						<li><svg class="icon"><use xlink:href="#toggle"></use></svg></li>
-						<li><svg class="icon"><use xlink:href="#trash"></use></svg></li>
-						<li><svg class="icon"><use xlink:href="#umbrella"></use></svg></li>
-						<li><svg class="icon"><use xlink:href="#unlock"></use></svg></li>
-						<li><svg class="icon"><use xlink:href="#upload"></use></svg></li>
-						<li><svg class="icon"><use xlink:href="#video"></use></svg></li>
-						<li><svg class="icon"><use xlink:href="#volume"></use></svg></li>
-						<li><svg class="icon"><use xlink:href="#watch"></use></svg></li>
-						<li><svg class="icon"><use xlink:href="#zoom-in"></use></svg></li>
-						<li><svg class="icon"><use xlink:href="#zoom-out"></use></svg></li>
+						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#air-play"></use></svg><span class="tooltip__tip">#air-play</span></li>
+						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#align-center"></use></svg><span class="tooltip__tip">#align-center</span></li>
+						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#align-justify"></use></svg><span class="tooltip__tip">#align-justify</span></li>
+						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#align-left"></use></svg><span class="tooltip__tip">#align-left</span></li>
+						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#align-right"></use></svg><span class="tooltip__tip">#align-right</span></li>
+						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#alt"></use></svg><span class="tooltip__tip">#alt</span></li>
+						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#anchor"></use></svg><span class="tooltip__tip">#anchor</span></li>
+						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#archive"></use></svg><span class="tooltip__tip">#archive</span></li>
+						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#arrow-down"></use></svg><span class="tooltip__tip">#arrow-down</span></li>
+						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#arrow-left"></use></svg><span class="tooltip__tip">#arrow-left</span></li>
+						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#arrow-right"></use></svg><span class="tooltip__tip">#arrow-right</span></li>
+						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#arrow-up"></use></svg><span class="tooltip__tip">#arrow-up</span></li>
+						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#bag"></use></svg><span class="tooltip__tip">#bag</span></li>
+						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#ban"></use></svg><span class="tooltip__tip">#ban</span></li>
+						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#bar-graph-2"></use></svg><span class="tooltip__tip">#bar-graph-2</span></li>
+						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#bar-graph"></use></svg><span class="tooltip__tip">#bar-graph</span></li>
+						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#battery"></use></svg><span class="tooltip__tip">#battery</span></li>
+						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#bell"></use></svg><span class="tooltip__tip">#bell</span></li>
+						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#book"></use></svg><span class="tooltip__tip">#book</span></li>
+						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#box"></use></svg><span class="tooltip__tip">#box</span></li>
+						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#briefcase"></use></svg><span class="tooltip__tip">#briefcase</span></li>
+						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#camera"></use></svg><span class="tooltip__tip">#camera</span></li>
+						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#check"></use></svg><span class="tooltip__tip">#check</span></li>
+						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#circle-check"></use></svg><span class="tooltip__tip">#circle-check</span></li>
+						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#circle-cross"></use></svg><span class="tooltip__tip">#circle-cross</span></li>
+						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#circle-minus"></use></svg><span class="tooltip__tip">#circle-minus</span></li>
+						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#circle-plus"></use></svg><span class="tooltip__tip">#circle-plus</span></li>
+						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#clipboard"></use></svg><span class="tooltip__tip">#clipboard</span></li>
+						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#clock"></use></svg><span class="tooltip__tip">#clock</span></li>
+						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#cloud-download"></use></svg><span class="tooltip__tip">#cloud-download</span></li>
+						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#cloud-upload"></use></svg><span class="tooltip__tip">#cloud-upload</span></li>
+						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#cloud"></use></svg><span class="tooltip__tip">#cloud</span></li>
+						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#cog"></use></svg><span class="tooltip__tip">#cog</span></li>
+						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#columns"></use></svg><span class="tooltip__tip">#columns</span></li>
+						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#command"></use></svg><span class="tooltip__tip">#command</span></li>
+						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#content-left"></use></svg><span class="tooltip__tip">#content-left</span></li>
+						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#content-right"></use></svg><span class="tooltip__tip">#content-right</span></li>
+						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#contract"></use></svg><span class="tooltip__tip">#contract</span></li>
+						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#cross"></use></svg><span class="tooltip__tip">#cross</span></li>
+						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#delete"></use></svg><span class="tooltip__tip">#delete</span></li>
+						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#disc"></use></svg><span class="tooltip__tip">#disc</span></li>
+						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#download"></use></svg><span class="tooltip__tip">#download</span></li>
+						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#drop"></use></svg><span class="tooltip__tip">#drop</span></li>
+						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#ellipsis"></use></svg><span class="tooltip__tip">#ellipsis</span></li>
+						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#esc"></use></svg><span class="tooltip__tip">#esc</span></li>
+						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#expand"></use></svg><span class="tooltip__tip">#expand</span></li>
+						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#eye"></use></svg><span class="tooltip__tip">#eye</span></li>
+						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#fast-forward"></use></svg><span class="tooltip__tip">#fast-forward</span></li>
+						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#file-add"></use></svg><span class="tooltip__tip">#file-add</span></li>
+						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#file-subtract"></use></svg><span class="tooltip__tip">#file-subtract</span></li>
+						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#file"></use></svg><span class="tooltip__tip">#file</span></li>
+						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#flag"></use></svg><span class="tooltip__tip">#flag</span></li>
+						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#folder"></use></svg><span class="tooltip__tip">#folder</span></li>
+						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#globe"></use></svg><span class="tooltip__tip">#globe</span></li>
+						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#grid-2"></use></svg><span class="tooltip__tip">#grid-2</span></li>
+						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#grid"></use></svg><span class="tooltip__tip">#grid</span></li>
+						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#head"></use></svg><span class="tooltip__tip">#head</span></li>
+						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#heart"></use></svg><span class="tooltip__tip">#heart</span></li>
+						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#help"></use></svg><span class="tooltip__tip">#help</span></li>
+						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#image"></use></svg><span class="tooltip__tip">#image</span></li>
+						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#inbox"></use></svg><span class="tooltip__tip">#inbox</span></li>
+						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#layers"></use></svg><span class="tooltip__tip">#layers</span></li>
+						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#layout"></use></svg><span class="tooltip__tip">#layout</span></li>
+						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#link"></use></svg><span class="tooltip__tip">#link</span></li>
+						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#loader"></use></svg><span class="tooltip__tip">#loader</span></li>
+						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#location-2"></use></svg><span class="tooltip__tip">#location-2</span></li>
+						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#location"></use></svg><span class="tooltip__tip">#location</span></li>
+						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#lock"></use></svg><span class="tooltip__tip">#lock</span></li>
+						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#mail"></use></svg><span class="tooltip__tip">#mail</span></li>
+						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#map"></use></svg><span class="tooltip__tip">#map</span></li>
+						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#marquee-minus"></use></svg><span class="tooltip__tip">#marquee-minus</span></li>
+						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#marquee-plus"></use></svg><span class="tooltip__tip">#marquee-plus</span></li>
+						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#marquee"></use></svg><span class="tooltip__tip">#marquee</span></li>
+						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#maximize"></use></svg><span class="tooltip__tip">#maximize</span></li>
+						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#menu"></use></svg><span class="tooltip__tip">#menu</span></li>
+						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#microphone"></use></svg><span class="tooltip__tip">#microphone</span></li>
+						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#minimize"></use></svg><span class="tooltip__tip">#minimize</span></li>
+						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#minus"></use></svg><span class="tooltip__tip">#minus</span></li>
+						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#monitor"></use></svg><span class="tooltip__tip">#monitor</span></li>
+						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#moon"></use></svg><span class="tooltip__tip">#moon</span></li>
+						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#move"></use></svg><span class="tooltip__tip">#move</span></li>
+						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#mute"></use></svg><span class="tooltip__tip">#mute</span></li>
+						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#open"></use></svg><span class="tooltip__tip">#open</span></li>
+						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#outbox"></use></svg><span class="tooltip__tip">#outbox</span></li>
+						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#paper-clip"></use></svg><span class="tooltip__tip">#paper-clip</span></li>
+						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#paper-stack"></use></svg><span class="tooltip__tip">#paper-stack</span></li>
+						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#paper"></use></svg><span class="tooltip__tip">#paper</span></li>
+						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#paragraph"></use></svg><span class="tooltip__tip">#paragraph</span></li>
+						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#pause"></use></svg><span class="tooltip__tip">#pause</span></li>
+						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#pie-graph"></use></svg><span class="tooltip__tip">#pie-graph</span></li>
+						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#play"></use></svg><span class="tooltip__tip">#play</span></li>
+						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#plus"></use></svg><span class="tooltip__tip">#plus</span></li>
+						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#power"></use></svg><span class="tooltip__tip">#power</span></li>
+						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#printer"></use></svg><span class="tooltip__tip">#printer</span></li>
+						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#record"></use></svg><span class="tooltip__tip">#record</span></li>
+						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#reload"></use></svg><span class="tooltip__tip">#reload</span></li>
+						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#repeat"></use></svg><span class="tooltip__tip">#repeat</span></li>
+						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#reply"></use></svg><span class="tooltip__tip">#reply</span></li>
+						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#rewind"></use></svg><span class="tooltip__tip">#rewind</span></li>
+						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#ribbon"></use></svg><span class="tooltip__tip">#ribbon</span></li>
+						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#search"></use></svg><span class="tooltip__tip">#search</span></li>
+						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#server"></use></svg><span class="tooltip__tip">#server</span></li>
+						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#share"></use></svg><span class="tooltip__tip">#share</span></li>
+						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#shuffle"></use></svg><span class="tooltip__tip">#shuffle</span></li>
+						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#signal"></use></svg><span class="tooltip__tip">#signal</span></li>
+						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#skip-back"></use></svg><span class="tooltip__tip">#skip-back</span></li>
+						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#skip-forward"></use></svg><span class="tooltip__tip">#skip-forward</span></li>
+						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#speech-bubble"></use></svg><span class="tooltip__tip">#speech-bubble</span></li>
+						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#square-check"></use></svg><span class="tooltip__tip">#square-check</span></li>
+						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#square-cross"></use></svg><span class="tooltip__tip">#square-cross</span></li>
+						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#square-minus"></use></svg><span class="tooltip__tip">#square-minus</span></li>
+						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#square-plus"></use></svg><span class="tooltip__tip">#square-plus</span></li>
+						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#stack-2"></use></svg><span class="tooltip__tip">#stack-2</span></li>
+						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#stack"></use></svg><span class="tooltip__tip">#stack</span></li>
+						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#star"></use></svg><span class="tooltip__tip">#star</span></li>
+						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#stop"></use></svg><span class="tooltip__tip">#stop</span></li>
+						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#sun"></use></svg><span class="tooltip__tip">#sun</span></li>
+						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#tag"></use></svg><span class="tooltip__tip">#tag</span></li>
+						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#target"></use></svg><span class="tooltip__tip">#target</span></li>
+						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#thermometer"></use></svg><span class="tooltip__tip">#thermometer</span></li>
+						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#toggle"></use></svg><span class="tooltip__tip">#toggle</span></li>
+						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#trash"></use></svg><span class="tooltip__tip">#trash</span></li>
+						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#umbrella"></use></svg><span class="tooltip__tip">#umbrella</span></li>
+						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#unlock"></use></svg><span class="tooltip__tip">#unlock</span></li>
+						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#upload"></use></svg><span class="tooltip__tip">#upload</span></li>
+						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#video"></use></svg><span class="tooltip__tip">#video</span></li>
+						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#volume"></use></svg><span class="tooltip__tip">#volume</span></li>
+						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#watch"></use></svg><span class="tooltip__tip">#watch</span></li>
+						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#zoom-in"></use></svg><span class="tooltip__tip">#zoom-in</span></li>
+						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#zoom-out"></use></svg><span class="tooltip__tip">#zoom-out</span></li>
 					</ul>
 					<p>Social</p>
 					<ul class="list--icons">
-						<li><svg class="icon"><use xlink:href="#facebook"></use></svg></li>
-						<li><svg class="icon"><use xlink:href="#twitter"></use></svg></li>
-						<li><svg class="icon"><use xlink:href="#pinterest"></use></svg></li>
-						<li><svg class="icon"><use xlink:href="#googleplus"></use></svg></li>
+						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#facebook"></use></svg><span class="tooltip__tip">#facebook</span></li>
+						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#twitter"></use></svg><span class="tooltip__tip">#twitter</span></li>
+						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#pinterest"></use></svg><span class="tooltip__tip">#pinterest</span></li>
+						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#googleplus"></use></svg><span class="tooltip__tip">#googleplus</span></li>
 					</ul>
 				</section>
 			</article>
@@ -314,6 +314,16 @@
 
 					<h5>Text</h5>
 					<p>Here's an example of a <a href="#">real anchor</a> and here's an example of a <button type="button" class="faux-anchor">faux anchor</button> (a &lt;button&gt; styled as an anchor).</p>
+
+					<h5>Icons</h5>
+					<p>
+						<a href="#"><svg class="icon"><use xlink:href="#cog"></use></svg></a> 
+						<button type="button" class="faux-anchor"><svg class="icon"><use xlink:href="#cog"></use></svg></button>
+						<a href="#"><svg class="icon"><use xlink:href="#archive"></use></svg></a> 
+						<button type="button" class="faux-anchor"><svg class="icon"><use xlink:href="#archive"></use></svg></button>
+						<a href="#"><svg class="icon"><use xlink:href="#circle-check"></use></svg></a> 
+						<button type="button" class="faux-anchor"><svg class="icon"><use xlink:href="#circle-check"></use></svg></button>
+					</p>
 
 					<h5>Buttons</h5>
 					<p>You can use a &lt;button&gt; element&hellip;</p>

@@ -5,8 +5,12 @@
 // Tooltip
 .tooltip {
 	position: relative;
-    cursor: help;
-	
+
+	&--help {
+    	cursor: help;
+	}
+
+	// The tip itself
 	&__tip {
 		// Arrow
         .arrow(top, @tooltip-bg, @tooltip-arrow-size);
