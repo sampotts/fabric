@@ -309,10 +309,10 @@
 					<p>For triggering actions or missile launches</p>
 				</header>
 				<section class="col9">
-					<h5>Important</h5>
-					<p>Choose the right element for the job. Anchor elements (&lt;a&gt;) should be used for linking to actual pages or content. Button elements (&lt;button&gt;) should be used when you're triggering an action such as a form submit. You can of course use an anchor and then bind JavaScript to it and prevent the default behaviour (following the link). This would be useful for something such as an image lightbox where the user might want to open in a new tab.</p>
+					<h5>Choose the right element</h5>
+					<p>Anchor elements (&lt;a&gt;) should be used for linking to actual pages or content. Button elements (&lt;button&gt;) should be used when you're triggering an action such as a form submit. You can use an anchor and then bind JavaScript to it and prevent the default behaviour (following the link). This would be useful for something such as an image lightbox where the user might want to open in a new tab.</p>
 
-					<h5>Basic links</h5>
+					<h5>Text</h5>
 					<p>Here's an example of a <a href="#">real anchor</a> and here's an example of a <button type="button" class="faux-anchor">faux anchor</button> (a &lt;button&gt; styled as an anchor).</p>
 
 					<h5>Buttons</h5>
@@ -332,8 +332,8 @@
 
 					<p>With icons</p>
 					<div class="actions example__actions">					
-						<button type="button" class="btn"><svg class="icon icon--first"><use xlink:href="#skip-back"></use></svg>Before</button>
-						<button type="button" class="btn">After<svg class="icon icon--last"><use xlink:href="#skip-forward"></use></svg></button>
+						<button type="button" class="btn"><svg class="icon icon--first"><use xlink:href="#speech-bubble"></use></svg>Comment</button>
+						<button type="button" class="btn">Go<svg class="icon icon--last"><use xlink:href="#arrow-right"></use></svg></button>
 						<button type="button" class="btn btn--primary"><svg class="icon"><use xlink:href="#check"></use></svg></button>
 					</div>
 
@@ -346,8 +346,8 @@
 
 					<p>With icons</p>
 					<div class="actions example__actions">					
-						<button type="button" class="btn btn--small"><svg class="icon icon--first"><use xlink:href="#skip-back"></use></svg>Before</button>
-						<button type="button" class="btn btn--small">After<svg class="icon icon--last"><use xlink:href="#skip-forward"></use></svg></button>
+						<button type="button" class="btn btn--small"><svg class="icon icon--first"><use xlink:href="#speech-bubble"></use></svg>Comment</button>
+						<button type="button" class="btn btn--small">Go<svg class="icon icon--last"><use xlink:href="#arrow-right"></use></svg></button>
 						<button type="button" class="btn btn--primary btn--small"><svg class="icon"><use xlink:href="#check"></use></svg></button>
 					</div>
 
