@@ -2,88 +2,9 @@
 // Icons
 // ==========================================================================
 
-@font-face {
-    font-family: "Icons";
-    src:    url("//d33i624pw6jj68.cloudfront.net/themes/classic/static/fonts/icons/icomoon.woff?wfg9q0") format("woff"),
-		    url("//d33i624pw6jj68.cloudfront.net/themes/classic/static/fonts/icons/icomoon.ttf?wfg9q0") format("truetype");
-	font-weight: normal;
-	font-style: normal;
+// SVG
+.icon {
+    width: 24px;
+    height: 24px;
+    fill: currentcolor;
 }
-
-// Specific styles
-// --------------------------------------------
-// Use aria-hidden="true" to prevent stand alone icons being read out
-[class^="icon-"]::before,
-[class*=" icon-"]::before {
-    vertical-align: middle;
-    font-family: "Icons";
-    speak: none;
-	font-style: normal;
-	font-weight: normal;
-	font-variant: normal;
-	text-transform: none;
-    .font-smoothing(on);
-}
-
-.btn,
-.btn-faux-link,
-a {
-    &[class^="icon-"],
-    &[class*=" icon-"] {
-        &::before {
-            line-height: 1;
-            text-decoration: inherit;
-            margin-right: 5px;
-        }
-        &.right-icon::before {
-            margin-left: 5px;
-            margin-right: 0;
-        }
-    }
-    
-    // Nested icons
-    // Use aria-hidden="true" to prevent them being read out
-    [class^="icon-"],
-    [class*=" icon-"] {
-        &::before {
-            margin-right: 5px;
-        }
-        &.right-icon::before {
-            margin-left: 5px;
-            margin-right: 0;
-        }
-    }
-}
-
-// Icons
-// --------------------------------------------
-.icon-sound::before { content: "\e600"; }
-.icon-soundoff::before { content: "\e601"; }
-.icon-sound-alt::before { content: "\e602"; }
-.icon-search::before { content: "\e603"; }
-.icon-cart::before { content: "\e604"; }
-.icon-cross::before { content: "\e605"; }
-.icon-list::before { content: "\e606"; }
-.icon-play::before { content: "\e607"; }
-.icon-pause::before { content: "\e608"; }
-.icon-stop::before { content: "\e609"; }
-.icon-resize-enlarge::before { content: "\e60a"; }
-.icon-resize-shrink::before { content: "\e60b"; }
-.icon-help::before { content: "\e605"; }
-.icon-download::before { content: "\e610"; }
-.icon-lock::before { content: "\e611"; }
-.icon-arrow-left::before { content: "\e612"; }
-.icon-arrow-right::before { content: "\e613"; }
-
-.icon-twitter::before { content: "\e60c"; }
-.icon-facebook::before { content: "\e60d"; }
-.icon-google-plus::before { content: "\e60e"; }
-.icon-dropbox::before { content: "\e60f"; }
-.icon-vimeo::before { content: "\e617"; }
-.icon-flickr::before { content: "\e616"; }
-.icon-pinterest::before { content: "\e618"; }
-.icon-dribbble::before { content: "\e61c"; }
-.icon-instagram::before { content: "\e61a"; }
-.icon-soundcloud::before { content: "\e61b"; }
-.icon-youtube::before { content: "\e619"; }
-.icon-tumblr::before { content: "\e61d"; }

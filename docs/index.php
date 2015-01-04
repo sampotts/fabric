@@ -20,6 +20,9 @@
 		<script src="../dist/js/modernizr.js"></script>
 	</head>
 	<body>
+		<!-- Include SVG sprite -->
+		<div style="display:none"><?php include_once(getcwd() . "/../dist/icons/symbol/svg/sprite.symbol.svg"); ?></div>
+
 		<header class="header">
 			<div class="container">
 				<h1 class="turbo">Fabric.css</h1>
@@ -141,6 +144,153 @@
 					</ol>
 				</section>
 			</article>
+			<article id="type" class="example row">
+				<header class="col3">
+					<h1>Icons</h1>
+					<p>Cool little pictures</p>
+				</header>
+				<section class="col9">
+					<ul class="list--icons">
+						<li><svg class="icon"><use xlink:href="#air-play"></use></svg></li>
+						<li><svg class="icon"><use xlink:href="#align-center"></use></svg></li>
+						<li><svg class="icon"><use xlink:href="#align-justify"></use></svg></li>
+						<li><svg class="icon"><use xlink:href="#align-left"></use></svg></li>
+						<li><svg class="icon"><use xlink:href="#align-right"></use></svg></li>
+						<li><svg class="icon"><use xlink:href="#alt"></use></svg></li>
+						<li><svg class="icon"><use xlink:href="#anchor"></use></svg></li>
+						<li><svg class="icon"><use xlink:href="#archive"></use></svg></li>
+						<li><svg class="icon"><use xlink:href="#arrow-down"></use></svg></li>
+						<li><svg class="icon"><use xlink:href="#arrow-left"></use></svg></li>
+						<li><svg class="icon"><use xlink:href="#arrow-right"></use></svg></li>
+						<li><svg class="icon"><use xlink:href="#arrow-up"></use></svg></li>
+						<li><svg class="icon"><use xlink:href="#bag"></use></svg></li>
+						<li><svg class="icon"><use xlink:href="#ban"></use></svg></li>
+						<li><svg class="icon"><use xlink:href="#bar-graph-2"></use></svg></li>
+						<li><svg class="icon"><use xlink:href="#bar-graph"></use></svg></li>
+						<li><svg class="icon"><use xlink:href="#battery"></use></svg></li>
+						<li><svg class="icon"><use xlink:href="#bell"></use></svg></li>
+						<li><svg class="icon"><use xlink:href="#book"></use></svg></li>
+						<li><svg class="icon"><use xlink:href="#box"></use></svg></li>
+						<li><svg class="icon"><use xlink:href="#briefcase"></use></svg></li>
+						<li><svg class="icon"><use xlink:href="#camera"></use></svg></li>
+						<li><svg class="icon"><use xlink:href="#check"></use></svg></li>
+						<li><svg class="icon"><use xlink:href="#circle-check"></use></svg></li>
+						<li><svg class="icon"><use xlink:href="#circle-cross"></use></svg></li>
+						<li><svg class="icon"><use xlink:href="#circle-minus"></use></svg></li>
+						<li><svg class="icon"><use xlink:href="#circle-plus"></use></svg></li>
+						<li><svg class="icon"><use xlink:href="#clipboard"></use></svg></li>
+						<li><svg class="icon"><use xlink:href="#clock"></use></svg></li>
+						<li><svg class="icon"><use xlink:href="#cloud-download"></use></svg></li>
+						<li><svg class="icon"><use xlink:href="#cloud-upload"></use></svg></li>
+						<li><svg class="icon"><use xlink:href="#cloud"></use></svg></li>
+						<li><svg class="icon"><use xlink:href="#cog"></use></svg></li>
+						<li><svg class="icon"><use xlink:href="#columns"></use></svg></li>
+						<li><svg class="icon"><use xlink:href="#command"></use></svg></li>
+						<li><svg class="icon"><use xlink:href="#content-left"></use></svg></li>
+						<li><svg class="icon"><use xlink:href="#content-right"></use></svg></li>
+						<li><svg class="icon"><use xlink:href="#contract"></use></svg></li>
+						<li><svg class="icon"><use xlink:href="#cross"></use></svg></li>
+						<li><svg class="icon"><use xlink:href="#delete"></use></svg></li>
+						<li><svg class="icon"><use xlink:href="#disc"></use></svg></li>
+						<li><svg class="icon"><use xlink:href="#download"></use></svg></li>
+						<li><svg class="icon"><use xlink:href="#drop"></use></svg></li>
+						<li><svg class="icon"><use xlink:href="#ellipsis"></use></svg></li>
+						<li><svg class="icon"><use xlink:href="#esc"></use></svg></li>
+						<li><svg class="icon"><use xlink:href="#expand"></use></svg></li>
+						<li><svg class="icon"><use xlink:href="#eye"></use></svg></li>
+						<li><svg class="icon"><use xlink:href="#fast-forward"></use></svg></li>
+						<li><svg class="icon"><use xlink:href="#file-add"></use></svg></li>
+						<li><svg class="icon"><use xlink:href="#file-subtract"></use></svg></li>
+						<li><svg class="icon"><use xlink:href="#file"></use></svg></li>
+						<li><svg class="icon"><use xlink:href="#flag"></use></svg></li>
+						<li><svg class="icon"><use xlink:href="#folder"></use></svg></li>
+						<li><svg class="icon"><use xlink:href="#globe"></use></svg></li>
+						<li><svg class="icon"><use xlink:href="#grid-2"></use></svg></li>
+						<li><svg class="icon"><use xlink:href="#grid"></use></svg></li>
+						<li><svg class="icon"><use xlink:href="#head"></use></svg></li>
+						<li><svg class="icon"><use xlink:href="#heart"></use></svg></li>
+						<li><svg class="icon"><use xlink:href="#help"></use></svg></li>
+						<li><svg class="icon"><use xlink:href="#image"></use></svg></li>
+						<li><svg class="icon"><use xlink:href="#inbox"></use></svg></li>
+						<li><svg class="icon"><use xlink:href="#layers"></use></svg></li>
+						<li><svg class="icon"><use xlink:href="#layout"></use></svg></li>
+						<li><svg class="icon"><use xlink:href="#link"></use></svg></li>
+						<li><svg class="icon"><use xlink:href="#loader"></use></svg></li>
+						<li><svg class="icon"><use xlink:href="#location-2"></use></svg></li>
+						<li><svg class="icon"><use xlink:href="#location"></use></svg></li>
+						<li><svg class="icon"><use xlink:href="#lock"></use></svg></li>
+						<li><svg class="icon"><use xlink:href="#mail"></use></svg></li>
+						<li><svg class="icon"><use xlink:href="#map"></use></svg></li>
+						<li><svg class="icon"><use xlink:href="#marquee-minus"></use></svg></li>
+						<li><svg class="icon"><use xlink:href="#marquee-plus"></use></svg></li>
+						<li><svg class="icon"><use xlink:href="#marquee"></use></svg></li>
+						<li><svg class="icon"><use xlink:href="#maximize"></use></svg></li>
+						<li><svg class="icon"><use xlink:href="#menu"></use></svg></li>
+						<li><svg class="icon"><use xlink:href="#microphone"></use></svg></li>
+						<li><svg class="icon"><use xlink:href="#minimize"></use></svg></li>
+						<li><svg class="icon"><use xlink:href="#minus"></use></svg></li>
+						<li><svg class="icon"><use xlink:href="#monitor"></use></svg></li>
+						<li><svg class="icon"><use xlink:href="#moon"></use></svg></li>
+						<li><svg class="icon"><use xlink:href="#move"></use></svg></li>
+						<li><svg class="icon"><use xlink:href="#mute"></use></svg></li>
+						<li><svg class="icon"><use xlink:href="#open"></use></svg></li>
+						<li><svg class="icon"><use xlink:href="#outbox"></use></svg></li>
+						<li><svg class="icon"><use xlink:href="#paper-clip"></use></svg></li>
+						<li><svg class="icon"><use xlink:href="#paper-stack"></use></svg></li>
+						<li><svg class="icon"><use xlink:href="#paper"></use></svg></li>
+						<li><svg class="icon"><use xlink:href="#paragraph"></use></svg></li>
+						<li><svg class="icon"><use xlink:href="#pause"></use></svg></li>
+						<li><svg class="icon"><use xlink:href="#pie-graph"></use></svg></li>
+						<li><svg class="icon"><use xlink:href="#play"></use></svg></li>
+						<li><svg class="icon"><use xlink:href="#plus"></use></svg></li>
+						<li><svg class="icon"><use xlink:href="#power"></use></svg></li>
+						<li><svg class="icon"><use xlink:href="#printer"></use></svg></li>
+						<li><svg class="icon"><use xlink:href="#record"></use></svg></li>
+						<li><svg class="icon"><use xlink:href="#reload"></use></svg></li>
+						<li><svg class="icon"><use xlink:href="#repeat"></use></svg></li>
+						<li><svg class="icon"><use xlink:href="#reply"></use></svg></li>
+						<li><svg class="icon"><use xlink:href="#rewind"></use></svg></li>
+						<li><svg class="icon"><use xlink:href="#ribbon"></use></svg></li>
+						<li><svg class="icon"><use xlink:href="#search"></use></svg></li>
+						<li><svg class="icon"><use xlink:href="#server"></use></svg></li>
+						<li><svg class="icon"><use xlink:href="#share"></use></svg></li>
+						<li><svg class="icon"><use xlink:href="#shuffle"></use></svg></li>
+						<li><svg class="icon"><use xlink:href="#signal"></use></svg></li>
+						<li><svg class="icon"><use xlink:href="#skip-back"></use></svg></li>
+						<li><svg class="icon"><use xlink:href="#skip-forward"></use></svg></li>
+						<li><svg class="icon"><use xlink:href="#speech-bubble"></use></svg></li>
+						<li><svg class="icon"><use xlink:href="#square-check"></use></svg></li>
+						<li><svg class="icon"><use xlink:href="#square-cross"></use></svg></li>
+						<li><svg class="icon"><use xlink:href="#square-minus"></use></svg></li>
+						<li><svg class="icon"><use xlink:href="#square-plus"></use></svg></li>
+						<li><svg class="icon"><use xlink:href="#stack-2"></use></svg></li>
+						<li><svg class="icon"><use xlink:href="#stack"></use></svg></li>
+						<li><svg class="icon"><use xlink:href="#star"></use></svg></li>
+						<li><svg class="icon"><use xlink:href="#stop"></use></svg></li>
+						<li><svg class="icon"><use xlink:href="#sun"></use></svg></li>
+						<li><svg class="icon"><use xlink:href="#tag"></use></svg></li>
+						<li><svg class="icon"><use xlink:href="#target"></use></svg></li>
+						<li><svg class="icon"><use xlink:href="#thermometer"></use></svg></li>
+						<li><svg class="icon"><use xlink:href="#toggle"></use></svg></li>
+						<li><svg class="icon"><use xlink:href="#trash"></use></svg></li>
+						<li><svg class="icon"><use xlink:href="#umbrella"></use></svg></li>
+						<li><svg class="icon"><use xlink:href="#unlock"></use></svg></li>
+						<li><svg class="icon"><use xlink:href="#upload"></use></svg></li>
+						<li><svg class="icon"><use xlink:href="#video"></use></svg></li>
+						<li><svg class="icon"><use xlink:href="#volume"></use></svg></li>
+						<li><svg class="icon"><use xlink:href="#watch"></use></svg></li>
+						<li><svg class="icon"><use xlink:href="#zoom-in"></use></svg></li>
+						<li><svg class="icon"><use xlink:href="#zoom-out"></use></svg></li>
+					</ul>
+					<p>Social</p>
+					<ul class="list--icons">
+						<li><svg class="icon"><use xlink:href="#facebook"></use></svg></li>
+						<li><svg class="icon"><use xlink:href="#twitter"></use></svg></li>
+						<li><svg class="icon"><use xlink:href="#pinterest"></use></svg></li>
+						<li><svg class="icon"><use xlink:href="#googleplus"></use></svg></li>
+					</ul>
+				</section>
+			</article>
 			<article id="alerts" class="example row">
 				<header class="col3">
 					<h1>Alerts</h1>
@@ -166,11 +316,25 @@
 						<button type="button" class="btn">Default</button>
 					</div>
 
+					<p>With icons</p>
+					<div class="actions example__actions">					
+						<button type="button" class="btn"><svg class="icon icon--first"><use xlink:href="#skip-back"></use></svg>Before</button>
+						<button type="button" class="btn">After<svg class="icon icon--last"><use xlink:href="#skip-forward"></use></svg></button>
+						<button type="button" class="btn btn--primary"><svg class="icon"><use xlink:href="#check"></use></svg></button>
+					</div>
+
 					<p>Small version</p>
 					<div class="actions example__actions">
 						<button type="button" class="btn btn--primary btn--small">Primary</button>
 						<button type="button" class="btn btn--secondary btn--small">Secondary</button>
 						<button type="button" class="btn btn--small">Default</button>
+					</div>
+
+					<p>With icons</p>
+					<div class="actions example__actions">					
+						<button type="button" class="btn btn--small"><svg class="icon icon--first"><use xlink:href="#skip-back"></use></svg>Before</button>
+						<button type="button" class="btn btn--small">After<svg class="icon icon--last"><use xlink:href="#skip-forward"></use></svg></button>
+						<button type="button" class="btn btn--primary btn--small"><svg class="icon"><use xlink:href="#check"></use></svg></button>
 					</div>
 
 					<p>States</p>
@@ -184,23 +348,23 @@
 
 					<p>There's some social ones too</p>
 					<div class="actions example__actions">
-						<button type="button" class="btn btn--facebook">Facebook</button>
-						<button type="button" class="btn btn--twitter">Twitter</button>
-						<button type="button" class="btn btn--pinterest">Pinterest</button>
-						<button type="button" class="btn btn--google-plus">Google&plus;</button>
+						<button type="button" class="btn btn--facebook"><svg class="icon icon--first"><use xlink:href="#facebook"></use></svg>Facebook</button>
+						<button type="button" class="btn btn--twitter"><svg class="icon icon--first"><use xlink:href="#twitter"></use></svg>Twitter</button>
+						<button type="button" class="btn btn--pinterest"><svg class="icon icon--first"><use xlink:href="#pinterest"></use></svg>Pinterest</button>
+						<button type="button" class="btn btn--google-plus"><svg class="icon icon--first"><use xlink:href="#googleplus"></use></svg>Google&plus;</button>
 					</div>
 
 					<p>Counters</p>
 					<div class="example__actions">
-						<button type="button" class="btn btn--facebook btn--small">Share</button>
+						<button type="button" class="btn btn--facebook btn--small"><svg class="icon icon--first"><use xlink:href="#facebook"></use></svg>Share</button>
 						<span class="counter">88</span>
-						<button type="button" class="btn btn--twitter btn--small">Tweet</button>
+						<button type="button" class="btn btn--twitter btn--small"><svg class="icon icon--first"><use xlink:href="#twitter"></use></svg>Tweet</button>
 						<span class="counter">88</span>
 					</div>
 					<div class="example__actions">
-						<button type="button" class="btn btn--facebook">Share</button>
+						<button type="button" class="btn btn--facebook"><svg class="icon icon--first"><use xlink:href="#facebook"></use></svg>Share</button>
 						<span class="counter">88</span>
-						<button type="button" class="btn btn--twitter">Tweet</button>
+						<button type="button" class="btn btn--twitter"><svg class="icon icon--first"><use xlink:href="#twitter"></use></svg>Tweet</button>
 						<span class="counter">88</span>
 					</div>
 

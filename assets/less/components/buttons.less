@@ -57,32 +57,22 @@
 	// --------------------------------------------------
 	&--facebook {
 		.btn-styles(@color-facebook);
-		
-		&::before { content: "\e60d"; }
 	}
 	&--twitter {
 		.btn-styles(@color-twitter);
-		
-		&::before { content: "\e60c"; }
 	}
 	&--pinterest {
 		.btn-styles(@color-pinterest);
-		
-		&::before { content: "\e618"; }
 	}
 	&--google-plus {
 		.btn-styles(@color-google-plus);
-		
-		&::before { content: "\e60e"; }
 	}
-	&--facebook::before,
-	&--twitter::before,
-	&--pinterest::before,
-	&--google-plus::before {
-	    font-family: "Icons";
-		vertical-align: top;
-		margin-right: 5px;
-		.font-smoothing(on);
+
+	// Sizes
+	// --------------------------------------------------
+	&--small {
+	    padding: @padding-small-vertical + 1 (@padding-small-horizontal * 1.5);
+	    .font-size(@font-size-small);
 	}
 	
 	// States
@@ -116,15 +106,32 @@
 	    text-shadow: none;
 	}
 
-	// Sizes
+	// Icons
 	// --------------------------------------------------
-	&--small {
-	    padding: @padding-small-vertical + 1 (@padding-small-horizontal * 1.5);
-	    .font-size(@font-size-small);
+	.icon {
+		vertical-align: top;
+		position: relative;
+		top: 2px;
+		width: 20px;
+		height: 20px;
 
-	    &.loading::after {
+		&.icon--first {
+			left: -5px;
+		}
+		&.icon--last {
+			right: -5px;
+		}
+	}
+	&--small .icon {
+		width: 16px;
+		height: 16px;
 
-	    }
+		&.icon--first {
+			left: -3px;
+		}
+		&.icon--last {
+			right: -3px;
+		}
 	}
 }
 

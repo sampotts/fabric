@@ -1,38 +1,48 @@
 // ==========================================================================
 // Gulp build script
 // ==========================================================================
+/*global require, __dirname*/
 
-var fs = require("fs"),
-	path = require("path"),
-	gulp = require("gulp"),
-	gutil = require("gulp-util"),
-	concat = require("gulp-concat"),
-	uglify = require("gulp-uglify"),
-	less = require("gulp-less"),
-	minifyCss = require("gulp-minify-css"),
+var fs 			= require("fs"),
+	path 		= require("path"),
+	gulp 		= require("gulp"),
+	gutil 		= require("gulp-util"),
+	concat 		= require("gulp-concat"),
+	uglify 		= require("gulp-uglify"),
+	less 		= require("gulp-less"),
+	minifyCss 	= require("gulp-minify-css"),
 	runSequence = require("run-sequence"),
-	prefix = require("gulp-autoprefixer");
+	prefix 		= require("gulp-autoprefixer"),
+	svgSprite   = require("gulp-svg-sprite"),
+	imagemin 	= require("gulp-imagemin"),
+	pngquant 	= require("imagemin-pngquant");
 
 var projectPath = __dirname;
 var paths = {
-    project: 	projectPath,
+    project: 		projectPath,
 
     // Watch paths
-    watchless: 	path.join(projectPath, "assets/less/**/*"),
-    watchjs: 	path.join(projectPath, "assets/js/**/*"),
+    watchless: 		path.join(projectPath, "assets/less/**/*"),
+    watchjs: 		path.join(projectPath, "assets/js/**/*"),
+    watchicons: 	path.join(projectPath, "assets/icons/**/*.svg"),
 
     // Output paths
-    js:  		path.join(projectPath, "dist/js/"),
-    css:  		path.join(projectPath, "dist/css/"),
+    js:  			path.join(projectPath, "dist/js/"),
+    css:  			path.join(projectPath, "dist/css/"),
+    icons:  		path.join(projectPath, "dist/icons/")
 },
+
 // Task names
 taskNames = {    
     lessBuild: 	"less-",
-    jsBuild: 	"js-"
+    jsBuild: 	"js-",
+    iconBuild: 	"icon-"
 },
+
 // Task arrays
 lessBuildTasks 	= [],
 jsBuildTasks 	= [],
+iconBuildTasks 	= [],
 
 // Fetch bundles from JSON
 lessBundles 	= load(path.join(paths.project, "bundles_less.json")),
@@ -89,6 +99,35 @@ for (var key in lessBundles) {
 	})(key);
 }
 
+// Process SVG
+var taskName = taskNames.iconBuild + "svg";
+iconBuildTasks.push(taskName);
+
+gulp.task(taskName, function () {
+	gulp.src("assets/icons/*.svg")
+		.pipe(imagemin({
+            progressive: true,
+            use: [pngquant()]
+        }))
+	    .pipe(svgSprite({
+		    shape               : {
+		        dimension       : {         // Set maximum dimensions
+		            maxWidth    : 24,
+		            maxHeight   : 24
+		        }
+		    },
+		    mode                : {
+		        view            : {         // Activate the «view» mode
+		            render      : {
+		                less    : true      // Activate Less output (with default options)
+		            }
+		        },
+		        symbol          : true      // Activate the «symbol» mode
+		    }
+		}))
+	    .pipe(gulp.dest(paths.icons));
+});
+
 /*
 default: 
     - less -> min css
@@ -97,11 +136,12 @@ default:
     run "gulp"
 */
 gulp.task("default", function(){
-	runSequence(jsBuildTasks.concat(lessBuildTasks, "watch"));
+	runSequence(jsBuildTasks.concat(lessBuildTasks, iconBuildTasks, "watch"));
 });
 
 // Watch for file changes
 gulp.task("watch", function () {
     gulp.watch(paths.watchless, lessBuildTasks);
     gulp.watch(paths.watchjs, jsBuildTasks);
+    gulp.watch(paths.watchicons, iconBuildTasks);
 });
