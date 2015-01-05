@@ -8,7 +8,8 @@
         config = {
             selector: {
                 toggleClass:    "[data-toggle='class']",
-                smoothScroll:   ".js-smooth-scroll"
+                smoothScroll:   ".js-smooth-scroll",
+                tableRowLink:   "[data-row-href] td"
             }
         };
 
@@ -33,9 +34,12 @@
 
             $body
                 .on("click", config.selector.toggleClass, toggleClass)
-                .on("click", config.selector.smoothScroll, smoothScroll);
+                .on("click", config.selector.smoothScroll, smoothScroll)
+                .on("click", config.selector.tableRowLink, tableRowClick);
         }
 
+        // Toggle class on element
+        // ---------------------------------
         function toggleClass() {
             var $this       = $(this),
                 className   = $this.data("class") || "in",
@@ -84,6 +88,15 @@
             $("html, body").animate({
                 scrollTop: dest
             }, 300, "swing");
+        }
+
+        // Row click
+        // ---------------------------------
+        function tableRowClick(event) {
+            // If the click event is on the td and it's not from text selection, redirect the user
+            if (!$(event.target).is("a, button, input") && !window.getSelection().toString()) {
+                window.location.href = $(this).closest("tr").data("row-href");
+            }
         }
     });
 })(jQuery);

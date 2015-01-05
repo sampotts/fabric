@@ -19,7 +19,6 @@ table {
 .table {
     width: 100%;
     margin-bottom: 20px;
-    //border-top: @table-border-width solid @table-border-color;
 
     // Cells
     th,
@@ -95,7 +94,7 @@ table {
         padding-bottom: (@table-cell-padding / 2);
         border-bottom-width: @table-header-border-width;
     }
-    tbody.empty td {
+    /*tbody.empty td {
         text-align: center;
         padding-top: 80px;
         padding-bottom: 80px;
@@ -110,29 +109,61 @@ table {
         .btn {
 	        margin-top: 20px;
         }
-    }
+    }*/
     
+    // Striped version 
+    &--striped tr:nth-of-type(odd) td,
+    &--striped tr:nth-of-type(odd) th {
+        background: @off-white;
+    }
+    &--striped thead tr:nth-of-type(odd) td,
+    &--striped thead tr:nth-of-type(odd) th {
+        background: @table-bg;
+    }
+
+    // Linked rows
+    tr[data-row-href] {
+        cursor: pointer;
+
+        &:hover td,
+        &:hover th {
+            background-color: @off-white;
+        }
+    }
+
+
+    // Condensed
+    &--condensed {
+        td,
+        th {
+            padding: @table-condensed-cell-padding * .75 @table-condensed-cell-padding;
+        }
+        thead th {
+            padding-top: (@table-condensed-cell-padding / 2);
+            padding-bottom: (@table-condensed-cell-padding / 2);
+        }
+    }
+
+    // Middle aligned
+    &--middle-align td,
+    &--middle-align tbody th {
+        vertical-align: middle;
+    }
+
     // Targetted with #anchor
-    tr:target td {
+    tr:target td,
+    tr:target th,
+    tr:target:hover td,
+    tr:target:hover th,
+    td:target {
         background: lighten(@yellow, 49%);
         border-bottom-color: lighten(@yellow, 10%);
         color: darken(@yellow, 5%);
-        box-shadow: 0 -1px 0 lighten(@yellow, 10%);
+        box-shadow: 0 -@table-border-width 0 lighten(@yellow, 10%);
         
         strong {
             color: inherit;
         }
-    }
-
-    // Links
-    tr[data-row-href]:hover td {
-        background-color: @off-white;
-    }
-    
-    // Alt row color
-    &--striped tbody tr:nth-of-type(odd) td,
-    &--striped tbody tr:nth-of-type(odd) th {
-        background: @off-white;
     }
 
     // Remove top border from thead by default
@@ -144,19 +175,4 @@ table {
     thead:first-child tr:first-child td {
         border-top: 0;
     }
-}
-
-
-// Condensed table styles
-// --------------------------------------------
-.table-condensed th,
-.table-condensed td {
-    padding: @table-condensed-cell-padding;
-}
-
-// Middle aligned table styles
-// --------------------------------------------
-.table-middle-align th,
-.table-middle-align td {
-    vertical-align: middle;
 }

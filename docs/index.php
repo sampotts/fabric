@@ -20,7 +20,7 @@
 		<script src="../dist/js/modernizr.js"></script>
 	</head>
 	<body>
-		<!-- Include SVG sprite -->
+		<!-- SVG defs -->
 		<div style="display:none"><?php include_once(getcwd() . "/../dist/icons/symbol/svg/sprite.symbol.svg"); ?></div>
 
 		<header class="header">
@@ -28,7 +28,7 @@
 				<h1 class="turbo">Fabric.css</h1>
 				<p>Yet another simple, lightweight CSS framework.</p>
 				<div class="actions">
-					<a href="#main" class="btn btn--primary">Download</a>
+					<a href="#" class="btn btn--primary">Download v0.1</a>
 					<a href="#main" class="btn js-smooth-scroll">More info</a>
 				</div>
 			</div>
@@ -621,16 +621,16 @@
 						</ul>
 					</nav>
 					<div class="tab-pane fade" id="tab-item-1">
-						<p>Home</p>
+						<p>Home content</p>
 					</div>
 					<div class="tab-pane fade active in" id="tab-item-2">
-						<p>Products</p>
+						<p>Products content</p>
 					</div>
 					<div class="tab-pane fade" id="tab-item-3">
-						<p>Contact</p>
+						<p>Contact content</p>
 					</div>
 					<div class="tab-pane fade" id="tab-item-4">
-						<p>About</p>
+						<p>About content</p>
 					</div>
 				</section>
 			</article>
@@ -641,68 +641,141 @@
 				</header>
 				<section class="col9">
 					<p>Basic table</p>
-					<table class="table">
-						<thead>
-							<tr>
-								<th scope="col">#</th>
-								<th scope="col">First Name</th>
-								<th scope="col">Second Name</th>
-								<th scope="col">Username</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<th>1</th>
-								<td>Sam</td>
-								<td>Potts</td>
-								<td>@Sam_Potts</td>
-							</tr>
-							<tr>
-								<th>2</th>
-								<td>Mathieu</td>
-								<td>Kempe</td>
-								<td>@MathieuKempe</td>
-							</tr>	
-							<tr>
-								<th>3</th>
-								<td>Steve</td>
-								<td>Marsh</td>
-								<td>@SteMarsh</td>
-							</tr>
-						</tbody>
-					</table>
+
+					<div class="scroll-horizontal-sm">
+						<table class="table">
+							<thead>
+								<tr>
+									<th scope="col">#</th>
+									<th scope="col">First Name</th>
+									<th scope="col">Second Name</th>
+									<th scope="col">Username</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th>1</th>
+									<td>Sam</td>
+									<td>Potts</td>
+									<td>@Sam_Potts</td>
+								</tr>
+								<tr>
+									<th>2</th>
+									<td>Mathieu</td>
+									<td>Kempe</td>
+									<td>@MathieuKempe</td>
+								</tr>	
+								<tr>
+									<th>3</th>
+									<td>Steve</td>
+									<td>Marsh</td>
+									<td>@SteMarsh</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
 
 					<p>Striped table</p>
-					<table class="table table--striped">
-						<thead>
-							<tr>
-								<th scope="col">#</th>
-								<th scope="col">First Name</th>
-								<th scope="col">Second Name</th>
-								<th scope="col">Username</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<th>1</th>
-								<td>Sam</td>
-								<td>Potts</td>
-								<td>@Sam_Potts</td>
-							</tr>
-							<tr>
-								<th>2</th>
-								<td>Mathieu</td>
-								<td>Kempe</td>
-								<td>@MathieuKempe</td>
-							</tr>	
-							<tr>
-								<th>3</th>
-								<td>Steve</td>
-								<td>Marsh</td>
-								<td>@SteMarsh</td>
-							</tr>
-						</tbody>
-					</table>
+					<div class="scroll-horizontal-sm">
+						<table class="table table--striped">
+							<thead>
+								<tr>
+									<th scope="col">#</th>
+									<th scope="col">First Name</th>
+									<th scope="col">Second Name</th>
+									<th scope="col">Username</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th>1</th>
+									<td>Sam</td>
+									<td>Potts</td>
+									<td>@Sam_Potts</td>
+								</tr>
+								<tr>
+									<th>2</th>
+									<td>Mathieu</td>
+									<td>Kempe</td>
+									<td>@MathieuKempe</td>
+								</tr>	
+								<tr>
+									<th>3</th>
+									<td>Steve</td>
+									<td>Marsh</td>
+									<td>@SteMarsh</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
+					<p>Condensed table</p>
+					<div class="scroll-horizontal-sm">
+						<table class="table table--condensed">
+							<thead>
+								<tr>
+									<th scope="col">#</th>
+									<th scope="col">First Name</th>
+									<th scope="col">Second Name</th>
+									<th scope="col">Username</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th>1</th>
+									<td>Sam</td>
+									<td>Potts</td>
+									<td>@Sam_Potts</td>
+								</tr>
+								<tr>
+									<th>2</th>
+									<td>Mathieu</td>
+									<td>Kempe</td>
+									<td>@MathieuKempe</td>
+								</tr>	
+								<tr>
+									<th>3</th>
+									<td>Steve</td>
+									<td>Marsh</td>
+									<td>@SteMarsh</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
+					<p>Linked rows table</p>
+					<div class="scroll-horizontal-sm">
+						<table class="table table--striped">
+							<thead>
+								<tr>
+									<th scope="col">#</th>
+									<th scope="col">First Name</th>
+									<th scope="col">Second Name</th>
+									<th scope="col">Username</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr data-row-href="#table-row-0" id="table-row-0">
+									<th>1</th>
+									<td>Sam</td>
+									<td>Potts</td>
+									<td>@Sam_Potts</td>
+								</tr>
+								<tr data-row-href="#table-row-1" id="table-row-1">
+									<th>2</th>
+									<td>Mathieu</td>
+									<td>Kempe</td>
+									<td>@MathieuKempe</td>
+								</tr>	
+								<tr data-row-href="#table-row-2" id="table-row-2">
+									<th>3</th>
+									<td>Steve</td>
+									<td>Marsh</td>
+									<td>@SteMarsh</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
 				</section>
 			</article>
 			<article id="tooltips" class="example row">

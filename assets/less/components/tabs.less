@@ -5,10 +5,12 @@
 .nav-tabs {
     border-bottom: 2px solid @section-border-color;
     padding-top: (@grid-section-padding / 2);
-    white-space: nowrap;
 
-    ul li {
+    ul {
         margin-bottom: -2px;
+        white-space: nowrap;
+        overflow-x: auto;
+        overflow-y: visible;
     }
     a {
         padding: (@grid-section-padding / 2) @grid-section-padding;
@@ -19,6 +21,9 @@
         &:hover,
         &:focus {
             color: @tab-hover-color;
+        }
+        &:focus {
+            outline: 0;
         }
     }
     .active a {

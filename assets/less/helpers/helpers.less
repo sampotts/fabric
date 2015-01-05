@@ -10,8 +10,23 @@
     float: right;
 }
 
+// Scroll containers
+@media (max-width : @screen-xs-max) {
+    .scroll-horizontal-sm {
+        overflow-x: auto;
+        overflow-y: visible;
+    }
+    .scroll-vertical-sm {
+        overflow-y: auto;
+        overflow-x: visible;
+    }
+    .scroll-vertical-sm {
+        overflow-x: auto;
+    }
+}
+
 // Text
-.text-centered {
+.centered {
     text-align: center;
 }
 
