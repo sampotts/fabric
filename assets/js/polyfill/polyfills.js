@@ -18,7 +18,6 @@ if(typeof Modernizr !== "undefined") {
             d = document.createElement("div");
         i.type = "checkbox";
         i.id = "test-input";
-        d.id = "test-div";
         d.appendChild(i);
 
         // Append test elements
