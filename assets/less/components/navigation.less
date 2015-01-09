@@ -3,7 +3,7 @@
 // ==========================================================================
 
 // Defaults
-nav ul {
+nav > ul {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -12,7 +12,7 @@ nav ul {
     > * {
         .font-size(@font-size-base);
     }
-    li {
+    > li {
         display: inline-block;
         margin: 0 (@grid-section-padding / 2) 0 0;
         padding: 0;
@@ -20,24 +20,25 @@ nav ul {
         &:first-child {
             margin-left: (@grid-section-padding / 2);
         }
-    }
-    a {
-        display: block;
-        text-decoration: none;
-        transition: background .3s ease, color .3s ease, border .3s ease;
+        > a,
+        > .faux-anchor {
+            display: block;
+            text-decoration: none;
+            transition: background .3s ease, color .3s ease, border .3s ease;
+        }
     }
 }
 
 // Navigation bar
 .nav-bar {
     position: relative;
-    padding-top: @grid-section-padding;
-    padding-bottom: @grid-section-padding;
+    padding-top: (@grid-section-padding / 2);
+    padding-bottom: (@grid-section-padding / 2);
     border: 1px solid @section-border-color;
     border-width: 2px 0;
     
     .logo,
-    ul {
+    > ul {
         text-align: center;
         
         @media (min-width : @screen-sm) {
@@ -54,31 +55,50 @@ nav ul {
             margin-bottom: 0;
         }
     }
-    li {
-        padding-top: (@grid-section-padding / 2);
+    > ul > li {
+        margin-top: (@grid-section-padding / 2);
+        margin-bottom: (@grid-section-padding / 2);
 
         &:first-child {
             margin-left: 0;
         }
+        > a,
+        > .faux-anchor {
+            padding: (@grid-section-padding / 4) (@grid-section-padding / 2);
+            border-radius: @navbar-link-radius;
 
-        @media (min-width : @screen-sm) {
-            padding-top: 0;
+            &:hover,
+            &:focus {
+                background: @navbar-link-hover-bg;
+                color: @navbar-link-hover-color;
+            }
         }
-    }
-    a {
-        padding: (@grid-section-padding / 4) (@grid-section-padding / 2);
-        border-radius: @navbar-link-radius;
+        &.active > a,
+        &.open > .faux-anchor {
+            background: @navbar-link-active-bg;
+            color: @navbar-link-active-color;
+        }
+        &.dropdown--user {
+            margin-top: 0;
+            margin-bottom: 0;
 
-        &:hover,
-        &:focus {
-            background: @navbar-link-hover-bg;
-            color: @navbar-link-hover-color;
+            .dropdown__toggle {
+                padding-left: (@grid-section-padding / 4);
+                padding-right: (@grid-section-padding / 4);
+
+                &--caret-after {
+                    padding-right: (@grid-section-padding / 2);
+                }
+                &--caret-before {
+                    padding-left: (@grid-section-padding / 2);
+                }
+            }
+            .avatar {
+                vertical-align: middle;
+                max-width: 40px;
+                max-height: 40px;
+                border-radius: @avatar-radius;
+            }
         }
-    }
-    .active a {
-        background: @navbar-link-active-bg;
-        color: @navbar-link-active-color;
-        .font-smoothing(on);
-        font-weight: @navbar-link-font-weight;
     }
 }

@@ -5,6 +5,7 @@
 		"assets/js/plugins/bootstrap/transition.js",
 		"assets/js/plugins/bootstrap/collapse.js",
 		"assets/js/plugins/bootstrap/tab.js",
+		"assets/js/plugins/bootstrap/dropdown.js",
 		"assets/js/polyfill/polyfills.js",
 		"assets/js/ui.js"
 	],

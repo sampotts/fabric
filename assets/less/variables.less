@@ -124,9 +124,16 @@
 @border-radius-large:                       6px;
 @border-radius-small:                       3px;
 
+@component-active-color:    				#fff;
+@component-active-bg:       				@green;
+
+@arrow-size-base:          					4px;
+@arrow-size-large:         					7px;
+
 // Media
 // --------------------------------------------------
 @image-background:                          @gray-lightest;
+@avatar-radius: 							@border-radius-base;
 
 // Loaders
 // --------------------------------------------------
@@ -183,12 +190,11 @@
 
 // Navigation
 // --------------------------------------------------
-@navbar-link-hover-bg: 						@gray-lighter;
+@navbar-link-hover-bg: 						@gray-lightest;
 @navbar-link-hover-color: 					@link-hover-color;
 @navbar-link-active-bg: 					@link-color;
 @navbar-link-active-color: 					#fff;
 @navbar-link-radius: 						@button-radius;
-@navbar-link-font-weight: 					@button-font-weight;
 
 // Tabs
 // --------------------------------------------------
@@ -202,7 +208,7 @@
 @tooltip-bg:                                @black;
 @tooltip-text-color:                        #fff;
 @tooltip-zindex:                            30;
-@tooltip-arrow-size: 						7px;
+@tooltip-arrow-size: 						@arrow-size-large;
 
 // Forms
 // --------------------------------------------------
@@ -232,7 +238,7 @@
 @checkbox-handle-size: 						@checkbox-height - (@checkbox-padding * 2);
 @checkbox-handle-bg: 						#fff;
 @checkbox-control-bg-off:                 	@gray-light;
-@checkbox-control-background-on:          	@green;
+@checkbox-control-background-on:          	@component-active-bg;
 
 @radio-width: 								24px;
 @radio-height: 								24px;
@@ -241,7 +247,7 @@
 @radio-border-color:                 		@gray-light;
 @radio-checked-width: 						(@radio-width / 2);
 @radio-checked-height: 						(@radio-height / 2);
-@radio-checked-bg:          				@green;
+@radio-checked-bg:          				@component-active-bg;
 
 // Form states and alerts
 // --------------------------------------------------
@@ -261,6 +267,23 @@
 @state-danger-text:                         @tint-red;
 @state-danger-bg:                           lighten(@tint-red, 48%);
 @state-danger-border:                       darken(spin(@state-danger-bg, -10), 5%);
+
+// Disabled cursor for form controls and buttons.
+@cursor-disabled:                			not-allowed;
+
+// Dropdowns
+// --------------------------------------------------
+@dropdown-bg:                    			#fff;
+@dropdown-border:                			@gray-lighter;
+@dropdown-link-color:            			@gray-dark;
+@dropdown-link-hover-color:      			darken(@gray-dark, 5%);
+@dropdown-link-hover-bg:         			@gray-lightest;
+@dropdown-link-active-color:     			@component-active-color;
+@dropdown-link-active-bg:        			@component-active-bg;
+@dropdown-link-disabled-color:   			@gray-light;
+@dropdown-header-color:         			@gray-light;
+@dropdown-arrow-size: 						@arrow-size-base;
+@zindex-dropdown: 							20;
 
 // Media queries breakpoints
 // --------------------------------------------------

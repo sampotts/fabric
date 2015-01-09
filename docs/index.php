@@ -150,6 +150,7 @@
 					<p>All icons are inline SVG as recommended by <a href="http://css-tricks.com/svg-sprites-use-better-icon-fonts/" target="_blank">Chris Coyier</a></p>
 				</header>
 				<section class="col9">
+					<h5>Standard Icons</h5>
 					<ul class="list--icons">
 						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#air-play"></use></svg><span class="tooltip__tip">#air-play</span></li>
 						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#align-center"></use></svg><span class="tooltip__tip">#align-center</span></li>
@@ -282,7 +283,7 @@
 						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#zoom-in"></use></svg><span class="tooltip__tip">#zoom-in</span></li>
 						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#zoom-out"></use></svg><span class="tooltip__tip">#zoom-out</span></li>
 					</ul>
-					<p>Social</p>
+					<h5>Social Icons</h5>
 					<ul class="list--icons">
 						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#facebook"></use></svg><span class="tooltip__tip">#facebook</span></li>
 						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#twitter"></use></svg><span class="tooltip__tip">#twitter</span></li>
@@ -584,7 +585,7 @@
 					<p>Getting around</p>
 				</header>
 				<section class="col9">
-					<p>Navigation bar</p>
+					<h5>Navigation bar</h5>
 					<nav class="nav-bar">
 						<div class="logo">Logo</div>
 						<ul>
@@ -600,10 +601,30 @@
 							<li>
 								<a href="#nav-item-4">About</a>
 							</li>
+							<li class="dropdown">
+								<button class="faux-anchor dropdown__toggle dropdown__toggle--caret-after" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="false">Dropdown</button>
+								<ul class="dropdown__menu" role="menu" aria-labelledby="dropdownMenu1">
+									<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
+									<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
+									<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
+									<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+								</ul>
+							</li>
+							<li class="dropdown dropdown--user">
+								<button class="faux-anchor dropdown__toggle dropdown__toggle--caret-after" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-expanded="false">
+									<img src="https://s3.amazonaws.com/uifaces/faces/twitter/brad_frost/48.jpg" class="avatar">
+								</button>
+								<ul class="dropdown__menu" role="menu" aria-labelledby="dropdownMenu2">
+									<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
+									<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
+									<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
+									<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+								</ul>
+							</li>
 						</ul>
 					</nav>
 
-					<p>Tabs</p>
+					<h5>Tabs</h5>
 					<nav class="nav-tabs">
 						<ul>
 							<li>
@@ -632,6 +653,27 @@
 					<div class="tab-pane fade" id="tab-item-4">
 						<p>About content</p>
 					</div>
+
+					<h5>Dropdowns</h5>
+					<div class="dropdown">
+						<button class="faux-anchor dropdown__toggle dropdown__toggle--caret-after" type="button" id="dropdownMenu3" data-toggle="dropdown" aria-expanded="false">Dropdown</button>
+						<ul class="dropdown__menu" role="menu" aria-labelledby="dropdownMenu3">
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+						</ul>
+					</div>
+
+					<div class="dropdown">
+						<button class="btn dropdown__toggle dropdown__toggle--caret-before" type="button" id="dropdownMenu4" data-toggle="dropdown" aria-expanded="false">Dropdown</button>
+						<ul class="dropdown__menu" role="menu" aria-labelledby="dropdownMenu4">
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+						</ul>
+					</div>
 				</section>
 			</article>
 			<article id="nav" class="example row">
@@ -640,8 +682,7 @@
 					<p>Displaying tabular data nicely</p>
 				</header>
 				<section class="col9">
-					<p>Basic table</p>
-
+					<h5>Basic table</h5>
 					<div class="scroll-horizontal-sm">
 						<table class="table">
 							<thead>
@@ -675,7 +716,7 @@
 						</table>
 					</div>
 
-					<p>Striped table</p>
+					<h5>Striped table</h5>
 					<div class="scroll-horizontal-sm">
 						<table class="table table--striped">
 							<thead>
@@ -709,7 +750,7 @@
 						</table>
 					</div>
 
-					<p>Condensed table</p>
+					<h5>Condensed table</h5>
 					<div class="scroll-horizontal-sm">
 						<table class="table table--condensed">
 							<thead>
@@ -743,7 +784,7 @@
 						</table>
 					</div>
 
-					<p>Linked rows table</p>
+					<h5>Linked rows table</h5>
 					<div class="scroll-horizontal-sm">
 						<table class="table table--striped">
 							<thead>
