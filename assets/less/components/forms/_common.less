@@ -332,9 +332,9 @@ input.input-tiny       { width: 30px; padding: 0 3px; min-height: 0; text-align:
 
 // HTML5 invalid states
 // Shares styles with the .control-group.error above
-input:invalid,
-textarea:invalid,
-select:invalid {
+input:invalid:not(:empty),
+textarea:invalid:not(:empty),
+select:invalid:not(:empty) {
     color: @state-danger-text;
     border-color: @state-danger-text;
 
@@ -363,25 +363,25 @@ select:invalid {
 // ---------------------------------------------
 // Common properties
 // -----------------
-.form-inline label,
-.form-inline .btn-group,
-.form-inline .actions {
+.form--inline label,
+.form--inline .btn-group,
+.form--inline .actions {
     display: inline-block;
 }
 // Remove margin for input-group
-.form-inline .input-group {
+.form--inline .input-group {
     margin-bottom: 0;
 }
 // Inline checkbox/radio labels (remove padding on left)
-.form-inline .radio,
-.form-inline .checkbox {
+.form--inline .radio,
+.form--inline .checkbox {
     padding-left: 0;
     margin-bottom: 0;
     vertical-align: middle;
 }
 // Remove float and margin, set to inline-block
-.form-inline .radio input[type="radio"],
-.form-inline .checkbox input[type="checkbox"] {
+.form--inline .radio input[type="radio"],
+.form--inline .checkbox input[type="checkbox"] {
     float: left;
     margin-right: 3px;
     margin-left: 0;
@@ -442,7 +442,7 @@ select:invalid {
 
 // Inline-specific styles
 // ---------------------------------------------
-.form-inline .control-group {
+.form--inline .control-group {
     padding: 0;
     border: none;
     display: inline-block;
@@ -453,7 +453,7 @@ select:invalid {
 // ---------------------------------------------
 @media only screen 
 and (min-width : @screen-md) {
-    .form-horizontal {
+    .form--horizontal {
         // Clear floats
         .control-group {
             .clearfix();
