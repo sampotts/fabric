@@ -461,7 +461,7 @@
 							</div>
 						</fieldset>
 					</form>
-					<form method="post" action="#form-horizontal" class="form-horizontal" id="form-horizontal">
+					<form method="post" action="#form--horizontal" class="form--horizontal" id="form--horizontal">
 						<fieldset>
 							<legend class="h5">Horizontal Layout</legend>
 							<p>This layout will only be used for <code>@screen-md</code> and larger screen sizes.</p>
@@ -544,7 +544,7 @@
 							</div>
 						</fieldset>
 					</form>
-					<form method="post" action="#form-combo" id="form-combo">
+					<form method="post" action="#form--combo" id="form--combo">
 						<fieldset>
 							<legend class="h5">Combo Input</legend>
 							<div class="control-combo">
