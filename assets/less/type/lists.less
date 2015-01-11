@@ -2,15 +2,20 @@
 // List styles
 // ==========================================================================
 
+// Remove default styling
+ul, 
+ol {
+	list-style-type: none;
+}
 ul,
 ul li,
 ol,
 ol li {
-    list-style: none;
     margin: 0;
     padding: 0;
 }
 
+// Basic lists
 ul.list, 
 ol.list {
     margin: 0 0 @grid-section-padding;
@@ -24,6 +29,12 @@ ol.list {
 			margin-top: 0;
 		}
     }
+}
+ul.list {
+	list-style-type: disc;
+}
+ol.list {
+	list-style-type: decimal;
 }
 
 // Fancy lists
