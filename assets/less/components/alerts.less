@@ -27,6 +27,13 @@
 		height: 1.2em;
     	margin-right: 10px;
 	}
+	p {
+		margin: 0;
+
+		+ p {
+			margin-top: (@grid-section-padding / 2);
+		}
+	}
 
 	// Error alerts
 	&-error {
@@ -45,5 +52,16 @@
 		background-color: @state-info-bg;
 		border-color: @state-info-border;
 		color: @state-info-text;
+	}
+}
+
+// Page alerts
+.page-alerts {
+	margin-bottom: @grid-section-padding;
+
+	.alert {
+		margin: 0;
+		border: 0;
+		animation: fade-in-down .3s ease;
 	}
 }

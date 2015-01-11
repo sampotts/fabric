@@ -44,8 +44,8 @@
 	font-size: @font-size-base;
 	text-align: left; // Ensures proper alignment if parent has it changed (e.g., modal footer)
 	background-color: @dropdown-bg;
-	border: 2px solid @dropdown-border;
-	border-radius: @border-radius-base;
+	border: @dropdown-border-width solid @dropdown-border;
+	border-radius: @dropdown-border-radius;
 	box-shadow: 0 6px 12px rgba(0,0,0, .175);
 	background-clip: padding-box;
 
@@ -64,6 +64,15 @@
 			color: @dropdown-link-color;
 			white-space: nowrap; // prevent links from randomly breaking onto new lines
 			text-decoration: none;
+		}
+		&:first-child a {
+			border-radius: @dropdown-inner-border-radius @dropdown-inner-border-radius 0 0;
+		}
+		&:last-child a {
+			border-radius: 0 0 @dropdown-inner-border-radius @dropdown-inner-border-radius;
+		}
+		&:first-child:last-child a {
+			border-radius: @dropdown-inner-border-radius;
 		}
 	}
 }
