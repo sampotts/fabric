@@ -332,15 +332,15 @@ input.input-tiny       { width: 30px; padding: 0 3px; min-height: 0; text-align:
 
 // HTML5 invalid states
 // Shares styles with the .control-group.error above
-input:invalid:not(:empty),
-textarea:invalid:not(:empty),
-select:invalid:not(:empty) {
+input:focus:invalid,
+textarea:focus:invalid,
+select:focus:invalid {
     color: @state-danger-text;
     border-color: @state-danger-text;
 
-    &:focus {
+    /*&:focus {
         border-color: darken(@state-danger-text, 5%);
-    }
+    }*/
 }
 
 // Help blocks
