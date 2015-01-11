@@ -3,13 +3,14 @@
 // ==========================================================================
 
 // Defaults
-nav ul {
+// Used for .nav-bar and .nav-tabs (tabs.less)
+.nav {
     font-size: 0;
 
     > * {
         .font-size(@font-size-base);
     }
-    li {
+    > li {
         display: inline-block;
         margin: 0 (@grid-section-padding / 2) 0 0;
         padding: 0;
@@ -37,7 +38,7 @@ nav ul {
     border-bottom: 2px solid @section-border-color;
     
     .logo,
-    &__group {
+    .nav {
         text-align: center;
         
         @media (min-width : @screen-sm) {
@@ -54,7 +55,7 @@ nav ul {
             margin-bottom: 0;
         }
     }
-    &__group > li {
+    .nav > li {
         margin-top: (@grid-section-padding / 2);
         margin-bottom: (@grid-section-padding / 2);
 
@@ -100,7 +101,7 @@ nav ul {
             }
         }
     }
-    &__group--right {
+    .nav--right {
         float: right;
     }
 }

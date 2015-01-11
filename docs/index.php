@@ -588,7 +588,7 @@
 					<h5>Navigation bar</h5>
 					<nav class="nav-bar">
 						<div class="logo">Logo</div>
-						<ul class="nav-bar__group">
+						<ul class="nav">
 							<li>
 								<a href="#nav-item-1">Home</a>
 							</li>
@@ -611,12 +611,12 @@
 								</ul>
 							</li>
 						</ul>
-						<ul class="nav-bar__group nav-bar__group--right">
+						<ul class="nav nav--right">
 							<li class="dropdown dropdown--user">
 								<button class="faux-anchor dropdown__toggle dropdown__toggle--caret-after" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-expanded="false">
 									<img src="https://s3.amazonaws.com/uifaces/faces/twitter/brad_frost/48.jpg" class="avatar">
 								</button>
-								<ul class="dropdown__menu" role="menu" aria-labelledby="dropdownMenu2">
+								<ul class="dropdown__menu dropdown__menu--right" role="menu" aria-labelledby="dropdownMenu2">
 									<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
 									<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
 									<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
@@ -628,7 +628,7 @@
 
 					<h5>Tabs</h5>
 					<nav class="nav-tabs">
-						<ul>
+						<ul class="nav">
 							<li>
 								<a href="#tab-item-1" data-toggle="tab">Home</a>
 							</li>
