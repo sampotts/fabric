@@ -3,22 +3,22 @@
 // ==========================================================================
 
 // Defaults
-nav > ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+nav ul {
     font-size: 0;
 
     > * {
         .font-size(@font-size-base);
     }
-    > li {
+    li {
         display: inline-block;
         margin: 0 (@grid-section-padding / 2) 0 0;
         padding: 0;
 
         &:first-child {
             margin-left: (@grid-section-padding / 2);
+        }
+        &:last-child {
+            margin-right: 0;
         }
         > a,
         > .faux-anchor {
@@ -34,11 +34,10 @@ nav > ul {
     position: relative;
     padding-top: (@grid-section-padding / 2);
     padding-bottom: (@grid-section-padding / 2);
-    border: 1px solid @section-border-color;
-    border-width: 2px 0;
+    border-bottom: 2px solid @section-border-color;
     
     .logo,
-    > ul {
+    &__group {
         text-align: center;
         
         @media (min-width : @screen-sm) {
@@ -55,7 +54,7 @@ nav > ul {
             margin-bottom: 0;
         }
     }
-    > ul > li {
+    &__group > li {
         margin-top: (@grid-section-padding / 2);
         margin-bottom: (@grid-section-padding / 2);
 
@@ -100,5 +99,8 @@ nav > ul {
                 border-radius: @avatar-radius;
             }
         }
+    }
+    &__group--right {
+        float: right;
     }
 }

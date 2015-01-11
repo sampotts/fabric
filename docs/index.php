@@ -121,23 +121,23 @@
 
 					<p>This is a <em>default</em> paragraph. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla porta neque libero, at accumsan felis lacinia at. Duis sit amet ultrices ante, vitae rhoncus turpis. Curabitur at nunc vel justo porttitor bibendum quis in tortor. Praesent suscipit tristique purus quis dictum.</p>
 
-					<ul>
+					<ul class="list">
 						<li>List item 1</li>
 						<li>List item 2</li>
 						<li>List item 3</li>
 					</ul>
-					<ol>
+					<ol class="list">
 						<li>List item 1</li>
 						<li>List item 2</li>
 						<li>List item 3</li>
 					</ol>
 
-					<ul class="fancy">
+					<ul class="list list--fancy">
 						<li>List item 1</li>
 						<li>List item 2</li>
 						<li>List item 3</li>
 					</ul>					
-					<ol class="fancy">
+					<ol class="list list--fancy">
 						<li>List item 1</li>
 						<li>List item 2</li>
 						<li>List item 3</li>
@@ -588,7 +588,7 @@
 					<h5>Navigation bar</h5>
 					<nav class="nav-bar">
 						<div class="logo">Logo</div>
-						<ul>
+						<ul class="nav-bar__group">
 							<li>
 								<a href="#nav-item-1">Home</a>
 							</li>
@@ -610,6 +610,8 @@
 									<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
 								</ul>
 							</li>
+						</ul>
+						<ul class="nav-bar__group nav-bar__group--right">
 							<li class="dropdown dropdown--user">
 								<button class="faux-anchor dropdown__toggle dropdown__toggle--caret-after" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-expanded="false">
 									<img src="https://s3.amazonaws.com/uifaces/faces/twitter/brad_frost/48.jpg" class="avatar">

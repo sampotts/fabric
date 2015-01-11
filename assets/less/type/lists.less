@@ -2,15 +2,17 @@
 // List styles
 // ==========================================================================
 
-ul.unstyled,
-ol.unstyled {
+ul,
+ul li,
+ol,
+ol li {
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
-ul, 
-ol {
+ul.list, 
+ol.list {
     margin: 0 0 @grid-section-padding;
     padding: 0 0 0 (@line-height-computed + (@grid-section-padding / 4));
 
@@ -25,8 +27,8 @@ ol {
 }
 
 // Fancy lists
-ul.fancy,
-ol.fancy {
+ul.list--fancy,
+ol.list--fancy {
 	padding: 0;
 	list-style: none;
 
@@ -47,7 +49,7 @@ ol.fancy {
 }
 
 // Fancy styled ordered list
-ul.fancy li:before {
+ul.list--fancy li:before {
 	content: "";
 	height: (@line-height-computed / 4);
 	width: (@line-height-computed / 4);
@@ -55,7 +57,7 @@ ul.fancy li:before {
 }
 
 // Fancy styled ordered list
-ol.fancy {
+ol.list--fancy {
 	counter-reset: counter;
 
 	li:before {
@@ -71,4 +73,23 @@ ol.fancy {
 		font-weight: 600;
 		.font-smoothing(on);
 	}	
+}
+
+// Data lists 
+dl {
+	margin: 0 0 @grid-section-padding;
+
+	dd,
+	dt {
+		margin: 0;
+	}
+	dt {
+		margin-top: (@grid-section-padding / 2);
+		font-weight: @list-data-header-font-weight;
+		color: @list-data-header-color;
+
+		&:first-child {
+			margin-top: 0;
+		}
+	}
 }
