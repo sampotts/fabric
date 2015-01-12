@@ -297,6 +297,12 @@ input.input-tiny       { width: 30px; padding: 0 3px; min-height: 0; text-align:
     margin: 0;
     vertical-align: middle;
 
+    // Hide the default radio or checkbox
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: 0;
+    background: none;
+
     &::before,
     &::after {
         display: inline-block;
