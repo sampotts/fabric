@@ -136,9 +136,9 @@
 // Button counter
 // ---------------------------------------------
 .counter {
-	margin: 0 8px;
+	margin-left: (@button-counter-arrow-size * 2);
     position: relative;
-	.arrow(left, @gray-lighter, 4px);
+	.arrow(left, @button-counter-bg, @button-counter-arrow-size);
 	display: inline-block;
 	vertical-align: middle;
 	padding: @padding-base-vertical + 2 ceil(@padding-base-horizontal * 1.2);
@@ -198,6 +198,15 @@ button:focus,
         &:first-child {
             margin: 0;
         }
+    }
+    .btn--with-counter {
+    	display: inline-block;
+    	width: auto;
+    	margin-top: 0;
+
+    	& ~ .btn--with-counter {
+    		margin: 0 0 0 (@grid-section-padding / 2);
+    	}
     }
     @media (max-width : @screen-xs) {
         .pull-left,
