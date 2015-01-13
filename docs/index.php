@@ -289,6 +289,13 @@
 						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#twitter"></use></svg><span class="tooltip__tip">#twitter</span></li>
 						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#pinterest"></use></svg><span class="tooltip__tip">#pinterest</span></li>
 						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#googleplus"></use></svg><span class="tooltip__tip">#googleplus</span></li>
+						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#github"></use></svg><span class="tooltip__tip">#github</span></li>
+						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#dribbble"></use></svg><span class="tooltip__tip">#dribbble</span></li>
+						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#vimeo"></use></svg><span class="tooltip__tip">#vimeo</span></li>
+						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#linkedin"></use></svg><span class="tooltip__tip">#linkedin</span></li>
+						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#instagram"></use></svg><span class="tooltip__tip">#instagram</span></li>
+						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#dropbox"></use></svg><span class="tooltip__tip">#dropbox</span></li>
+						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#paypal"></use></svg><span class="tooltip__tip">#paypal</span></li>
 					</ul>
 				</section>
 			</article>
