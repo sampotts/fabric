@@ -387,13 +387,13 @@
 					</div>
 
 					<p>Counters</p>
-					<div class="example__actions">
+					<div class="actions example__actions">
 						<button type="button" class="btn btn--facebook btn--small"><svg class="icon icon--first"><use xlink:href="#facebook"></use></svg>Share</button>
 						<span class="counter">88</span>
 						<button type="button" class="btn btn--twitter btn--small"><svg class="icon icon--first"><use xlink:href="#twitter"></use></svg>Tweet</button>
 						<span class="counter">88</span>
 					</div>
-					<div class="example__actions">
+					<div class="actions example__actions">
 						<button type="button" class="btn btn--facebook"><svg class="icon icon--first"><use xlink:href="#facebook"></use></svg>Share</button>
 						<span class="counter">88</span>
 						<button type="button" class="btn btn--twitter"><svg class="icon icon--first"><use xlink:href="#twitter"></use></svg>Tweet</button>
