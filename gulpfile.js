@@ -24,7 +24,7 @@ var paths = {
     // Watch paths
     watchless: 		path.join(projectPath, "assets/less/**/*"),
     watchjs: 		path.join(projectPath, "assets/js/**/*"),
-    watchicons: 	path.join(projectPath, "assets/icons/**/*.svg"),
+    watchicons: 	path.join(projectPath, "lib/icomoon/SVG/*.svg"),
 
     // Output paths
     js:  			path.join(projectPath, "dist/js/"),
@@ -104,7 +104,7 @@ var taskName = taskNames.iconBuild + "svg";
 iconBuildTasks.push(taskName);
 
 gulp.task(taskName, function () {
-	gulp.src("assets/icons/*.svg")
+	gulp.src("lib/icomoon/SVG/*.svg")
 		.pipe(imagemin({
             progressive: true,
             use: [pngquant()]
@@ -117,11 +117,6 @@ gulp.task(taskName, function () {
 		        }
 		    },
 		    mode                : {
-		        view            : {         // Activate the «view» mode
-		            render      : {
-		                less    : true      // Activate Less output (with default options)
-		            }
-		        },
 		        symbol          : true      // Activate the «symbol» mode
 		    }
 		}))
