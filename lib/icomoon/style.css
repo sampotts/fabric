@@ -3,6 +3,14 @@
 	color: #000000;
 	fill: currentColor;
 }
+.icon-github {
+	width: 24px;
+	height: 24px;
+}
+.icon-vimeo {
+	width: 24px;
+	height: 24px;
+}
 .icon-twitter {
 	width: 24px;
 	height: 24px;
@@ -16,6 +24,26 @@
 	height: 24px;
 }
 .icon-pinterest {
+	width: 24px;
+	height: 24px;
+}
+.icon-linkedin {
+	width: 24px;
+	height: 24px;
+}
+.icon-dribbble {
+	width: 24px;
+	height: 24px;
+}
+.icon-instagram {
+	width: 24px;
+	height: 24px;
+}
+.icon-dropbox {
+	width: 24px;
+	height: 24px;
+}
+.icon-paypal {
 	width: 24px;
 	height: 24px;
 }
