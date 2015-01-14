@@ -13,8 +13,8 @@
 		<meta name="viewport" content="initial-scale=1,user-scalable=yes,maximum-scale=2" media="(device-height: 568px)">
 
 		<!-- Stylesheets -->
-		<link rel="stylesheet" href="../dist/css/fabric.css">
-		<link rel="stylesheet" href="../dist/css/docs.css">
+		<link rel="stylesheet" href="../dist/css/fabric.css?v=1">
+		<link rel="stylesheet" href="../dist/css/docs.css?v=1">
 
 		<!-- Modernizr -->
 		<script src="../dist/js/modernizr.js"></script>
