@@ -1,0 +1,30 @@
+{
+  "name": "fabric-css",
+  "description": "Yet another mobile first, simple CSS framework.",
+  "homepage": "https://github.com/sampotts/fabric",
+  "keywords": [
+    "CSS",
+    "Mobile First",
+    "Responsive",
+    "framework"
+  ],
+  "authors": [
+    "Sam Potts <me@sampotts.me>"
+  ],
+  "dependencies": {
+    "jquery": ">=1.7"
+  },
+  "main": [
+    "fabric.css"
+  ],
+  "ignore": [
+    "node_modules",
+    "bower_components",
+    ".gitignore"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/sampotts/fabric.git"
+  },
+  "license": "MIT"
+}
