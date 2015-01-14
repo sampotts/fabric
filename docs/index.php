@@ -289,6 +289,13 @@
 						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#twitter"></use></svg><span class="tooltip__tip">#twitter</span></li>
 						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#pinterest"></use></svg><span class="tooltip__tip">#pinterest</span></li>
 						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#googleplus"></use></svg><span class="tooltip__tip">#googleplus</span></li>
+						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#github"></use></svg><span class="tooltip__tip">#github</span></li>
+						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#dribbble"></use></svg><span class="tooltip__tip">#dribbble</span></li>
+						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#vimeo"></use></svg><span class="tooltip__tip">#vimeo</span></li>
+						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#linkedin"></use></svg><span class="tooltip__tip">#linkedin</span></li>
+						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#instagram"></use></svg><span class="tooltip__tip">#instagram</span></li>
+						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#dropbox"></use></svg><span class="tooltip__tip">#dropbox</span></li>
+						<li class="tooltip tooltip--hover"><svg class="icon"><use xlink:href="#paypal"></use></svg><span class="tooltip__tip">#paypal</span></li>
 					</ul>
 				</section>
 			</article>
@@ -380,17 +387,25 @@
 					</div>
 
 					<p>Counters</p>
-					<div class="example__actions">
-						<button type="button" class="btn btn--facebook btn--small"><svg class="icon icon--first"><use xlink:href="#facebook"></use></svg>Share</button>
-						<span class="counter">88</span>
-						<button type="button" class="btn btn--twitter btn--small"><svg class="icon icon--first"><use xlink:href="#twitter"></use></svg>Tweet</button>
-						<span class="counter">88</span>
+					<div class="actions example__actions">
+						<span class="btn--with-counter">
+							<button type="button" class="btn btn--facebook btn--small"><svg class="icon icon--first"><use xlink:href="#facebook"></use></svg>Share</button>
+							<span class="counter">88</span>
+						</span>
+						<span class="btn--with-counter">
+							<button type="button" class="btn btn--twitter btn--small"><svg class="icon icon--first"><use xlink:href="#twitter"></use></svg>Tweet</button>
+							<span class="counter">88</span>
+						</span>
 					</div>
-					<div class="example__actions">
-						<button type="button" class="btn btn--facebook"><svg class="icon icon--first"><use xlink:href="#facebook"></use></svg>Share</button>
-						<span class="counter">88</span>
-						<button type="button" class="btn btn--twitter"><svg class="icon icon--first"><use xlink:href="#twitter"></use></svg>Tweet</button>
-						<span class="counter">88</span>
+					<div class="actions example__actions">
+						<span class="btn--with-counter">
+							<button type="button" class="btn btn--facebook"><svg class="icon icon--first"><use xlink:href="#facebook"></use></svg>Share</button>
+							<span class="counter">88</span>
+						</span>
+						<span class="btn--with-counter">
+							<button type="button" class="btn btn--twitter"><svg class="icon icon--first"><use xlink:href="#twitter"></use></svg>Tweet</button>
+							<span class="counter">88</span>
+						</span>
 					</div>
 
 					<p>Pagination</p>

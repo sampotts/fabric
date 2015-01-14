@@ -67,6 +67,9 @@
 	&--google-plus {
 		.btn-styles(@color-google-plus);
 	}
+	&--dribbble {
+		.btn-styles(@color-dribbble);
+	}
 
 	// Sizes
 	// --------------------------------------------------
@@ -133,23 +136,26 @@
 // Button counter
 // ---------------------------------------------
 .counter {
-	margin: 0 8px;
+	margin-left: (@button-counter-arrow-size * 2);
     position: relative;
-	.arrow(left, @gray-lighter, 4px);
+	.arrow(left, @button-counter-bg, @button-counter-arrow-size);
 	display: inline-block;
 	vertical-align: middle;
 	padding: @padding-base-vertical + 2 ceil(@padding-base-horizontal * 1.2);
 	
-	background: @gray-lighter;
+	background: @button-counter-bg;
 	border-radius: @button-radius;
 
 	font-weight: 600;
 	.font-smoothing(on);
-	color: @gray-dark;
+	color: @button-counter-color;
 }
 .btn--small + .counter {
 	padding: @padding-small-vertical + 2 ceil(@padding-small-horizontal * 1.2);
 	.font-size(@font-size-small);
+}
+.btn--with-counter {
+	white-space: nowrap;
 }
 
 // Style <button> elements to look like anchors
@@ -184,18 +190,20 @@ button:focus,
     > * {
     	.font-size(@font-size-base);
     }
-    .btn {
+    .btn--small {
+        .font-size(@font-size-small);
+    }
+    > .btn,
+    > .btn--with-counter {
         display: block;
         width: 100%;
         margin: @grid-section-padding / 2 0 0;   
         
-        &--small {
-            .font-size(@font-size-small);
-        }
         &:first-child {
             margin: 0;
         }
     }
+
     @media (max-width : @screen-xs) {
         .pull-left,
         .pull-right {
@@ -203,12 +211,14 @@ button:focus,
         }
     }
     @media (min-width : @screen-xs) {
-        .btn {
+        > .btn,
+    	> .btn--with-counter {
             display: inline-block; 
             width: auto;
             margin: 0;
         }
-        .btn + .btn {
+        > .btn ~ .btn,
+        > .btn--with-counter ~ .btn--with-counter {
             margin: 0 0 0 @grid-section-padding;
             
             &.pull-left,

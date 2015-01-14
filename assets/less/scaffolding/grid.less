@@ -7,10 +7,13 @@
 body {
     min-width: @body-min-width;
 }
-.container {
-    max-width: @container-max-width;
+.container,
+.container--fluid {
     padding-left: @grid-gutter-width;
     padding-right: @grid-gutter-width;
+}
+.container {
+    max-width: @container-max-width;
     margin-right: auto;
     margin-left: auto;
 }
