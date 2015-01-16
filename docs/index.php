@@ -13,8 +13,8 @@
 		<meta name="viewport" content="initial-scale=1,user-scalable=yes,maximum-scale=2" media="(device-height: 568px)">
 
 		<!-- Stylesheets -->
-		<link rel="stylesheet" href="../dist/css/fabric.css">
-		<link rel="stylesheet" href="../dist/css/docs.css">
+		<link rel="stylesheet" href="../dist/css/fabric.css?v=1">
+		<link rel="stylesheet" href="../dist/css/docs.css?v=1">
 
 		<!-- Modernizr -->
 		<script src="../dist/js/modernizr.js"></script>
@@ -388,16 +388,24 @@
 
 					<p>Counters</p>
 					<div class="actions example__actions">
-						<button type="button" class="btn btn--facebook btn--small btn--with-counter"><svg class="icon icon--first"><use xlink:href="#facebook"></use></svg>Share</button>
-						<span class="counter">88</span>
-						<button type="button" class="btn btn--twitter btn--small btn--with-counter"><svg class="icon icon--first"><use xlink:href="#twitter"></use></svg>Tweet</button>
-						<span class="counter">88</span>
+						<span class="btn--with-counter">
+							<button type="button" class="btn btn--facebook btn--small"><svg class="icon icon--first"><use xlink:href="#facebook"></use></svg>Share</button>
+							<span class="counter">88</span>
+						</span>
+						<span class="btn--with-counter">
+							<button type="button" class="btn btn--twitter btn--small"><svg class="icon icon--first"><use xlink:href="#twitter"></use></svg>Tweet</button>
+							<span class="counter">88</span>
+						</span>
 					</div>
 					<div class="actions example__actions">
-						<button type="button" class="btn btn--facebook btn--with-counter"><svg class="icon icon--first"><use xlink:href="#facebook"></use></svg>Share</button>
-						<span class="counter">88</span>
-						<button type="button" class="btn btn--twitter btn--with-counter"><svg class="icon icon--first"><use xlink:href="#twitter"></use></svg>Tweet</button>
-						<span class="counter">88</span>
+						<span class="btn--with-counter">
+							<button type="button" class="btn btn--facebook"><svg class="icon icon--first"><use xlink:href="#facebook"></use></svg>Share</button>
+							<span class="counter">88</span>
+						</span>
+						<span class="btn--with-counter">
+							<button type="button" class="btn btn--twitter"><svg class="icon icon--first"><use xlink:href="#twitter"></use></svg>Tweet</button>
+							<span class="counter">88</span>
+						</span>
 					</div>
 
 					<p>Pagination</p>
