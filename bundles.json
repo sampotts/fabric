@@ -5,6 +5,7 @@
 	},
 	"js": {
 		"modernizr.js": ["assets/js/vendor/modernizr.custom.js"],
+		"jquery.js": 	["assets/js/vendor/jquery-2.1.3.js"],
 		"fabric.js": 	[
 			"assets/js/plugins/bootstrap/transition.js",
 			"assets/js/plugins/bootstrap/collapse.js",
