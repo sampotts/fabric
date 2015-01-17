@@ -37,7 +37,7 @@ var paths = {
 taskNames = {    
     lessBuild: 	"less-",
     jsBuild: 	"js-",
-    svgBuild: 	"svg-build",
+    iconBuild: 	"icon-build",
 },
 // Task arrays
 lessBuildTasks 	= [],
@@ -86,13 +86,13 @@ for (var key in bundles.less) {
 	})(key);
 }
 
-// Process SVG
-gulp.task(taskNames.svgBuild, function () {
+// Process Icons
+gulp.task(taskNames.iconBuild, function () {
 	gulp
 		.src(paths.svg)
 		.pipe(svgmin())
         .pipe(svgstore({ 
-        	prefix: 	"svg-",
+        	prefix: 	"icon-",
         	fileName: 	"sprite.svg"
         }))
 	    .pipe(gulp.dest(paths.icons));
@@ -100,7 +100,7 @@ gulp.task(taskNames.svgBuild, function () {
 
 // Default gulp task
 gulp.task("default", function(){
-	runSequence(jsBuildTasks.concat(lessBuildTasks, taskNames.svgBuild, "watch"));
+	runSequence(jsBuildTasks.concat(lessBuildTasks, taskNames.iconBuild, "watch"));
 });
 
 // Watch for file changes
