@@ -18,6 +18,7 @@
 }
 .example__grid {
 	margin-top: (@grid-section-padding * .75);
+	margin-bottom: @grid-section-padding;
 
 	&:first-child {
 		margin-top: 0;
@@ -34,11 +35,7 @@
 		.font-smoothing(on);
 
 		transition: background .3s ease, color .3s ease;
-
-		&[class*=" pull"] {
-			background-color: @gray-light;
-			color: #fff;
-		}
+		
 		&:hover {
 			background: @gray;
 			color: #fff;
