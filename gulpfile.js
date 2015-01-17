@@ -13,9 +13,8 @@ var fs 			= require("fs"),
 	minifyCss 	= require("gulp-minify-css"),
 	runSequence = require("run-sequence"),
 	prefix 		= require("gulp-autoprefixer"),
-	svgSprite   = require("gulp-svg-sprite"),
-	imagemin 	= require("gulp-imagemin"),
-	pngquant 	= require("imagemin-pngquant");
+	svgstore 	= require("gulp-svgstore"),
+	svgmin 		= require("gulp-svgmin");
 
 var projectPath = __dirname;
 var paths = {
@@ -24,56 +23,43 @@ var paths = {
     // Watch paths
     watchless: 		path.join(projectPath, "assets/less/**/*"),
     watchjs: 		path.join(projectPath, "assets/js/**/*"),
-    watchicons: 	path.join(projectPath, "lib/icomoon/SVG/*.svg"),
+
+    // SVG Icons
+   	svg: 			path.join(projectPath, "lib/icomoon/SVG/*.svg"),
 
     // Output paths
     js:  			path.join(projectPath, "dist/js/"),
     css:  			path.join(projectPath, "dist/css/"),
-    icons:  		path.join(projectPath, "dist/icons/")
+    icons:  		path.join(projectPath, "dist/svg/")
 },
 
 // Task names
 taskNames = {    
     lessBuild: 	"less-",
     jsBuild: 	"js-",
-    iconBuild: 	"icon-"
+    svgBuild: 	"svg-build",
 },
-
 // Task arrays
 lessBuildTasks 	= [],
 jsBuildTasks 	= [],
-iconBuildTasks 	= [],
 
 // Fetch bundles from JSON
-lessBundles 	= load(path.join(paths.project, "bundles_less.json")),
-jsBundles 		= load(path.join(paths.project, "bundles_js.json"));
+bundles = loadJSON(path.join(paths.project, "bundles.json"));
 
-// Load json and add project path to every file in every bundle
-function load(bundlePath){
-    var json = JSON.parse(fs.readFileSync(bundlePath));
-	var result = {};
-	
-    // Append project directory to asset path
-	for (var key in json) {
-		var files = [];
-		
-		json[key].forEach(function (asset) {
-            files.push(path.join(paths.project, asset));
-		});
-
-		result[key] = files;
-	}
-	return result;
+// Load json
+function loadJSON(path) {
+    return JSON.parse(fs.readFileSync(path));
 }
 
 // Process JS 
-for (var key in jsBundles) {
+for (var key in bundles.js) {
 	(function(key) {
 	    var taskName = taskNames.jsBuild + key;
 	    jsBuildTasks.push(taskName);
 
 	    gulp.task(taskName, function () {
-	        return gulp.src(jsBundles[key])
+	        return gulp
+	        	.src(bundles.js[key])
 				.pipe(concat(key))
 	            .pipe(uglify())
 	            .pipe(gulp.dest(paths.js));
@@ -82,13 +68,14 @@ for (var key in jsBundles) {
 }
 
 // Process CSS
-for (var key in lessBundles) {
+for (var key in bundles.less) {
     (function (key) {		
 	    var taskName = taskNames.lessBuild + key;
 	    lessBuildTasks.push(taskName);
 
 	    gulp.task(taskName, function () {
-			return gulp.src(lessBundles[key])
+			return gulp
+				.src(bundles.less[key])
 				.pipe(less())
 				.on("error", gutil.log)
 				.pipe(concat(key))
@@ -100,43 +87,24 @@ for (var key in lessBundles) {
 }
 
 // Process SVG
-var taskName = taskNames.iconBuild + "svg";
-iconBuildTasks.push(taskName);
-
-gulp.task(taskName, function () {
-	gulp.src("lib/icomoon/SVG/*.svg")
-		.pipe(imagemin({
-            progressive: true,
-            use: [pngquant()]
+gulp.task(taskNames.svgBuild, function () {
+	gulp
+		.src(paths.svg)
+		.pipe(svgmin())
+        .pipe(svgstore({ 
+        	fileName: "icons.svg"
         }))
-	    .pipe(svgSprite({
-		    shape               : {
-		        dimension       : {         // Set maximum dimensions
-		            maxWidth    : 24,
-		            maxHeight   : 24
-		        }
-		    },
-		    mode                : {
-		        symbol          : true      // Activate the «symbol» mode
-		    }
-		}))
 	    .pipe(gulp.dest(paths.icons));
 });
 
-/*
-default: 
-    - less -> min css
-    - js -> min js
-    - output files
-    run "gulp"
-*/
+// Default gulp task
 gulp.task("default", function(){
-	runSequence(jsBuildTasks.concat(lessBuildTasks, iconBuildTasks, "watch"));
+	runSequence(jsBuildTasks.concat(lessBuildTasks, taskNames.svgBuild, "watch"));
 });
 
 // Watch for file changes
 gulp.task("watch", function () {
     gulp.watch(paths.watchless, lessBuildTasks);
     gulp.watch(paths.watchjs, jsBuildTasks);
-    gulp.watch(paths.watchicons, iconBuildTasks);
+    gulp.watch(paths.watchicons, taskNames.iconBuild);
 });

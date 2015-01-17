@@ -1,0 +1,21 @@
+{
+	"less": {
+		"fabric.css": 	["assets/less/_fabric.less"],
+		"docs.css": 	["assets/less/_docs.less"]
+	},
+	"js": {
+		"modernizr.js": ["assets/js/vendor/modernizr.custom.js"],
+		"fabric.js": 	[
+			"assets/js/plugins/bootstrap/transition.js",
+			"assets/js/plugins/bootstrap/collapse.js",
+			"assets/js/plugins/bootstrap/tab.js",
+			"assets/js/plugins/bootstrap/dropdown.js",
+			"assets/js/polyfill/polyfills.js",
+			"assets/js/ui.js"
+		],
+		"docs.js": 		[
+			"assets/js/plugins/prism.js",
+			"assets/js/plugins/ZeroClipboard.js"
+		]
+	}
+}

@@ -6,14 +6,12 @@
     "CSS",
     "Mobile First",
     "Responsive",
-    "framework"
+    "Framework"
   ],
   "authors": [
     "Sam Potts <me@sampotts.me>"
   ],
-  "dependencies": {
-    "jquery": ">=1.7"
-  },
+  "dependencies": {},
   "main": [
     "fabric.css"
   ],

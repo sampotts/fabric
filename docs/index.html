@@ -20,9 +20,6 @@
 		<script src="../dist/js/modernizr.js"></script>
 	</head>
 	<body>
-		<!-- SVG defs -->
-		<div style="display:none"><?php include_once(getcwd() . "/../dist/icons/symbol/svg/sprite.symbol.svg"); ?></div>
-
 		<header class="header">
 			<div class="container">
 				<h1 class="turbo">Fabric.css</h1>
@@ -853,6 +850,20 @@
 		<footer class="container">
 			<p>&copy; Sam Potts</p>
 		</footer>
+		<!-- Load SVG defs -->
+		<script>
+		(function(d,p){
+			var a = new XMLHttpRequest(), b = d.body;
+			a.open("GET", p, !0);
+			a.send();
+			a.onload = function(){ 
+				var c = d.createElement("div"); 
+				c.style.display = "none"; 
+				c.innerHTML = a.responseText;
+				b.insertBefore(c,b.childNodes[0]);
+			}
+		})(document,"../dist/svg/icons.svg");		
+		</script>
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 		<script src="../dist/js/fabric.js"></script>
 	</body>
