@@ -9,8 +9,8 @@ body {
 }
 .container,
 .container--fluid {
-    padding-left: @grid-gutter-width;
-    padding-right: @grid-gutter-width;
+    padding-left: @container-gutter-width;
+    padding-right: @container-gutter-width;
 }
 .container {
     max-width: @container-max-width;
@@ -18,42 +18,43 @@ body {
     margin-left: auto;
 }
 
-// Settings 
-@gutter: 2.75%;    // - distance between columns
-@grid-size: 12; // - num of columns
-
-// same size columns
-.cols (@num, @in-gutter: @gutter, @global-gutter: @gutter) {
-    .syntax();
-    @col-size: (@width / @grid-size); 
-    @cols: (@width / (@col-size * @num-of-cols));
-    float: left;
-    width: (@width - (@global-gutter * (@cols - 1))) / @cols;
-    margin-right: @in-gutter; 
-}
-
-.span(@cols) { 
-    width: (100 / @grid-size)
-}
-.offset(@cols) {
-
-}
-
 // Grid
 // -----------------------------------------------
+// Calculate column width
+.col-width(@columns) {
+    @column: (100 / ((100 / @grid-columns) * @columns));
+    @width: (100 - (@grid-gutter-width * (@column - 1))) / @column;    
+}
+
+// Generate columns
+.colX(@index) when (@index > 0) {
+    .col@{index} { 
+        .col-width(@index);
+        width: @width; 
+    }
+    .colX(@index - 1);
+}
+.colX(0) {}
+
+// Pull columns over
+.pullX(@index) when (@index > 0) {
+    .col-width(@index);
+
+    &.pull@{index} { 
+        //.pull(@index); 
+        margin-left: @width + (@grid-gutter-width * 2);
+
+        &:first-child {
+            margin-left: @width + @grid-gutter-width;
+        }
+    }
+    .pullX(@index - 1);
+}
+.pullX(0) {}
+
 @media (min-width: @bp-grid) {
-    // Setup widths
-    .col1  { .span(1);  }
-    .col2  { width: 14.364640883%; }
-    .col3  { width: 22.928176794%; }
-    .col4  { width: 31.491712705%; }
-    .col5  { width: 40.055248616%; }
-    .col6  { width: 48.618784527%; }
-    .col7  { width: 57.182320438000005%; }
-    .col8  { width: 65.74585634900001%; }
-    .col9  { width: 74.30939226%; }
-    .col10 { width: 82.87292817100001%; }
-    .col11 { width: 91.436464082%; }
+    // Generate columns
+    .colX(@grid-columns);
     
     // Setup the rows
     .row { 
@@ -61,25 +62,15 @@ body {
 
         & > [class^="col"] {
         	float: left;
-        	margin-left: 2.762430939%;
+            margin-left: @grid-gutter-width;
         
             // First child has no margin, or first in row
             &:first-child {
             	margin-left: 0;
             }
 
-            // Setup offsets
-            &.push1  { margin-left: 5.801104972%; }
-            &.push2  { margin-left: 14.364640883%; }
-            &.push3  { margin-left: 22.928176794%; }
-            &.push4  { margin-left: 31.491712705%; }
-            &.push5  { margin-left: 40.055248616%; }
-            &.push6  { margin-left: 48.618784527%; }
-            &.push7  { margin-left: 57.182320438000005%; }
-            &.push8  { margin-left: 65.74585634900001%; }
-            &.push9  { margin-left: 74.30939226%; }
-            &.push10 { margin-left: 82.87292817100001%; }
-            &.push11 { margin-left: 91.436464082%; }
+            // Pull a column
+            .pullX(@grid-columns);
         }
     }
 }
