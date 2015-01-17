@@ -92,7 +92,8 @@ gulp.task(taskNames.svgBuild, function () {
 		.src(paths.svg)
 		.pipe(svgmin())
         .pipe(svgstore({ 
-        	fileName: "icons.svg"
+        	prefix: 	"svg-",
+        	fileName: 	"sprite.svg"
         }))
 	    .pipe(gulp.dest(paths.icons));
 });
