@@ -18,11 +18,32 @@ body {
     margin-left: auto;
 }
 
+// Settings 
+@gutter: 2.75%;    // - distance between columns
+@grid-size: 12; // - num of columns
+
+// same size columns
+.cols (@num, @in-gutter: @gutter, @global-gutter: @gutter) {
+    .syntax();
+    @col-size: (@width / @grid-size); 
+    @cols: (@width / (@col-size * @num-of-cols));
+    float: left;
+    width: (@width - (@global-gutter * (@cols - 1))) / @cols;
+    margin-right: @in-gutter; 
+}
+
+.span(@cols) { 
+    width: (100 / @grid-size)
+}
+.offset(@cols) {
+
+}
+
 // Grid
 // -----------------------------------------------
 @media (min-width: @bp-grid) {
     // Setup widths
-    .col1  { width: 5.801104972%;  }
+    .col1  { .span(1);  }
     .col2  { width: 14.364640883%; }
     .col3  { width: 22.928176794%; }
     .col4  { width: 31.491712705%; }
@@ -46,6 +67,19 @@ body {
             &:first-child {
             	margin-left: 0;
             }
+
+            // Setup offsets
+            &.push1  { margin-left: 5.801104972%; }
+            &.push2  { margin-left: 14.364640883%; }
+            &.push3  { margin-left: 22.928176794%; }
+            &.push4  { margin-left: 31.491712705%; }
+            &.push5  { margin-left: 40.055248616%; }
+            &.push6  { margin-left: 48.618784527%; }
+            &.push7  { margin-left: 57.182320438000005%; }
+            &.push8  { margin-left: 65.74585634900001%; }
+            &.push9  { margin-left: 74.30939226%; }
+            &.push10 { margin-left: 82.87292817100001%; }
+            &.push11 { margin-left: 91.436464082%; }
         }
     }
 }

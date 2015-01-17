@@ -2,18 +2,20 @@
 // Base styles
 // ==========================================================================
 
-*,
-*:after,
-*:before {
-    box-sizing: border-box;
-}
-
-// Allow for header-takeover
 html, 
 body {
 	height: 100%;
 }
-
+html {
+	box-sizing: border-box;
+}
+// Inherit box sizing
+// http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+*,
+*:after,
+*:before {
+    box-sizing: inherit;
+}
 body {
     background: @body-bg;
 }
