@@ -1,6 +1,3 @@
-# Fabric
+# Fabric.css
 
-#### To do
-- More button styles (danger, etc)
-- Right aligned nav in .nav-bar
-- Data lists
+More info coming soon...
