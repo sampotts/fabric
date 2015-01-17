@@ -309,10 +309,10 @@
 					<p>Warnings, errors, success and info alert messages</p>
 				</header>
 				<section class="col9">
-					<div class="alert" role="alert"><svg class="icon"><use xlink:href="#icon-cross"></use></svg>This is a default warning alert</div>
+					<div class="alert" role="alert"><svg class="icon"><use xlink:href="#icon-cross"></use></svg>This is a warning alert (default)</div>
 					<div class="alert alert-error" role="alert"><svg class="icon"><use xlink:href="#icon-cross"></use></svg>This is an error alert</div>
 					<div class="alert alert-success" role="alert"><svg class="icon"><use xlink:href="#icon-check"></use></svg>This is a success alert</div>
-					<div class="alert alert-info" role="alert"><svg class="icon"><use xlink:href="#icon-help"></use></svg>This is an info alert</div>
+					<div class="alert alert-info" role="alert"><svg class="icon"><use xlink:href="#icon-check"></use></svg>This is an info alert</div>
 				</section>
 			</article>
 			<article id="buttons" class="example row">
@@ -339,17 +339,19 @@
 
 					<h5>Buttons</h5>
 					<p>You can use a &lt;button&gt; element&hellip;</p>
-					<div class="actions example__actions">					
+					<div class="actions example__actions">		
+						<button type="button" class="btn">Default</button>			
 						<button type="button" class="btn btn--primary">Primary</button>
 						<button type="button" class="btn btn--secondary">Secondary</button>
-						<button type="button" class="btn">Default</button>
+						<button type="button" class="btn btn--danger">Danger</button>
 					</div>
 
 					<p>&hellip; or an &lt;a&gt; element</p>
 					<div class="actions example__actions">	
+						<a href="#" class="btn">Default</a>
 						<a href="#" class="btn btn--primary">Primary</a>
 						<a href="#" class="btn btn--secondary">Secondary</a>
-						<a href="#" class="btn">Default</a>
+						<a href="#" class="btn btn--danger">Danger</a>
 					</div>
 
 					<p>With icons</p>
@@ -361,9 +363,10 @@
 
 					<p>Small version</p>
 					<div class="actions example__actions">
+						<button type="button" class="btn btn--small">Default</button>
 						<button type="button" class="btn btn--primary btn--small">Primary</button>
 						<button type="button" class="btn btn--secondary btn--small">Secondary</button>
-						<button type="button" class="btn btn--small">Default</button>
+						<button type="button" class="btn btn--danger btn--small">Danger</button>
 					</div>
 
 					<p>With icons</p>
@@ -388,6 +391,8 @@
 						<button type="button" class="btn btn--twitter"><svg class="icon icon--first"><use xlink:href="#icon-twitter"></use></svg>Twitter</button>
 						<button type="button" class="btn btn--pinterest"><svg class="icon icon--first"><use xlink:href="#icon-pinterest"></use></svg>Pinterest</button>
 						<button type="button" class="btn btn--google-plus"><svg class="icon icon--first"><use xlink:href="#icon-googleplus"></use></svg>Google&plus;</button>
+						<button type="button" class="btn btn--dribbble"><svg class="icon icon--first"><use xlink:href="#icon-dribbble"></use></svg>Dribbble</button>
+						<button type="button" class="btn btn--github"><svg class="icon icon--first"><use xlink:href="#icon-github"></use></svg>Github</button>
 					</div>
 
 					<p>Counters</p>
