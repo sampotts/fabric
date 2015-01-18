@@ -33,8 +33,8 @@
 @gray-dark:							        #7f8c8d;
 @gray:			                            #95a5a6;
 @gray-light:					        	#bdc3c7;
-@gray-lighter:					        	mix(@gray-light, @gray-lightest, 30%);
 @gray-lightest:								#ecf0f1;
+@gray-lighter:					        	mix(@gray-light, @gray-lightest, 30%);
 @off-white:						        	#fbfbfb;
 
 // Brands
@@ -144,20 +144,6 @@
 @image-background:                          @gray-lightest;
 @avatar-radius: 							@border-radius-base;
 
-// Loaders
-// --------------------------------------------------
-@loader-size-base:                      	24px;
-@loader-size-small:                     	16px;
-@loader-size-large:                     	32px;
-@loader-bg-base:                        	@gray-lightest;
-@loader-bg:                        			@brand-primary;
-@loader-border-width-base:              	3px;
-@loader-border-width-small:                	2px;
-
-@loader-btn-bg:                         	@button-color;
-@loader-btn-size-base:                  	@loader-size-base;
-@loader-btn-size-sm:                    	@loader-size-small;
-
 // Logos
 // --------------------------------------------------
 @logo-selz:                                 url("//d33i624pw6jj68.cloudfront.net/themes/classic/static/images/selz.svg");
@@ -198,6 +184,20 @@
 @button-counter-arrow-size: 				4px;
 @button-counter-bg: 						@gray-lighter;
 @button-counter-color: 						@gray-dark;
+
+// Loaders
+// --------------------------------------------------
+@loader-size-base:                      	24px;
+@loader-size-small:                     	16px;
+@loader-size-large:                     	32px;
+@loader-bg-base:                        	@gray-lightest;
+@loader-bg:                        			@brand-primary;
+@loader-border-width-base:              	3px;
+@loader-border-width-small:                	2px;
+
+@loader-btn-bg:                         	@button-color;
+@loader-btn-size-base:                  	@loader-size-base;
+@loader-btn-size-sm:                    	@loader-size-small;
 
 // Navigation
 // --------------------------------------------------
@@ -243,21 +243,28 @@
 
 // Checkboxes & Radios
 // --------------------------------------------------
+@checkbox-padding: 							2px;
 @checkbox-width: 							50px;
 @checkbox-height: 							24px;
-@checkbox-padding: 							2px;
 @checkbox-handle-size: 						@checkbox-height - (@checkbox-padding * 2);
+@checkbox-small-width: 						40px;
+@checkbox-small-height: 					18px;
+@checkbox-small-handle-size: 				@checkbox-small-height - (@checkbox-padding * 2);
 @checkbox-handle-bg: 						#fff;
 @checkbox-control-bg-off:                 	@gray-light;
 @checkbox-control-background-on:          	@component-active-bg;
 
 @radio-width: 								24px;
 @radio-height: 								24px;
+@radio-checked-width: 						(@radio-width / 2);
+@radio-checked-height: 						(@radio-height / 2);
+@radio-small-width: 						20px;
+@radio-small-height: 						20px;
+@radio-small-checked-width: 				(@radio-small-width / 2);
+@radio-small-checked-height: 				(@radio-small-height / 2);
 @radio-bg: 									#fff;
 @radio-border-width: 						2px;
 @radio-border-color:                 		@gray-light;
-@radio-checked-width: 						(@radio-width / 2);
-@radio-checked-height: 						(@radio-height / 2);
 @radio-checked-bg:          				@component-active-bg;
 
 // Form states and alerts

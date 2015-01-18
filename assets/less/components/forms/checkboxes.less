@@ -12,7 +12,6 @@
         height: @checkbox-height;
         background: @checkbox-control-bg-off;
     }
-
     // The handle
     &::after {
         width: @checkbox-handle-size;
@@ -21,7 +20,6 @@
         left: @checkbox-padding;
         background: @checkbox-handle-bg;
     }
-
     // Active state
     &:checked::before {
         background: @checkbox-control-background-on;
@@ -30,7 +28,32 @@
         transform: translateX(@checkbox-width - @checkbox-handle-size - (@checkbox-padding * 2));
     }
 }
-
+// Fallback
 .no-csstransforms.inputgeneratedcontent .checkbox [type="checkbox"]:checked::after {
     left: @checkbox-width - @checkbox-handle-size;
+}
+
+// Small version (extends .checkbox)
+.inputgeneratedcontent .checkbox--small [type="checkbox"] {
+    width: @checkbox-small-width;
+    height: @checkbox-small-height;
+
+    // The background
+    &::before {
+        width: @checkbox-small-width;
+        height: @checkbox-small-height;
+    }
+    // The handle
+    &::after {
+        width: @checkbox-small-handle-size;
+        height: @checkbox-small-handle-size;
+    }
+    // Active state
+    &:checked::after {
+        transform: translateX(@checkbox-small-width - @checkbox-small-handle-size - (@checkbox-padding * 2));
+    }
+}
+// Fallback
+.no-csstransforms.inputgeneratedcontent .checkbox--small [type="checkbox"]:checked::after {
+    left: @checkbox-small-width - @checkbox-small-handle-size;
 }

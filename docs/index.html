@@ -7,10 +7,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		
 		<!-- Mobile meta -->
-		<!-- standard viewport tag to set the viewport to the device's width, Android 2.3 devices need this so 100% width works properly and	doesn't allow children to blow up the viewport width-->
-		<meta name="viewport" content="initial-scale=1,user-scalable=yes,maximum-scale=2,width=device-width">
-		<!-- width=device-width causes the iPhone 5 to letterbox the app, so we want to exclude it for iPhone 5 to allow full screen apps -->
-		<meta name="viewport" content="initial-scale=1,user-scalable=yes,maximum-scale=2" media="(device-height: 568px)">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 
 		<!-- Stylesheets -->
 		<link rel="stylesheet" href="../dist/css/fabric.css?v=1">
@@ -529,16 +526,46 @@
 								</div>
 								<div class="controls">
 									<div class="radio">
-										<input type="radio" id="control-radio1" name="control-radio">
-										<label for="control-radio1" name="control-radio">Radio 1</label>
+										<input type="radio" id="control-radio-1" name="control-radio-1">
+										<label for="control-radio-1" name="control-radio">Radio 1</label>
 									</div>
 									<div class="radio">
-										<input type="radio" id="control-radio2" name="control-radio" checked>
-										<label for="control-radio2">Radio 2</label>
+										<input type="radio" id="control-radio-2" name="control-radio-1" checked>
+										<label for="control-radio-2">Radio 2</label>
 									</div>
 									<div class="radio">
-										<input type="radio" id="control-radio3" name="control-radio">
-										<label for="control-radio3">Radio 3</label>
+										<input type="radio" id="control-radio-3" name="control-radio-1">
+										<label for="control-radio-3">Radio 3</label>
+									</div>
+								</div>
+								<div class="controls">
+									<small class="control-help">You can also inline them&hellip;</small>
+									<div class="radio radio--inline">
+										<input type="radio" id="control-radio-4" name="control-radio-2">
+										<label for="control-radio-4" name="control-radio">Radio 4</label>
+									</div>
+									<div class="radio radio--inline">
+										<input type="radio" id="control-radio-5" name="control-radio-2" checked>
+										<label for="control-radio-5">Radio 5</label>
+									</div>
+									<div class="radio radio--inline">
+										<input type="radio" id="control-radio-6" name="control-radio-2">
+										<label for="control-radio-6">Radio 6</label>
+									</div>
+								</div>
+								<div class="controls">
+									<small class="control-help">&hellip;or go small&hellip;</small>
+									<div class="radio radio--small">
+										<input type="radio" id="control-radio-7" name="control-radio-3">
+										<label for="control-radio-7" name="control-radio">Radio 7</label>
+									</div>
+									<div class="radio radio--small">
+										<input type="radio" id="control-radio-8" name="control-radio-3" checked>
+										<label for="control-radio-8">Radio 8</label>
+									</div>
+									<div class="radio radio--small">
+										<input type="radio" id="control-radio-9" name="control-radio-3">
+										<label for="control-radio-9">Radio 9</label>
 									</div>
 								</div>
 							</div>
@@ -549,16 +576,46 @@
 								</div>
 								<div class="controls">
 									<div class="checkbox">
-										<input type="checkbox" id="control-checkbox1" name="control-checkbox" checked>
-										<label for="control-checkbox1" name="control-radio">Checkbox 1</label>
+										<input type="checkbox" id="control-checkbox-1" name="control-checkbox" checked>
+										<label for="control-checkbox-1" name="control-radio">Checkbox 1</label>
 									</div>
 									<div class="checkbox">
-										<input type="checkbox" id="control-checkbox2" name="control-checkbox">
-										<label for="control-checkbox2">Checkbox 2</label>
+										<input type="checkbox" id="control-checkbox-2" name="control-checkbox">
+										<label for="control-checkbox-2">Checkbox 2</label>
 									</div>
 									<div class="checkbox">
-										<input type="checkbox" id="control-checkbox3" name="control-checkbox">
-										<label for="control-checkbox3">Checkbox 3</label>
+										<input type="checkbox" id="control-checkbox-3" name="control-checkbox">
+										<label for="control-checkbox-3">Checkbox 3</label>
+									</div>
+								</div>
+								<div class="controls">
+									<small class="control-help">You can also inline them&hellip;</small>
+									<div class="checkbox checkbox--inline">
+										<input type="checkbox" id="control-checkbox-4" name="control-checkbox" checked>
+										<label for="control-checkbox-4" name="control-radio">Checkbox 4</label>
+									</div>
+									<div class="checkbox checkbox--inline">
+										<input type="checkbox" id="control-checkbox-5" name="control-checkbox">
+										<label for="control-checkbox-5">Checkbox 5</label>
+									</div>
+									<div class="checkbox checkbox--inline">
+										<input type="checkbox" id="control-checkbox-6" name="control-checkbox">
+										<label for="control-checkbox-6">Checkbox 6</label>
+									</div>
+								</div>
+								<div class="controls">
+									<small class="control-help">&hellip;or go small&hellip;</small>
+									<div class="checkbox checkbox--small">
+										<input type="checkbox" id="control-checkbox-7" name="control-checkbox" checked>
+										<label for="control-checkbox-7" name="control-radio">Checkbox 7</label>
+									</div>
+									<div class="checkbox checkbox--small">
+										<input type="checkbox" id="control-checkbox-8" name="control-checkbox">
+										<label for="control-checkbox-8">Checkbox 8</label>
+									</div>
+									<div class="checkbox checkbox--small">
+										<input type="checkbox" id="control-checkbox-9" name="control-checkbox">
+										<label for="control-checkbox-9">Checkbox 9</label>
 									</div>
 								</div>
 							</div>

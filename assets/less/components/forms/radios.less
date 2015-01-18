@@ -30,3 +30,24 @@
         background: @radio-checked-bg;
     }
 }
+
+// Small version (extends .radio)
+.inputgeneratedcontent .radio--small [type="radio"] {
+    width: @radio-small-width;
+    height: @radio-small-height;
+
+    // The background
+    &::before {
+        width: @radio-small-width;
+        height: @radio-small-height;
+    }
+
+    // The ball
+    &::after {
+        // Layout
+        width: @radio-small-checked-width;
+        height: @radio-small-checked-height;
+        top: (@radio-small-checked-width / 2);
+        left: (@radio-small-checked-height / 2);
+    }
+}

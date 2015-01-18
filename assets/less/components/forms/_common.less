@@ -254,16 +254,14 @@ and (min-width : @screen-md) {
 
 // Radios and checkboxes on same line
 // TODO v3: Convert .inline to .control-inline
-.radio.inline,
-.checkbox.inline {
+.radio--inline,
+.checkbox--inline {
     display: inline-block;
-    padding-top: 5px;
-    margin-bottom: 0;
     vertical-align: middle;
 }
-.radio.inline + .radio.inline,
-.checkbox.inline + .checkbox.inline {
-    margin-left: 10px; // space out consecutive inline controls
+.radio--inline + .radio--inline,
+.checkbox--inline + .checkbox--inline {
+    margin-left: (@grid-section-padding * .75); 
 }
 
 // Fancy Checkboxes & Radios
@@ -288,11 +286,12 @@ and (min-width : @screen-md) {
     label {
         display: inline-block;
         vertical-align: middle;
-        margin: 0 0 0 10px;
+        margin: 1px 0 0 (@grid-section-padding / 4);
     }
 }
 .inputgeneratedcontent .checkbox [type="checkbox"],
 .inputgeneratedcontent .radio [type="radio"] {
+    float: none;
     position: relative;
     margin: 0;
     vertical-align: middle;
@@ -477,8 +476,7 @@ and (min-width : @screen-md) {
 
             // Move the options list down to align with labels
             > .radio:first-child,
-            > .checkbox:first-child,
-            > .control-switch:first-child {
+            > .checkbox:first-child {
                 padding-top: 10px; // has to be padding because margin collaspes
             }
 

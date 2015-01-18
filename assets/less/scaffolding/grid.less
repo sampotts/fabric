@@ -28,28 +28,24 @@ body {
 
 // Generate columns
 .colX(@index) when (@index > 0) {
-    .col-width(@index);
-
     .col@{index} { 
+        .col-width(@index);
         width: @width; 
     }
-    
     .colX(@index - 1);
 }
 .colX(0) {}
 
 // Pull columns over
 .pullX(@index) when (@index > 0) {
-    .col-width(@index);
-
     &.pull@{index} { 
+        .col-width(@index);
         margin-left: @width + (@grid-gutter-width * 2);
 
         &:first-child {
             margin-left: @width + @grid-gutter-width;
         }
     }
-
     .pullX(@index - 1);
 }
 .pullX(0) {}
