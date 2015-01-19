@@ -6,6 +6,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  * ======================================================================== */
 
+// Changed to use BEM syntax
 
 +function ($) {
   'use strict';
@@ -23,7 +24,7 @@
 
   Tab.prototype.show = function () {
     var $this    = this.element
-    var $ul      = $this.closest('ul:not(.dropdown-menu)')
+    var $ul      = $this.closest('ul:not(.dropdown__menu)')
     var selector = $this.data('target')
 
     if (!selector) {
@@ -70,7 +71,7 @@
     function next() {
       $active
         .removeClass('active')
-        .find('> .dropdown-menu > .active')
+        .find('> .dropdown__menu > .active')
           .removeClass('active')
         .end()
         .find('[data-toggle="tab"]')
@@ -88,7 +89,7 @@
         element.removeClass('fade')
       }
 
-      if (element.parent('.dropdown-menu')) {
+      if (element.parent('.dropdown__menu')) {
         element
           .closest('li.dropdown')
             .addClass('active')

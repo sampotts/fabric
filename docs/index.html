@@ -915,6 +915,37 @@
 					<p>You can also set them to display <button type="button" class="faux-anchor tooltip tooltip--hover">on hover or focus <span class="tooltip__tip">Awesome</span></button> as well.</p>
 				</section>
 			</article>
+			<article id="tooltips" class="example row">
+				<header class="col3">
+					<h1>Modals</h1>
+					<p>Small dialog prompts</p>
+				</header>
+				<section class="col9">
+					<!-- Button trigger modal -->
+					<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Launch demo modal</button>
+
+					<!-- Modal -->
+					<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+						<div class="modal__dialog">
+							<div class="modal__content">
+								<header class="modal__header">
+									<button type="button" class="faux-anchor close" data-dismiss="modal" aria-label="Close">
+										<svg class="icon"><use xlink:href="#icon-cross"></use></svg>
+									</button>
+									<h4 class="modal__title" id="myModalLabel">Modal title</h4>
+								</header>
+								<div class="modal__body">
+								...
+								</div>
+								<footer class="modal__footer">
+									<button type="button" class="btn pull-left" data-dismiss="modal">Close</button>
+									<button type="button" class="btn btn--primary">Save changes</button>
+								</footer>
+							</div>
+						</div>
+					</div>
+				</section>
+			</article>
 		</main>
 		<footer class="container">
 			<p>&copy; Sam Potts</p>

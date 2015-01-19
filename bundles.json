@@ -11,6 +11,7 @@
 			"assets/js/plugins/bootstrap/collapse.js",
 			"assets/js/plugins/bootstrap/tab.js",
 			"assets/js/plugins/bootstrap/dropdown.js",
+			"assets/js/plugins/bootstrap/modal.js",
 			"assets/js/polyfill/polyfills.js",
 			"assets/js/ui.js"
 		],
