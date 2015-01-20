@@ -3,6 +3,22 @@
 	color: #000000;
 	fill: currentColor;
 }
+.icon-arrow-left-sm {
+	width: 24px;
+	height: 24px;
+}
+.icon-arrow-right-sm {
+	width: 24px;
+	height: 24px;
+}
+.icon-arrow-left-lg {
+	width: 24px;
+	height: 24px;
+}
+.icon-arrow-right-lg {
+	width: 24px;
+	height: 24px;
+}
 .icon-github {
 	width: 24px;
 	height: 24px;

@@ -8,8 +8,24 @@
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-<svg display="none" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg display="none" width="0" height="0" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <defs>
+<symbol id="icon-arrow-left-sm" viewBox="0 0 1024 1024">
+	<title>arrow-left-sm</title>
+	<path class="path1" d="M585.574 231.219c-21.402 20.89-230.502 240.435-230.502 240.435-11.418 11.162-17.101 25.754-17.101 40.346s5.683 29.184 17.101 40.346c0 0 209.101 219.546 230.502 240.384 21.402 20.89 59.904 22.323 82.739 0 22.784-22.272 24.576-53.35-0.051-80.64l-191.846-200.090 191.846-200.090c24.627-27.341 22.835-58.419 0.051-80.691-22.886-22.272-61.389-20.89-82.739 0z"></path>
+</symbol>
+<symbol id="icon-arrow-right-sm" viewBox="0 0 1024 1024">
+	<title>arrow-right-sm</title>
+	<path class="path1" d="M438.426 231.219c21.402 20.89 230.502 240.435 230.502 240.435 11.469 11.162 17.152 25.754 17.152 40.346s-5.683 29.184-17.152 40.346c0 0-209.101 219.546-230.502 240.384-21.402 20.89-59.853 22.323-82.739 0-22.835-22.272-24.627-53.35 0-80.64l191.898-200.090-191.846-200.090c-24.627-27.341-22.835-58.419 0-80.691s61.338-20.89 82.688 0z"></path>
+</symbol>
+<symbol id="icon-arrow-left-lg" viewBox="0 0 1024 1024">
+	<title>arrow-left-lg</title>
+	<path class="path1" d="M737.229 891.802c13.722 13.875 13.722 36.25 0 50.125s-35.891 13.875-49.613 0l-400.896-404.838c-13.722-13.875-13.722-36.301 0-50.125l400.896-404.89c13.722-13.875 35.891-13.875 49.613 0s13.722 36.25 0 50.125l-365.568 379.802 365.568 379.802z"></path>
+</symbol>
+<symbol id="icon-arrow-right-lg" viewBox="0 0 1024 1024">
+	<title>arrow-right-lg</title>
+	<path class="path1" d="M286.704 891.802c-13.722 13.875-13.722 36.25 0 50.125s35.891 13.875 49.613 0l400.896-404.838c13.722-13.875 13.722-36.301 0-50.125l-400.896-404.89c-13.722-13.875-35.891-13.875-49.613 0s-13.722 36.25 0 50.125l365.568 379.802-365.568 379.802z"></path>
+</symbol>
 <symbol id="icon-github" viewBox="0 0 1024 1024">
 	<title>github</title>
 	<path class="path1" d="M674.816 579.072c-36.762 0-66.56 41.267-66.56 92.109 0 50.893 29.798 92.16 66.56 92.16s66.56-41.267 66.56-92.16c-0.051-50.893-29.85-92.109-66.56-92.109zM906.547 339.251c7.578-18.688 7.936-124.928-32.461-226.611 0 0-92.774 10.138-233.062 106.445-29.44-8.141-79.258-12.186-129.024-12.186-49.818 0-99.584 4.096-129.075 12.186-140.237-96.307-232.96-106.445-232.96-106.445-40.397 101.683-40.090 207.923-32.461 226.611-47.514 51.61-76.544 113.562-76.544 198.195 0 367.923 305.254 373.811 382.31 373.811 17.459 0 52.173 0.051 88.781 0.102 36.608-0.051 71.322-0.102 88.678-0.102 77.107 0 382.31-5.888 382.31-373.811 0-84.634-28.979-146.586-76.493-198.195zM513.434 866.048h-2.816c-193.126 0-343.552-23.040-343.552-210.739 0-44.954 15.923-86.682 53.555-121.293 62.925-57.702 169.267-27.136 289.997-27.136 0.461 0 0.973 0 1.434-0.051 0.512 0 0.973 0.051 1.382 0.051 120.73 0 227.123-30.566 289.997 27.136 37.632 34.611 53.504 76.339 53.504 121.293 0 187.699-150.323 210.739-343.501 210.739zM349.235 579.072c-36.762 0-66.56 41.267-66.56 92.109 0 50.893 29.798 92.16 66.56 92.16s66.56-41.267 66.56-92.16c0-50.893-29.798-92.109-66.56-92.109z"></path>
@@ -582,6 +598,26 @@
 </header>
 	<div class="clearfix mhl ptl">
 		<h1 class="mvm mtn fgc1">Grid Size: 20</h1>
+		<div class="glyph fs1">
+			<div class="clearfix pbs">
+				<svg class="icon icon-arrow-left-sm"><use xlink:href="#icon-arrow-left-sm"></use></svg><span class="mls"> icon-arrow-left-sm</span>
+			</div>
+		</div>
+		<div class="glyph fs1">
+			<div class="clearfix pbs">
+				<svg class="icon icon-arrow-right-sm"><use xlink:href="#icon-arrow-right-sm"></use></svg><span class="mls"> icon-arrow-right-sm</span>
+			</div>
+		</div>
+		<div class="glyph fs1">
+			<div class="clearfix pbs">
+				<svg class="icon icon-arrow-left-lg"><use xlink:href="#icon-arrow-left-lg"></use></svg><span class="mls"> icon-arrow-left-lg</span>
+			</div>
+		</div>
+		<div class="glyph fs1">
+			<div class="clearfix pbs">
+				<svg class="icon icon-arrow-right-lg"><use xlink:href="#icon-arrow-right-lg"></use></svg><span class="mls"> icon-arrow-right-lg</span>
+			</div>
+		</div>
 		<div class="glyph fs1">
 			<div class="clearfix pbs">
 				<svg class="icon icon-github"><use xlink:href="#icon-github"></use></svg><span class="mls"> icon-github</span>
